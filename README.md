@@ -14,6 +14,6 @@ Expect more updates soon!
 
 ---
 Previous implementation can be found here: https://github.com/uwgraphics/SerendipSlim
-
 Or you can visit their website: http://vep.cs.wisc.edu/serendip/
+
 ---
