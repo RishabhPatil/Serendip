@@ -51,6 +51,7 @@ $(document).ready(function() {
 						data.push({
 						x: x,
 						y: y,
+						val: "topic"+key,
 						r: mdata[l][key] * 2,
 					})
 					x += bD
@@ -87,10 +88,11 @@ $(document).ready(function() {
 			return data;
 		}
 
-
 		var lData = vData(bD).concat(hData(bD));
 		var cData = cData(bD);
 		var labelData = labelData(bD);
+
+		var newP = document.getElementById("topicP");
 
 		var grid = d3.select("#grid")
 			.append("svg")
@@ -113,8 +115,12 @@ $(document).ready(function() {
 			.attr("y1", function(d) { return d.y1; })
 			.attr("x2", function(d) { return d.x2; })
 			.attr("y2", function(d) { return d.y2; })
-			.attr("stroke-width", 0.5)
-			.attr("stroke", "grey");
+			.attr("stroke-width", 1.0)
+			.attr("stroke", "grey")
+			.on("click", function(d) {
+				newP.innerHTML = d.val;
+			});
+			
 			
 
 		var intersection = grid.selectAll("circle")
@@ -124,7 +130,10 @@ $(document).ready(function() {
 		    .style("fill", "#FFFFE0")
 		    .attr("r", function(d) { return d.r })
 		    .attr("cx", function(d) { return d.x })
-		    .attr("cy", function(d) { return d.y});
+		    .attr("cy", function(d) { return d.y })
+		    .on("click", function(d) {
+				newP.innerHTML = d.val;
+			});
 
 	});
 
