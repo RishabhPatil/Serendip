@@ -1,9 +1,6 @@
-window.onload = function(){
-    document.getElementById('close').onclick = function(){
-        mp = this.parentNode.parentNode.parentNode;
 
-        this.parentNode.parentNode.hide();
-
-        return false;
-    };
-};
+function close_window(){
+	//var mp = this.parentNode.parentNode.parentNode;
+	alert(this.id);
+	//this.parentNode.parentNode.style.display="none";
+}

@@ -2,13 +2,13 @@
 <html>
 <head>
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
 	<title></title>
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light shadow-sm" role="navigation">
   		<a class="navbar-brand" href="#">
-    		<img src="./pictures/icon-nav.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-    		Serendip
+    		<img src="./pictures/logo.png" width="160" height="40" class="d-inline-block align-top" alt="">
   		</a>
   		<ul class="nav nav-pills" id="pills-tab" role="tablist">
 			<li class="nav-item">
@@ -21,7 +21,7 @@
 			    <a class="nav-link" id="pills-rank-view" data-toggle="tab" href="#rankview" role="tab" aria-controls="rankview" aria-selected="false">Rank View</a>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link" id="pills-rank-view" data-toggle="tab" href="#extensionview" role="tab" aria-controls="extensionview" aria-selected="false">Extension View</a>
+			    <a class="nav-link" id="pills-extension-view" data-toggle="tab" href="#extensionview" role="tab" aria-controls="extensionview" aria-selected="false">Extension View</a>
 			</li>
 		</ul>
 
@@ -132,7 +132,7 @@
 									<a class="nav-link" href="#">Distribution</a>
 								</li>
 							</ul>
-							<button type="button" class="close float-lg-right" aria-label="Close">
+							<button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
@@ -156,7 +156,7 @@
 								</li>
 								
 							</ul>
-							<button type="button" id="close" class="close float-lg-right" aria-label="Close">
+							<button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
@@ -244,7 +244,6 @@
 									<option>red</option>
 									<option>blue</option>
 									<option>green</option>
-									<option>yellow</option>
 									<option>purple</option>
 									<option>orange</option>
 									<option>pink</option>
@@ -290,13 +289,57 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="tab-pane fade" id="extensionview" role="tabpanel" aria-labelledby="pills-extension-view">
+			<!-- Rank View Starts -->
+			<div class="row mt-3 mx-2" style="height: 5vh">
+				
+				<form >
+					<div class="form-row">
+						
+						<div class="form-group col-lg-8" style="width: 95vw">
+							<input type="text" class="form-control" id="inputword2" placeholder="Enter words separated by a space">
+						</div>
+						
+						<div class="form-group col-lg-2">								
+							<button id="input_word_btn2" type="button" onclick="add_word_extension()" class="btn btn-primary btn-block">Add</button>
+						</div>
+
+						<div class="form-group col-lg-2">								
+							<button id="clear_words" type="button" onclick="clear_word_extension()" class="btn btn-warning btn-block">Clear</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+
+			<div class="row mx-2" id="topics">
+				
+			</div>
+
+			<div class="row my-2">
+				<div class="col-lg-12">
+					<div class="card">
+						<div class="card-header">
+							<h2>Documents</h2>
+						</div>
+						<div class="card-body" id="ranking">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
+	<script type="text/javascript" src="./scripts/d3.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="./scripts/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
     <script type="text/javascript" src="./scripts/rankview.js"></script>
+    <script type="text/javascript" src="./scripts/extension.js"></script>
+
 
 
 </body>
