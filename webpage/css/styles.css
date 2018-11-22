@@ -1,13 +1,9 @@
-
-.bar {
-    fill: #ff8533;
-}
 g {
     font-size: 10px;
     font-weight: bold;
 }
 
-g path, line {
+g path {
     fill: none;
     display: none;
 }

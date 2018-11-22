@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
 	<meta charset="utf-8"/>
 	<title></title>
 </head>
@@ -118,10 +119,7 @@
 							<button class="btn btn-secondary float-lg-right mx-1" >Hide empty topics</button>
 						</div>
 						<div class="card-body" style="overflow: auto">
-
 							<div id="grid"></div>
-
-
 						</div>
 					</div>
 				</div>
@@ -129,28 +127,25 @@
 					<div class="card h-50 m-1 mt-2">
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
-								<h5>Document</h5>
-								<li class="nav-item">
+								<h5 id = "topicP">Topic</h5>
+								<!-- <li class="nav-item">
 									<a class="nav-link active" href="#">Metadata</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Distribution</a>
-								</li>
+								</li> -->
 							</ul>
 							<button type="button" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div id="topicbody" class="card-body" style="overflow: scroll">
-							<p id="topicP"></p>
+						<div class="card-body" style="overflow: scroll">
+							<div id="topicdist"></div>
 						</div>
 						
 					</div>
 					<div class="card h-50 m-1">
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
-								<h5>Document</h5>
-								<li class="nav-item">
+								<h5 id = "documentP">Document</h5>
+								<!-- <li class="nav-item">
 									<a class="nav-link active" href="#">Metadata</a>
 								</li>
 								<li class="nav-item">
@@ -158,8 +153,7 @@
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Count</a>
-								</li>
-								
+								</li> -->
 							</ul>
 							<button type="button" id="close" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
@@ -271,7 +265,6 @@
 							<h4>Words</h4>
 						</div>
 						<div id="words" class="card-body">
-
 						</div>
 					</div>
 				</div>
@@ -303,6 +296,7 @@
     <script type="text/javascript" src="./scripts/index.js"></script>
     <script type="text/javascript" src="./scripts/graph.js"></script>
     <script type="text/javascript" src="./scripts/rankview.js"></script>
+    <script type="text/javascript" src="./scripts/topic_distribution.js"></script>
 
 
 </body>

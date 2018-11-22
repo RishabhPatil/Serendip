@@ -1,9 +1,9 @@
 $(document).ready(function() {
-
-    var filename = "topic1"+".csv"
+    var filename = "topic1"+".csv";
     d3.csv(filename, function(data) {
 
-        // Create a topic array using csv data
+        
+
         var topic = [];
         for (var i = 0; i < 20; i++) {
             topic[i] = {
@@ -12,20 +12,19 @@ $(document).ready(function() {
             };
         }
 
-        // Sort values of array
         topic = topic.sort(function(x,y){
             return d3.ascending(x.Value,y.Value);
         })
 
         var margin = {
-            left: 70,
+            left: 50,
             right: 5,
             top: 5,
             bottom: 5
         };
 
-        var width = 230 - margin.left - margin.right,
-            height = 250 - margin.top - margin.bottom;
+        var width = 200 - margin.left - margin.right,
+            height = 300 - margin.top - margin.bottom;
 
         var svg = d3.select("#topicdist")
             .append("svg")
@@ -56,6 +55,7 @@ $(document).ready(function() {
             .enter()
             .append("rect")
             .attr("class", "bar")
+            .attr("fill","#ff8533")
             .attr("width", function(d) {
                 return x(d.Value);
             })

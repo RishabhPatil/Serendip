@@ -15,6 +15,7 @@ $(document).ready(function() {
 					y1: ypos1,
 					x2: xpos2,
 					y2: ypos2,
+					val: "Topic " + (l-1).toString(),
 				})
 				xpos1 += bD
 				xpos2 += bD
@@ -34,6 +35,7 @@ $(document).ready(function() {
 					y1: ypos1,
 					x2: xpos2,
 					y2: ypos2,
+					val: "Document " + (l-1).toString(),
 				})
 				ypos1 += bD
 				ypos2 += bD
@@ -51,7 +53,7 @@ $(document).ready(function() {
 						data.push({
 						x: x,
 						y: y,
-						val: "topic"+key,
+						val: "Topic "+key,
 						r: mdata[l][key] * 2,
 					})
 					x += bD
@@ -70,7 +72,7 @@ $(document).ready(function() {
 					x: x,
 					y: y,
 					r: 0,
-					val: "document"+i.toString(),
+					val: "Document "+i.toString(),
 				})
 				y += bD
 			}
@@ -81,7 +83,7 @@ $(document).ready(function() {
 					x: x,
 					y: y,
 					r: 315,
-					val: "topic"+i.toString(),
+					val: "Topic "+i.toString(),
 				})
 				x += bD
 			}
@@ -93,6 +95,7 @@ $(document).ready(function() {
 		var labelData = labelData(bD);
 
 		var newP = document.getElementById("topicP");
+		var newD = document.getElementById("documentP");
 
 		var grid = d3.select("#grid")
 			.append("svg")
@@ -105,7 +108,14 @@ $(document).ready(function() {
 			.append("text")
 			.text(function(d,i) { return d.val; })
 			.attr("transform", (d,i)=>{
-        			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';});
+        			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';})
+			.on("click", function(d) {
+				if (d.val.startsWith("Topic")) {
+					newP.innerHTML = d.val;
+				} else {
+					newD.innerHTML = d.val;
+				}
+			});
 
 
 		var lLines = grid.selectAll("line")
@@ -115,10 +125,14 @@ $(document).ready(function() {
 			.attr("y1", function(d) { return d.y1; })
 			.attr("x2", function(d) { return d.x2; })
 			.attr("y2", function(d) { return d.y2; })
-			.attr("stroke-width", 1.0)
-			.attr("stroke", "grey")
+			.attr("stroke-width", 0.5)
+			.attr("stroke", "black")
 			.on("click", function(d) {
-				newP.innerHTML = d.val;
+				if (d.val.startsWith("Topic")) {
+					newP.innerHTML = d.val;
+				} else {
+					newD.innerHTML = d.val;
+				}
 			});
 			
 			
@@ -133,7 +147,15 @@ $(document).ready(function() {
 		    .attr("cy", function(d) { return d.y })
 		    .on("click", function(d) {
 				newP.innerHTML = d.val;
+			})
+			.on("mouseover", handleMouseOver);
+
+		function handleMouseOver(d, i) { 
+			d3.select(this).attr({
+				"fill": "#000",
 			});
+		}
+
 
 	});
 
