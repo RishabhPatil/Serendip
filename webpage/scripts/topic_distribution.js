@@ -1,8 +1,12 @@
-$(document).ready(function() {
+$("#grid").click(function() {
     var filename = "topic1"+".csv";
     d3.csv(filename, function(data) {
 
-        
+        d3.select("#topicdist")
+            .selectAll("*")
+            .remove();
+
+        console.log(window.localStorage.getItem("tname"));
 
         var topic = [];
         for (var i = 0; i < 20; i++) {
