@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="./css/index.css">
 	<title></title>
 </head>
@@ -31,10 +33,10 @@
 		<div class="tab-pane fade show active" id="corpusview" role="tabpanel" aria-labelledby="pills-corpus-view">
 			<!-- Corpus View Starts -->
 			<div class="row mx-0" style="margin-right: 0px; margin-left: 0px;">
-				<div class="col-lg-3 p-0" style="height: 90vh">
+				<div class="col-lg-2 p-0" style="height: 90vh;">
 					<div class="card h-50 m-1 mt-2" style="overflow: scroll;">
 						<div class="card-header">
-							<h4 style="float: left;">Topic Controls</h4>
+							<h5 style="float: left;">Topic Controls</h5>
 							<button class="btn btn-secondary btn-sm" style="float: right;"><img src="./pictures/menu.png"></img></button>
 						</div>
 						<div class="card-body">
@@ -42,7 +44,7 @@
 					</div>
 					<div class="card h-50 m-1" style="overflow: scroll;">
 						<div class="card-header">
-							<h4 style="float: left;">Document Controls</h4>
+							<h5 style="float: left;">Document Controls</h5>
 							<button class="btn btn-secondary btn-sm" style="float: right;"><img src="./pictures/menu.png"></img></button>
 						</div>
 						<div class="card-body">
@@ -108,7 +110,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 p-0">
+				<div style = "width: 63%">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h4 class="float-lg-left">Model</h4>
@@ -116,36 +118,34 @@
 							<button class="btn btn-secondary float-lg-right mx-1" >Reset colors</button>
 							<button class="btn btn-secondary float-lg-right mx-1" >Hide empty topics</button>
 						</div>
-						<div class="card-body">
+						<div class="card-body" style="overflow: auto">
+							<div id="grid"></div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 p-0">
+				<div style = "height: 100vh; width: 20%">
 					<div class="card h-50 m-1 mt-2">
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
-								<h4>Document</h4>
-								<li class="nav-item">
+								<h5 id = "topicP">Topic</h5>
+								<!-- <li class="nav-item">
 									<a class="nav-link active" href="#">Metadata</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Distribution</a>
-								</li>
+								</li> -->
 							</ul>
 							<button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div class="card-body">
-							<p>No doc selected</p>
+						<div class="card-body" style="overflow: scroll">
+							<div id="topicdist"></div>
 						</div>
 						
 					</div>
 					<div class="card h-50 m-1">
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
-								<h4>Document</h4>
-								<li class="nav-item">
+								<h5 id = "documentP">Document</h5>
+								<!-- <li class="nav-item">
 									<a class="nav-link active" href="#">Metadata</a>
 								</li>
 								<li class="nav-item">
@@ -153,8 +153,7 @@
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Count</a>
-								</li>
-								
+								</li> -->
 							</ul>
 							<button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
@@ -210,7 +209,7 @@
 							<h4>Doc_xyz.txt</h4>
 						</div>
 						<div class="card-body">
-							<embed src="./pdf/sample.pdf" width="100%" height="700vh" />
+
 						</div>
 					</div>
 				</div>
@@ -265,7 +264,6 @@
 							<h4>Words</h4>
 						</div>
 						<div id="words" class="card-body">
-
 						</div>
 					</div>
 				</div>
@@ -275,6 +273,7 @@
 							<h4>Rank Chart</h4>
 						</div>
 						<div class="card-body">
+							<div id = "rank" style="margin-left: 20px; margin-top: 30px"></div>
 						</div>
 					</div>
 				</div>
@@ -333,12 +332,14 @@
 	</div>
 
 	<script type="text/javascript" src="./scripts/d3.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 	<script type="text/javascript" src="./scripts/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="./scripts/index.js"></script>
+    <script type="text/javascript" src="./scripts/graph.js"></script>
     <script type="text/javascript" src="./scripts/rankview.js"></script>
     <script type="text/javascript" src="./scripts/extension.js"></script>
+    <script type="text/javascript" src="./scripts/topic_distribution.js"></script>
 
 
 
