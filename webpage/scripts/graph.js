@@ -112,8 +112,10 @@ $(document).ready(function() {
 			.on("click", function(d) {
 				if (d.val.startsWith("Topic")) {
 					newP.innerHTML = d.val;
+					window.localStorage.setItem("tname",d.val);
 				} else {
 					newD.innerHTML = d.val;
+					window.localStorage.setItem("tname",d.val);
 				}
 			});
 
@@ -130,8 +132,10 @@ $(document).ready(function() {
 			.on("click", function(d) {
 				if (d.val.startsWith("Topic")) {
 					newP.innerHTML = d.val;
+					window.localStorage.setItem("tname",d.val);
 				} else {
 					newD.innerHTML = d.val;
+					window.localStorage.setItem("tname",d.val);
 				}
 			});
 			
@@ -147,6 +151,7 @@ $(document).ready(function() {
 		    .attr("cy", function(d) { return d.y })
 		    .on("click", function(d) {
 				newP.innerHTML = d.val;
+				window.localStorage.setItem("tname",d.val);
 			})
 			.on("mouseover", handleMouseOver);
 
