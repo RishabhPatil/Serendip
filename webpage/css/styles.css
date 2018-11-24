@@ -1,0 +1,9 @@
+g {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+g path {
+    fill: none;
+    display: none;
+}
