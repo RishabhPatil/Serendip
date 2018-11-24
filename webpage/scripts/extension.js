@@ -33,7 +33,9 @@ function view_cards()
 		topics_space.appendChild(words);
 	}
 
+
 	var doc_results = [ ["doc1", 20, 30], ["doc2", 20, 20], ["doc3", 10, 20] ];
+
 	var card, card_doc, card_body;
 	var ranking_space = document.getElementById("ranking");
 	ranking_space.innerHTML = "";
@@ -42,43 +44,85 @@ function view_cards()
 	{
 		add_card(doc_results[i]);
 	}
-	add_card(doc_results[1]);
-	
+
+	/*for(i=0; i<documents.length && documents.length!=0; i++)
+	{
+		add_bubble()
+	}*/
+	display_bubble_chart();	
 }
 
 function add_card(doc_name)
 {
-	var card, card_doc, card_body, card_header_p;
+	var card, card_doc, card_body, card_header_p, img;
 	var ranking_space = document.getElementById("ranking");
 
 	card = document.createElement("div");
-	card.class = "card card-primary";
+	card.className = "card my-2";
 	card_header = document.createElement("div");
-	card_header.class = "card-header";
-	card_header_h2 = document.createElement("h2");
-	card_header_h2.innerHTML = doc_name[0];
-	card_header.appendChild(card_header_h2);
+	card_header.className = "card-header";
+	card_header_h5 = document.createElement("h5");
+	card_header_h5.innerHTML = doc_name[0];
+	card_header_h5.style.cssFloat = "right";
+	card_header.appendChild(card_header_h5);
 	card.appendChild(card_header);
-	card_body = document.createElement("div");
-	card_body.class = "card-body";
+	var chart;
+	chart = document.createElement("div");
 
-	/*var progress, pro_bar;
-	for(i=1; i<doc_name.length; i++)
-	{
-		progress = document.createElement("div");
-		progress.class = "progress";
-		pro_bar = document.createElement("div");
-		pro_bar.class = "progress-bar progress-bar-striped progress-bar-animated";
-		pro_bar.role = "progressbar";
-		pro_bar.style.width = ""+doc_name[i]+"%";
-		pro_bar.innerHTML = doc_name[i];
-		progress.appendChild(pro_bar);
-		card_body.appendChild(progress);
-	}*/
+	d3.csv("TopicsWords.csv", function(error, data) {
+		if (error) throw error;
+
+		var topics = new Array();
+		var lengths = new Array()
+		data.forEach(function(d) {
+			topics.push(d.topics);
+			lengths.push(d.length);	
+		})
+
+		var MaxWidth = 1000;
+		var MaxHeight = 80;
+
+		var margin = {top: 0, right: 10, bottom: 0, left: 10},
+		    width = MaxWidth - margin.left - margin.right,
+		    height = MaxHeight - margin.top - margin.bottom;
+
+		var x1 = d3.scaleBand()
+			.domain(topics)
+			.rangeRound([0, width]);
+
+		var y1 = d3.scaleLinear()
+			.range([80,0]);
+
+		y1.domain([0, d3.max(lengths)]);
+
+		var xAxis1 = d3.axisBottom(x1).ticks(30);
+		var yAxis1 = d3.axisLeft(y1).ticks(20);
+
+		var rankBar = d3.select(chart)
+		    .append("svg")
+			.attr("width", MaxWidth)
+			.attr("height", MaxHeight);
 
 
-	card.appendChild(card_body);
+		rankBar.selectAll(".bar")
+			.data(data)
+			.enter()
+			.append("rect")
+		      .attr("class", "bar")
+		      .attr("x", function(d) { return x1(d.topics) })
+		      .attr("y", function(d) { return y1(d.length) } )
+		      .attr("width", 25)
+		      .attr("height", function(d) { return height - y1(d.length); })
+		      .attr("fill","grey");
+   	});
+
+/*	var dataURL = chart.node().toDataURL();
+	card_header.style('background-image', 'url(' + dataURL + ')');*/
+	card_header.appendChild(chart);
 	ranking_space.appendChild(card);
-
 }
 
+function display_bubble_chart()
+{
+	
+}
