@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light shadow-sm" role="navigation">
+  		<a class="navbar-brand" href="#">
+    		<img src="{{ url_for('static', filename='pictures/logo.png')}}" width="160" height="40" class="d-inline-block align-top" alt="">
+  		</a>
+  		<ul class="nav nav-pills" id="pills-tab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="pills-corpus-view" data-toggle="tab" href="#corpusview" role="tab" aria-controls="corpusview" aria-selected="true">Corpus View</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" id="pills-text-view" data-toggle="tab" href="#textview" role="tab" aria-controls="textview" aria-selected="false">Text View</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" id="pills-rank-view" data-toggle="tab" href="#rankview" role="tab" aria-controls="rankview" aria-selected="false">Rank View</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" id="pills-extension-view" data-toggle="tab" href="#extensionview" role="tab" aria-controls="extensionview" aria-selected="false">Extension View</a>
+			</li>
+		</ul>
+
+	</nav>
+
+	<div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="corpusview" role="tabpanel" aria-labelledby="pills-corpus-view">
+			<!-- Corpus View Starts -->
+			<div class="row mx-0" style="margin-right: 0px; margin-left: 0px;">
+				<div class="col-lg-2 p-0" style="height: 90vh;">
+					<div class="card h-50 m-1 mt-2" style="overflow: scroll;">
+						<div class="card-header">
+							<h5 style="float: left;">Topic Controls</h5>
+							<button class="btn btn-secondary btn-sm" style="float: right;"><img src="./pictures/menu.png"></img></button>
+						</div>
+						<div class="card-body">
+						</div>
+					</div>
+					<div class="card h-50 m-1" style="overflow: scroll;">
+						<div class="card-header">
+							<h5 style="float: left;">Document Controls</h5>
+							<button class="btn btn-secondary btn-sm" style="float: right;"><img src="./pictures/menu.png"></img></button>
+						</div>
+						<div class="card-body">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<p class="mb-0">
+											<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							    			Sorting
+							    			</button>
+						    			</p>
+						    		</div>
+
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">
+											1
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Aggregation
+											</button>
+										</h5>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">
+											2
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											Filtering
+											</button>
+										</h5>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">
+											3
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h5 class="mb-0">
+											<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											Selection
+											</button>
+										</h5>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">
+											4
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style = "width: 63%">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h4 class="float-lg-left">Model</h4>
+							<button class="btn btn-secondary float-lg-right mx-1" >Reset Data</button>
+							<button class="btn btn-secondary float-lg-right mx-1" >Reset colors</button>
+							<button class="btn btn-secondary float-lg-right mx-1" >Hide empty topics</button>
+						</div>
+						<div class="card-body" style="overflow: auto">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+				<div style = "height: 100vh; width: 20%">
+					<div class="card h-50 m-1 mt-2">
+						<div class="card-header">
+							<ul class="nav nav-tabs float-lg-left">
+								<h5 id = "topicP">Topic</h5>
+								<!-- <li class="nav-item">
+									<a class="nav-link active" href="#">Metadata</a>
+								</li> -->
+							</ul>
+							<button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="card-body" style="overflow: scroll">
+							<div id="topicdist"></div>
+						</div>
+						
+					</div>
+					<div class="card h-50 m-1">
+						<div class="card-header">
+							<ul class="nav nav-tabs float-lg-left">
+								<h5 id = "documentP">Document</h5>
+								<!-- <li class="nav-item">
+									<a class="nav-link active" href="#">Metadata</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Graph</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Count</a>
+								</li> -->
+							</ul>
+							<button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div id="textoverview" class="card-body" style="overflow:scroll;">
+							<p>No doc selected</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="textview" role="tabpanel" aria-labelledby="pills-text-view">
+			<!-- Text View Starts -->
+			<div class="row mx-0">
+				<div class="col-lg-2 p-0" style="height: 90vh">
+					<div class="card h-100 m-1 mt-2" >
+						<div class="card-header">
+							<h4 style="float: left;">Tags</h4>
+							<button class="btn btn-secondary" style="float: right;">Clear All</button>
+						</div>
+						<div class="card-body">
+							<div class="alert alert-primary">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">small</div>
+								</div>
+							</div>
+
+							<div class="alert alert-secondary">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%">And</div>
+								</div>
+							</div>
+
+							<div class="alert alert-warning">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 81%">text</div>
+								</div>
+							</div>
+
+							<div class="alert alert-danger">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 9%">More</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h4>Doc_xyz.txt</h4>
+						</div>
+						<div class="card-body">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h4 style="float: left;">Topic Overview</h4>
+							<button class="btn btn-secondary" style="float: right;">Clear All</button>
+						</div>
+						<div class="card-body" id="textoverview">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="rankview" role="tabpanel" aria-labelledby="pills-rank-view">
+			<!-- Rank View Starts -->
+			<div class="row mt-3 mx-2" style="height: 5vh">
+				
+				<form >
+					<div class="form-row">
+						
+						<div class="form-group col-lg-8" style="width: 95vw">
+							<input type="text" class="form-control" id="inputword" placeholder="Enter words separated by a space">
+						</div>
+						<div class="form-group col-lg-2">
+							
+							<div class="form-group">
+							
+								<select id="Select" class="form-control">
+									<option>red</option>
+									<option>blue</option>
+									<option>green</option>
+									<option>purple</option>
+									<option>orange</option>
+									<option>pink</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-lg-2">								
+							<button id="input_word_btn" type="button" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+
+			<div class="row mx-0">
+				<div class="col-lg-2 p-0" style="height: 85vh">
+					<div class="card h-100 m-1 mt-2" >
+						<div class="card-header">
+							<h4>Words</h4>
+						</div>
+						<div id="words" class="card-body">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h4>Rank Chart</h4>
+						</div>
+						<div class="card-body">
+							<div id = "rank" style="margin-left: 20px; margin-top: 30px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h4>Saliency</h4>
+						</div>
+						<div class="card-body">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane fade" id="extensionview" role="tabpanel" aria-labelledby="pills-extension-view">
+			<!-- Extension View Starts -->
+			<div class="row mt-3 mx-2" style="height: 5vh">
+				
+				<form >
+					<div class="form-row">
+						
+						<div class="form-group col-lg-8" style="width: 95vw">
+							<input type="text" class="form-control" id="inputword2" placeholder="Enter words separated by a space">
+						</div>
+						
+						<div class="form-group col-lg-2">								
+							<button id="input_word_btn2" type="button" onclick="add_word_extension()" class="btn btn-primary btn-block">Add</button>
+						</div>
+
+						<div class="form-group col-lg-2">								
+							<button id="clear_words" type="button" onclick="clear_word_extension()" class="btn btn-warning btn-block">Clear</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+
+			<div class="row mx-2" id="topics">
+				
+			</div>
+
+			<div class="row my-2 mx-1">
+				<div class="col-lg-8">
+					<div class="card">
+						<div class="card-header">
+							<h3>Documents</h3>
+						</div>
+						<div class="card-body" id="ranking">
+
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-4">
+					<div class="card">
+						<div class="card-header">
+							<h3>Bubble something</h3>
+						</div>
+						<div class="card-body">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/d3.min.js')}}"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/index.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/graph.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/rankview.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/extension.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/topic_distribution.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/text_overview.js')}}"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+	    	var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
+	    	drawMatrix(path);
+	    });
+    </script>
+
+</body>
+</html>
