@@ -33,7 +33,7 @@
 		<div class="tab-pane fade show active" id="corpusview" role="tabpanel" aria-labelledby="pills-corpus-view">
 			<!-- Corpus View Starts -->
 			<div class="row mx-0" style="margin-right: 0px; margin-left: 0px;">
-				<div class="col-lg-2 p-0" style="height: 90vh;">
+				<div class="col-xl-2 p-0" style="height: 90vh;">
 					<div class="card h-50 m-1 mt-2" style="overflow: scroll;">
 						<div class="card-header">
 							<h5 style="float: left;">Topic Controls</h5>
@@ -110,7 +110,7 @@
 						</div>
 					</div>
 				</div>
-				<div style = "width: 63%">
+				<div class="col-xl-7 p-0" style="height: 90vh;">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h4 class="float-lg-left">Model</h4>
@@ -123,14 +123,11 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 100vh; width: 20%">
+				<div class="col-xl-3 p-0" style="height: 90vh;">
 					<div class="card h-50 m-1 mt-2">
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
 								<h5 id = "topicP">Topic</h5>
-								<!-- <li class="nav-item">
-									<a class="nav-link active" href="#">Metadata</a>
-								</li> -->
 							</ul>
 							<button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
@@ -145,15 +142,6 @@
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
 								<h5 id = "documentP">Document</h5>
-								<!-- <li class="nav-item">
-									<a class="nav-link active" href="#">Metadata</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Graph</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Count</a>
-								</li> -->
 							</ul>
 							<button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
@@ -169,7 +157,7 @@
 		<div class="tab-pane fade" id="textview" role="tabpanel" aria-labelledby="pills-text-view">
 			<!-- Text View Starts -->
 			<div class="row mx-0">
-				<div class="col-lg-2 p-0" style="height: 90vh">
+				<div class="col-xl-2 p-0" style="height: 90vh">
 					<div class="card h-100 m-1 mt-2" >
 						<div class="card-header">
 							<h4 style="float: left;">Tags</h4>
@@ -203,7 +191,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 p-0">
+				<div class="col-xl-6 p-0">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h4>Doc_xyz.txt</h4>
@@ -213,7 +201,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 p-0">
+				<div class="col-xl-4 p-0">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h4 style="float: left;">Topic Overview</h4>
@@ -232,10 +220,10 @@
 				<form >
 					<div class="form-row">
 						
-						<div class="form-group col-lg-8" style="width: 95vw">
+						<div class="form-group col-xl-8" style="width: 95vw">
 							<input type="text" class="form-control" id="inputword" placeholder="Enter words separated by a space">
 						</div>
-						<div class="form-group col-lg-2">
+						<div class="form-group col-xl-2">
 							
 							<div class="form-group">
 							
@@ -249,7 +237,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="form-group col-lg-2">								
+						<div class="form-group col-xl-2">								
 							<button id="input_word_btn" type="button" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
 						</div>
 					</div>
@@ -258,7 +246,7 @@
 			</div>
 
 			<div class="row mx-0">
-				<div class="col-lg-2 p-0" style="height: 85vh">
+				<div class="col-xl-2 p-0" style="height: 85vh">
 					<div class="card h-100 m-1 mt-2" >
 						<div class="card-header">
 							<h4>Words</h4>
@@ -267,7 +255,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 p-0">
+				<div class="col-xl-6 p-0">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h4>Rank Chart</h4>
@@ -277,7 +265,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 p-0">
+				<div class="col-xl-4 p-0">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h4>Saliency</h4>
@@ -296,15 +284,15 @@
 				<form >
 					<div class="form-row">
 						
-						<div class="form-group col-lg-8" style="width: 95vw">
+						<div class="form-group col-xl-8" style="width: 95vw">
 							<input type="text" class="form-control" id="inputword2" placeholder="Enter words separated by a space">
 						</div>
 						
-						<div class="form-group col-lg-2">								
+						<div class="form-group col-xl-2">								
 							<button id="input_word_btn2" type="button" onclick="add_word_extension()" class="btn btn-primary btn-block">Add</button>
 						</div>
 
-						<div class="form-group col-lg-2">								
+						<div class="form-group col-xl-2">								
 							<button id="clear_words" type="button" onclick="clear_word_extension()" class="btn btn-warning btn-block">Clear</button>
 						</div>
 					</div>
@@ -317,7 +305,7 @@
 			</div>
 
 			<div class="row my-2 mx-1">
-				<div class="col-lg-8">
+				<div class="col-xl-8">
 					<div class="card">
 						<div class="card-header">
 							<h3>Documents</h3>
@@ -328,12 +316,12 @@
 					</div>
 					
 				</div>
-				<div class="col-lg-4">
+				<div class="col-xl-4">
 					<div class="card">
 						<div class="card-header">
 							<h3>Bubble something</h3>
 						</div>
-						<div class="card-body">
+						<div class="card-body" id="bubble">
 
 						</div>
 					</div>
