@@ -212,61 +212,86 @@ function display_bubble_chart(topics, importance)
 
 	var chart = document.createElement("div");
 
-	/*var data = new Array();
-	var obj = {}
+	alert(bubble_chartspace.offsetWidth);
+	//start bubble_chart
+	var children = new Array();
+	var obj = {};
+	var color = d3.scaleOrdinal().range(d3.schemeCategory20);
 	for(i=0; i<topics.length; i++)
 	{
 		obj = {};
-		obj.topic = topics[i];
-		obj.importance = importance[i];
-		data.push(obj);
+		obj["topic"] = topics[i];
+		obj["score"] = parseInt(importance[i], 10);
+		obj["color"] = color(Math.random()*20);
+		children.push(obj);
 	}
-
+	var bubble_topic = {};
+	bubble_topic["children"] = children;
 	
-	//Start with the chart dimensions
+    var diameter = bubble_chartspace.offsetWidth - 50;
 
-	var diameter = 500,
-		pad = 1.5,
-		color = d3.scaleOrdinal(d3.schemeCategory20c);
+    var bubble = d3.pack(bubble_topic)
+        .size([diameter, diameter])
+        .padding(1.5);
 
-	alert("1 here");
+    var svg = d3.select("#bubble")
+        .append("svg")
+        .attr("width", diameter)
+        .attr("height", diameter)
+        .attr("class", "bubble");
 
-	var bubble = d3.pack(data)
-					.size([diameter, diameter])
-					.padding(pad);
+    var source = d3.hierarchy(bubble_topic)
+        .sum(function(d) {
+            return d.score;
+        });
 
-	alert("2");
-	var svg = d3.select(chart)
-            .append("svg")
-            .attr("width", diameter)
-            .attr("height", diameter)
-            .attr("class", "bubble");
+    var node = svg.selectAll(".node")
+        .data(bubble(source).descendants())
+        .enter()
+        .filter(function(d) {
+            return !d.children
+        })
+        .append("g")
+        .attr("class", "node")
+        .attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
 
-    alert("3");
-    var nodes = d3.hierarchy(data)
-        .sum(function(d) { return d.importance; });
+    //Bubble attributes
+    node.append("circle")
+        .attr("r", function(d) {
+            return d.r;
+        })
+        .style("fill", function(d, i) {
+            return d.data.color;
+        });
 
-    alert("4");
-        var node = svg.selectAll(".node")
-            .data(bubble(nodes).descendants())
-            .enter()
-            .filter(function(d){
-                return  !d.children
-            })
-            .append("g")
-            .attr("class", "node")
-            .attr("transform", function(d) {
-                return "translate(" + d.x + "," + d.y + ")";
-            });
+    //Labels in bubble
+    node.append("text")
+        .attr("dy", ".1em")
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .text(function(d) {
+            return d.data.topic.substring(0, d.r);
+        })
+        .attr("font-size", function(d) {
+            return d.r / 6;
+        })
+        .attr("fill", "black");
+    //Values of labels in bubble
+    node.append("text")
+        .attr("dy", "1.3em")
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .text(function(d) {
+            return d.data.score;
+        })
+        .attr("font-size", function(d) {
+            return d.r / 6;
+        })
+        .attr("fill", "black");
 
-    alert("5");
-        node.append("circle")
-            .attr("r", function(d) {
-                return d.importance;
-            })
-            .style("fill", function(d,i) {
-                return color(i);
-            });*/
+	//end bubble_chart
     
     bubble_chartspace.appendChild(chart);
 
