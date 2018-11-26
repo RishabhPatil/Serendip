@@ -42,19 +42,31 @@ function view_cards_and_chart()
 {
 	var topics_space = document.getElementById("topics");
 	topics_space.innerHTML = "";
+	document.getElementById("bubble").innerHTML="";
 	var words;
+	var ranking_space = document.getElementById("ranking");
+	ranking_space.innerHTML = "";
+
+	if(documents.length == 0)
+	{
+		return;
+	}
+
 
 	for(i=0; i<documents.length; i++)
 	{
 		words=document.createElement("button");
-		words.class = "btn btn-sm btn-success";
-		words.innerHTML = documents[i];
+		words.className = "btn btn-success mx-1";
+		words.innerHTML = '<b>'+documents[i]+'</b> <span aria-hidden="true">&times;</span>';
+		words.type = "button";
+		words.name = documents[i];
 		topics_space.appendChild(words);
+		words.onclick = Remove_word;
 	}
 
 	var card, card_doc, card_body;
-	var ranking_space = document.getElementById("ranking");
-	ranking_space.innerHTML = "";
+	
+	
 
 	d3.csv("Extension.csv", function(error, data) {
 		var documents_name = new Array();
@@ -170,9 +182,6 @@ function add_card(doc_name, topics, lengths)
 
 		y1.domain([0, d3.max(lengths)]);
 
-		var xAxis1 = d3.axisBottom(x1).ticks(30);
-		var yAxis1 = d3.axisLeft(y1).ticks(20);
-
 		var rankBar = d3.select(chart)
 		    .append("svg")
 			.attr("width", MaxWidth)
@@ -202,9 +211,6 @@ function display_bubble_chart(topics, importance)
     bubble_chartspace.innerHTML = "";
 
 	var chart = document.createElement("div");
-
-	
-	alert(topics);
 
 	/*var data = new Array();
 	var obj = {}
@@ -264,4 +270,18 @@ function display_bubble_chart(topics, importance)
     
     bubble_chartspace.appendChild(chart);
 
+}
+
+function Remove_word()
+{
+	var new_array = new Array();
+	for(i=0; i<documents.length; i++)
+	{
+		if(this.name != documents[i])
+		{
+			new_array.push(documents[i]);
+		}
+	}
+	documents = new_array;
+	view_cards_and_chart();
 }

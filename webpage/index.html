@@ -9,7 +9,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-light bg-light shadow-sm" role="navigation">
-  		<a class="navbar-brand" href="#">
+  		<a class="navbar-brand">
     		<img src="./pictures/logo.png" width="160" height="40" class="d-inline-block align-top" alt="">
   		</a>
   		<ul class="nav nav-pills" id="pills-tab" role="tablist">
@@ -282,7 +282,7 @@
 						</div>
 						
 						<div class="form-group col-xl-2">								
-							<button id="input_word_btn2" type="button" onclick="add_word_extension()" class="btn btn-primary btn-block">Add</button>
+							<input id="input_word_btn2" type="submit" onclick="add_word_extension()" class="btn btn-primary btn-block" value="Add"></input>
 						</div>
 
 						<div class="form-group col-xl-2">								
@@ -293,7 +293,12 @@
 				
 			</div>
 
-			<div class="row mx-2" id="topics">
+			<div class="row mx-2" >
+				<form>
+					<div class="form-group" id="topics">
+					</div>
+
+				</form>
 				
 			</div>
 
