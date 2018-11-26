@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    console.log("start")
+function topicLineGraph(data){
+
     var data = [{
             name: "Topic1",
             color: "red",
@@ -254,4 +254,4 @@ $(document).ready(function() {
 
     console.log("end")
 
-});
+}
