@@ -358,7 +358,8 @@
     		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
 	    	drawMatrix(DATA_FOLDER);
-	    	topicLineGraph()
+	    	topicLineGraph();
+	    	rankView(DATA_FOLDER);
 	    });
     </script>
 

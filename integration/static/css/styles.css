@@ -7,3 +7,12 @@ g path {
     fill: none;
     display: none;
 }*/
+
+.tick line {
+	fill: none;
+	display:none;
+}
+
+.domain {
+	display: none;
+}

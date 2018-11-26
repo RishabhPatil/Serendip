@@ -1,4 +1,4 @@
-$(document).ready(function() {
+function rankView(DATA_FOLDER, topic_filename){
 	function add_word()
 	{
 		var text, color;
@@ -13,7 +13,9 @@ $(document).ready(function() {
 		words_panel.appendChild(para);
 	}
 
-	d3.csv("TopicsWords.csv", function(error, data) {
+	var filename = DATA_FOLDER+"TopicsWords.csv";
+	
+	d3.csv(filename, function(error, data) {
 		if (error) throw error;
 
 		var topics = new Array();
@@ -75,6 +77,16 @@ $(document).ready(function() {
 		      .attr("width", 15)
 		      .attr("height", function(d) { return height - y1(d.length); })
 		      .attr("fill","grey");
+
+		rankBar.append("line")
+			.data(data)
+			.attr("dy", ".35em")
+			.attr("x1", function(d) { return x1(d.topics) })
+			.attr("y1", function(d) { return height - y1(d.length) - 40 })
+			.attr("x2", function(d) { return x1(d.topics) + 15 })
+			.attr("y2", function(d) { return height - y1(d.length) - 40 })
+			.attr("stroke-width", 2.0)
+			.attr("stroke", "black")
    	});
 
-});
+}

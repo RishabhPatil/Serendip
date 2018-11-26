@@ -23,7 +23,7 @@ function drawMatrix(DATA_FOLDER) {
 					x2: xpos2,
 					y2: ypos2,
 					val: "topic " + (l-1).toString(),
-					t: l-1,
+					t: l-2,
 				})
 				xpos1 += bD
 				xpos2 += bD
@@ -62,9 +62,9 @@ function drawMatrix(DATA_FOLDER) {
 						data.push({
 						x: x,
 						y: y,
-						val: "topic "+key,
+						val: key,
 						r: mdata[l][key] * 8,
-						t: key
+						t: key.slice(5),
 					})
 					x += bD
 				}
@@ -95,7 +95,7 @@ function drawMatrix(DATA_FOLDER) {
 					x: x,
 					y: y,
 					r: 315,
-					val: "topic "+i.toString(),
+					val: "Topic "+i.toString(),
 					t: i,
 				})
 				x += bD
@@ -128,13 +128,14 @@ function drawMatrix(DATA_FOLDER) {
 			.attr("transform", (d,i)=>{
         			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';})
 			.on("click", function(d) {
-				if (d.val.startsWith("topic")) {
+				if (d.val.startsWith("Topic")) {
+					d3.selectAll(".classl"+d.t)
+						.style("fill", "red");
 					newP.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
 					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
 				} else {
 					window.localStorage.setItem("tname",d.val);
-					console.log(d.id);
 					newD.innerHTML = d.val;
 					$("#documentP").click(function() {
   						$("#pills-text-view").click()
@@ -172,7 +173,6 @@ function drawMatrix(DATA_FOLDER) {
 						.style("fill", "red");
 					newP.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
-					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
 				} else {
 					newD.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
@@ -194,7 +194,7 @@ function drawMatrix(DATA_FOLDER) {
 						.style("stroke", "black")
 						.style("stroke-width", 0.5)	
 				}
-			});;
+			});
 			
 			
 
@@ -210,11 +210,14 @@ function drawMatrix(DATA_FOLDER) {
 		    .on("click", function(d) {
 		    	d3.selectAll(".classl"+d.t)
 						.style("fill", "red");
+				console.log(d.val);
 				newP.innerHTML = d.val;
 				window.localStorage.setItem("tname",d.val);
+				topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
 			})
 			.on("mouseover", function(d,i) {
-				c = d3.select(this).attr("class")
+				c = d3.select(this).attr("class");
+				console.log(c)
 				d3.selectAll("."+c)
 					.style("stroke", "black")
 					.style("stroke-width", 2.0)	
