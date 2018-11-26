@@ -176,30 +176,14 @@
 							<h4 style="float: left;">Tags</h4>
 							<button class="btn btn-secondary" style="float: right;">Clear All</button>
 						</div>
-						<div class="card-body">
-							<div class="alert alert-primary">
-								<div class="progress">
-									<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">small</div>
+						<div class="card-body-topic">
+							{% for n in range(30) %}
+								<div class="alert alert-primary">
+									<div class="progress">
+										<div class="tpcbutton progress-bar t{{n}}" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Topic {{n}}</div>
+									</div>
 								</div>
-							</div>
-
-							<div class="alert alert-secondary">
-								<div class="progress">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%">And</div>
-								</div>
-							</div>
-
-							<div class="alert alert-warning">
-								<div class="progress">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 81%">text</div>
-								</div>
-							</div>
-
-							<div class="alert alert-danger">
-								<div class="progress">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 9%">More</div>
-								</div>
-							</div>
+							{% endfor %}							
 
 						</div>
 					</div>
@@ -207,9 +191,9 @@
 				<div class="col-lg-6 p-0">
 					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
-							<h4>Doc_xyz.txt</h4>
+							<h4 id="doc-title">Doc_xyz.txt</h4>
 						</div>
-						<div class="card-body">
+						<div id="doc-text-html" class="card-body">
 
 						</div>
 					</div>
@@ -342,6 +326,116 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+    	function textViewInit()
+    	{
+    		var topic_colors;
+    		$.ajax({
+		      url: "/get_colors",
+		      type: "get",
+		      async: false,
+		      data: {},
+		      success: function(response) {
+		        topic_colors = response.colors;
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+		    console.log(topic_colors);
+    		var topic_x_word;
+    		$.ajax({
+		      url: "/get_topic_words_json",
+		      type: "get",
+		      async:false,
+		      data: {},
+		      success: function(response) {
+		        topic_x_word = response["topic_words_json"];
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+			console.log(topic_x_word);
+    		var docid = window.localStorage.getItem("docid");
+
+    		$.ajax({
+		      url: "/get_doc",
+		      type: "get",
+		      async: false,
+		      data: {docid: docid},
+		      success: function(response) {
+		        window.localStorage.setItem("docText", response.html);
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+		    var txt = window.localStorage.getItem("docText");
+		    console.log(txt)
+		    $("#doc-text-html").html(txt)
+
+			var temp = '';
+			$("span.hoverable").mouseenter(function() {
+				temp = $(this).css("background-color");
+			    $(this).css("background-color", "#aaaaaa").css("border-radius", "3px");
+			}).mouseleave(function() {
+			     $(this).css("background-color", temp).css("border-radius", "0px");
+			});
+
+			$('div.tpcbutton').click(function() {
+
+				console.log(this);
+	  			var myClass = $(this).attr("class");
+	  			var classes = myClass.split(" ");
+	  			console.log(classes);
+
+	  			var topic = "";
+	  			var selected = classes.indexOf("topic-selected");
+
+	  			for(i in classes){
+		  			if( classes[i].startsWith("t") && classes[i].length<4 ){
+		  				console.log(classes[i])
+		  				topic = classes[i]
+		  				break
+		  			}
+	  			}
+	  			var topicNo = parseInt(topic.replace("t",'')) - 1
+	  			console.log(topic, topicNo)
+
+
+				if(selected >= 0){
+					$("span."+topic).css({"background-color":""});
+					$(this).removeClass("topic-selected");
+				}
+				else{
+					
+					$("span."+topic).each(function( k, v ) {
+
+						var t = $(this).text();
+  						var wordScore = topic_x_word[topic][t.toLowerCase()];
+						var r = ((topic_colors[topicNo][0]-128)*wordScore*100 +128).toString()
+						var g = ((topic_colors[topicNo][1]-128)*wordScore*100 +128).toString()
+						var b = ((topic_colors[topicNo][2]-128)*wordScore*100 +128).toString()
+  						var rgbtext = "rgb("+r+","+g+","+b+")";
+  						console.log(rgbtext)
+
+  						$(this).css({"background-color":rgbtext});
+					});
+
+					$(this).addClass("topic-selected");
+				}
+
+
+  			}
+		);
+
+
+
+
+    		$("#pills-text-view").click()
+    	}
+    </script>
 
 	<script type="text/javascript" src="{{ url_for('static', filename='scripts/d3.min.js')}}"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
@@ -355,6 +449,19 @@
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/text_overview.js')}}"></script>
     <script type="text/javascript">
     	$(document).ready(function() {
+    		// $.ajax({
+		    //   url: "/get_colors",
+		    //   type: "get",
+		    //   data: {},
+		    //   success: function(response) {
+		    //     window.localStorage.setItem("colors", response.colors);
+		    //     console.log(response)
+		    //   },
+		    //   error: function(xhr) {
+		    //     //Do Something to handle error
+		    //   }
+		    // });
+
     		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
 	    	drawMatrix(DATA_FOLDER);

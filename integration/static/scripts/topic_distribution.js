@@ -1,7 +1,6 @@
 // $("#grid").click(function() {
 
 function topic_click(DATA_FOLDER, topic_filename){
-    console.log("in")
 
     var filename = DATA_FOLDER+"/"+topic_filename;
     d3.csv(filename, function(data) {

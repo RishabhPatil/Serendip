@@ -136,9 +136,10 @@ function drawMatrix(DATA_FOLDER) {
 					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
 				} else {
 					window.localStorage.setItem("tname",d.val);
+					window.localStorage.setItem("docid",d.id)
 					newD.innerHTML = d.val;
 					$("#documentP").click(function() {
-  						$("#pills-text-view").click()
+  						textViewInit();
 					});
 				}
 			}).
