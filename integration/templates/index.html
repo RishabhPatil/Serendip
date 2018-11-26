@@ -145,7 +145,7 @@
 					<div class="card h-50 m-1">
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
-								<h5 id = "documentP">Document</h5>
+								<h5><a id = "documentP">Document</a></h5>
 								<!-- <li class="nav-item">
 									<a class="nav-link active" href="#">Metadata</a>
 								</li>
@@ -355,8 +355,10 @@
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/text_overview.js')}}"></script>
     <script type="text/javascript">
     	$(document).ready(function() {
-	    	var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
-	    	drawMatrix(path);
+    		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
+	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
+	    	drawMatrix(DATA_FOLDER);
+	    	topicLineGraph()
 	    });
     </script>
 

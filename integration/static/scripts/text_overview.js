@@ -1,5 +1,6 @@
-function topicLineGraph(data){
+function topicLineGraph(){
 
+    console.log("start")
     var data = [{
             name: "Topic1",
             color: "red",
