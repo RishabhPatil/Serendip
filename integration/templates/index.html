@@ -469,6 +469,7 @@
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
 	    	window.localStorage.setItem("DATA_FOLDER",DATA_FOLDER);
 	    	window.localStorage.setItem("sId",1);
+
 	    	drawMatrix(DATA_FOLDER);
 	    	topicLineGraph("textoverview0");
 	    	topicLineGraph("textoverview1");
@@ -483,3 +484,21 @@
 
 </body>
 </html>
+
+
+<!-- x = {
+	word1: king,
+	word2: queen
+}
+
+$.ajax({
+  url: "/docsearch",
+  type: "get",
+  async: false,
+  data: x,
+  success: function(response) {
+  },
+  error: function(xhr) {
+    //Do Something to handle error
+  }
+}); -->
