@@ -71,11 +71,13 @@ def docsearch():
 					t_array[int(t[0])] += float(t)
 				words.append(t_array)
 
-	topic_score_array = []
+	topic_score_array = {"children":[]}
 	for i in range(30):
 		if t_array[i]!=0:
-			print(i,t_array[i])
-			topic_score_array.append([i,t_array[i]])
+			temp_j = {"topic":"topic"+str(i)}
+			temp_j['score'] = t_array[i]
+			temp_j['color'] = "rgb("+str(colors[i][0])+','+str(colors[i][1])+','+str(colors[i][2])+")"
+			topic_score_array["children"].append(temp_j)
 
 	scores = []
 	for i in doc_topic:
@@ -83,6 +85,14 @@ def docsearch():
 		if score:
 			scores.append([i,doc_topic[i].tolist()])
 	scores = sorted(scores, key=lambda x:x[1], reverse=True)
+
+	doc_topic_string = "Document,topics,length"
+	for i in scores:
+		t = doc_ids[i[0]]
+		for j in range(30):
+			doc_topic_string += "\n"+t+",topic"+str(j)+","+str(i[1][j])
+	with open(DATA_FOLDER+"Extension.csv","w") as f:
+		f.write(doc_topic_string)
 
 	return jsonify({"scores":scores, "topic_scores":topic_score_array})
 
