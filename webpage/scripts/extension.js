@@ -153,10 +153,12 @@ function add_card(doc_name, topics, lengths)
 	card.appendChild(card_header);
 	var chart;
 	chart = document.createElement("div");
+	var color = d3.scaleOrdinal().range(d3.schemeCategory20);
 
 	d3.csv("Extension.csv", function(){
 		var document_data = new Array();
 		var obj = {};
+
 
 		//creating the data structure for input
 		for(i=0; i<topics.length ;i++)
@@ -200,7 +202,16 @@ function add_card(doc_name, topics, lengths)
 		      .attr("y", function(d) { return y1(d.length) } )
 		      .attr("width", Math.round(width/40))
 		      .attr("height", function(d) { return height - y1(d.length); })
-		      .attr("fill","grey");
+		      .attr("fill", function (d) {
+		      		for(i=0;i<documents.length;i++)
+		      		{
+		      			if(documents[i] == d.topic)
+		      			{
+		      				return color(d.topic);
+		      			}
+		      		}
+		      		return "gray";
+		      });
    	});
 
 	card_header.appendChild(chart);
@@ -224,7 +235,7 @@ function display_bubble_chart(topics, importance)
 		obj = {};
 		obj["topic"] = topics[i];
 		obj["score"] = parseInt(importance[i], 10);
-		obj["color"] = color(Math.random()*20);
+		obj["color"] = color(topics[i]);
 		children.push(obj);
 	}
 	var bubble_topic = {};
