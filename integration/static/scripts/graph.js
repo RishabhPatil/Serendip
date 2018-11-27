@@ -134,6 +134,7 @@ function drawMatrix(DATA_FOLDER) {
 					newP.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
 					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
+
 				} else {
 					window.localStorage.setItem("tname",d.val);
 					window.localStorage.setItem("docid",d.id)
