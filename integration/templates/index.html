@@ -133,9 +133,9 @@
 									<a class="nav-link active" href="#">Metadata</a>
 								</li> -->
 							</ul>
-							<button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
+							<!-- <button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
-							</button>
+							</button> -->
 						</div>
 						<div class="card-body" style="overflow: scroll">
 							<div id="topicdist"></div>
@@ -156,9 +156,9 @@
 									<a class="nav-link" href="#">Count</a>
 								</li> -->
 							</ul>
-							<button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
+							<!-- <button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
 								<span aria-hidden="true">&times;</span>
-							</button>
+							</button> -->
 						</div>
 						<div id="textoverview0" class="card-body" style="overflow:scroll;">
 							
@@ -433,6 +433,11 @@
     		$("#pills-text-view").click()
     	}
 
+    function closew(span) {
+	    $(span).parent().remove();
+	    add_word();
+	}
+
     </script>
 
 	<script type="text/javascript" src="{{ url_for('static', filename='scripts/d3.min.js')}}"></script>
@@ -463,10 +468,16 @@
     		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
 	    	window.localStorage.setItem("DATA_FOLDER",DATA_FOLDER);
+	    	window.localStorage.setItem("sId",1);
 	    	drawMatrix(DATA_FOLDER);
 	    	topicLineGraph("textoverview0");
 	    	topicLineGraph("textoverview1");
 	    	add_word();
+
+	    	// $(".cls").click(function () {
+	    	// 	console.log(this);
+	    	// 	// delete_word(this.id);
+      //   	});
 	    });
     </script>
 

@@ -5,19 +5,36 @@ function add_word()
 	var colors = new Array()
 	text=document.getElementById("inputword").value;
 	color=document.getElementById("Select").value;
+	document.getElementById('inputword').value = '';
+
+	var words_panel=document.getElementById("words");
 	
 	if (text != "") {
-		var words_panel=document.getElementById("words");
+		
 		var para=document.createElement('p');
+		var span=document.createElement('span');
+
+		id = window.localStorage.getItem("sId");
+		span.id = id;
+		window.localStorage.setItem("sId",Number(id)+1);
+		span.innerHTML = " X";
+		span.style.color = "black";
+		$(span).addClass("cls");
+		$(span).click(function() {closew(span)});
 		para.innerHTML = text;
-		para.style.color=color;
+		para.style.color = color;
+
+		para.append(span);
+
 		words_panel.appendChild(para);
 
-		var nodes = words_panel.querySelectorAll("p"); 
+		
+	}
+
+	var nodes = words_panel.querySelectorAll("p"); 
 		for (i = 0; i < nodes.length; i++) {
-			all_words[i] = nodes[i].innerHTML;
+			all_words[i] = nodes[i].childNodes[0].nodeValue;
 			colors.push(nodes[i].style.color);
-		}
 	}
 
 	var topics_data;
@@ -41,6 +58,10 @@ function add_word()
 
 }
 
+function delete_word(){
+
+}
+
 function rankView(topics_data, ranks_data, colors){
 
 	var topics = new Array();
@@ -51,8 +72,6 @@ function rankView(topics_data, ranks_data, colors){
 			lengths.push(d.len);
 		})
 	}
-
-	// console.log(ranks_data);
 
 	d3.select("#rank")
             .selectAll("*")
@@ -89,15 +108,6 @@ function rankView(topics_data, ranks_data, colors){
 	      .attr("dx", "4.0em")
 	      .attr("dy", "0em")
 	      .attr("transform", "rotate(90)" );
-
-	// rankBar.append("g")
-	//       .attr("class", "y axis")
-	//       .call(yAxis1)
-	//     .append("text")
-	//       .attr("transform", "rotate(-90)")
-	//       .attr("y", 6)
-	//       .attr("dy", ".71em")
-	//       .style("text-anchor", "end");
 
 
 	rankBar.selectAll(".bar")
