@@ -10,20 +10,24 @@ function drawMatrix(DATA_FOLDER) {
 	d3.csv(DATA_FOLDER+"/text_topic_matrix.csv", function(error, mdata) {
 		if (error) throw error;
 		var bD = 25
+		var h = Object.keys(mdata[0]).length -1;
+		var v = mdata.length;
+		console.log(h,v);
+
 		function vData(bD) {
 			var data = new Array();
 			xpos1 = 100
 			ypos1 = 100
 			xpos2 = 100
 			ypos2 = 100 + (bD * (mdata.length+1))
-			for (var l = 0; l < 33; l++) {
+			for (var l = 0; l < h+2; l++) {
 				data.push({
 					x1: xpos1,
 					y1: ypos1,
 					x2: xpos2,
 					y2: ypos2,
 					val: "topic " + (l-1).toString(),
-					t: l-2,
+					t: l-1,
 				})
 				xpos1 += bD
 				xpos2 += bD
@@ -35,7 +39,7 @@ function drawMatrix(DATA_FOLDER) {
 			var data = new Array();
 			xpos1 = 100
 			ypos1 = 100
-			xpos2 = 100 + (bD * 32)
+			xpos2 = 100 + (bD * h)
 			ypos2 = 100
 			for (var l = 0; l < (mdata.length+2); l++) {
 				data.push({
@@ -56,9 +60,10 @@ function drawMatrix(DATA_FOLDER) {
 			var data = new Array();
 			x = 100 + bD
 			y = 100 + bD 
-			for (var l = 0; l < mdata.length; l++) {
+			for (var l = 0; l < v; l++) {
 				x = 100 + bD
-				for (key in mdata[l]) {
+				for (var k = 1; k < h; k++) {
+						key = "Topic"+(k-1).toString();
 						data.push({
 						x: x,
 						y: y,
@@ -90,7 +95,7 @@ function drawMatrix(DATA_FOLDER) {
 			}
 			x = 130
 			y = 80
-			for (var i = 0; i < 31; i++) {
+			for (var i = 0; i < h; i++) {
 				data.push({
 					x: x,
 					y: y,

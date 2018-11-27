@@ -8,7 +8,7 @@ function add_word()
 	document.getElementById('inputword').value = '';
 
 	var words_panel=document.getElementById("words");
-	
+
 	if (text != "") {
 		
 		var para=document.createElement('p');
@@ -121,8 +121,6 @@ function rankView(topics_data, ranks_data, colors){
 	      .attr("height", function(d) { return height - y(d.len); })
 	      .attr("fill","grey");
 
-
-	console.log(ranks_data);
 
 	for (var i =0; i < ranks_data.length; i++) {
 		for (var j=0; j < topics.length; j++) {
