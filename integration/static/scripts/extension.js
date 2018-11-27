@@ -49,7 +49,9 @@ function add_word_extension()
 	  	{
 	  		topics.push(response.topic_scores.children[i].topic);
 	  		importance.push(response.topic_scores.children[i].score);
+
 	  	}
+	  	console.log(response);
 	  },
 	  error: function(xhr) {
 	    //Do Something to handle error
