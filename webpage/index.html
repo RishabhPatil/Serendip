@@ -210,7 +210,7 @@
 			<!-- Rank View Starts -->
 			<div class="row mt-3 mx-2" style="height: 5vh">
 				
-				<form >
+				<form onsubmit="return false">
 					<div class="form-row">
 						
 						<div class="form-group col-xl-8" style="width: 95vw">
@@ -231,7 +231,7 @@
 							</div>
 						</div>
 						<div class="form-group col-xl-2">								
-							<button id="input_word_btn" type="button" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
+							<input id="input_word_btn" type="submit" onclick="add_word()" class="btn btn-primary btn-block" value="Add"></input>
 						</div>
 					</div>
 				</form>
@@ -274,7 +274,7 @@
 			<!-- Extension View Starts -->
 			<div class="row mt-3 mx-2" style="height: 5vh">
 				
-				<form >
+				<form onsubmit="return false">
 					<div class="form-row">
 						
 						<div class="form-group col-xl-8" style="width: 95vw">
@@ -282,7 +282,7 @@
 						</div>
 						
 						<div class="form-group col-xl-2">								
-							<input id="input_word_btn2" type="button" onclick="add_word_extension()" class="btn btn-primary btn-block" value="Add"></input>
+							<input id="input_word_btn2" type="submit" onclick="add_word_extension()" class="btn btn-primary btn-block" value="Add"></input>
 						</div>
 
 						<div class="form-group col-xl-2">								

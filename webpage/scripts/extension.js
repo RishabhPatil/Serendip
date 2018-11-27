@@ -158,6 +158,7 @@ function add_card(doc_name, topics, lengths)
 		var document_data = new Array();
 		var obj = {};
 
+		//creating the data structure for input
 		for(i=0; i<topics.length ;i++)
 		{
 			obj = {};
@@ -166,7 +167,9 @@ function add_card(doc_name, topics, lengths)
 			document_data.push(obj);
 		}
 
-		var MaxWidth = 1000;
+		var parentWidth = card.offsetWidth;
+
+		var MaxWidth = Math.round(parentWidth - (0.15*parentWidth));
 		var MaxHeight = 80;
 
 		var margin = {top: 0, right: 10, bottom: 0, left: 10},
@@ -195,7 +198,7 @@ function add_card(doc_name, topics, lengths)
 		      .attr("class", "bar")
 		      .attr("x", function(d) { return x1(d.topic) })
 		      .attr("y", function(d) { return y1(d.length) } )
-		      .attr("width", 25)
+		      .attr("width", Math.round(width/40))
 		      .attr("height", function(d) { return height - y1(d.length); })
 		      .attr("fill","grey");
    	});
@@ -212,7 +215,6 @@ function display_bubble_chart(topics, importance)
 
 	var chart = document.createElement("div");
 
-	alert(bubble_chartspace.offsetWidth);
 	//start bubble_chart
 	var children = new Array();
 	var obj = {};
@@ -228,7 +230,7 @@ function display_bubble_chart(topics, importance)
 	var bubble_topic = {};
 	bubble_topic["children"] = children;
 	
-    var diameter = bubble_chartspace.offsetWidth - 50;
+    var diameter = bubble_chartspace.offsetWidth - Math.round(bubble_chartspace.offsetWidth/12);
 
     var bubble = d3.pack(bubble_topic)
         .size([diameter, diameter])
