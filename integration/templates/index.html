@@ -430,11 +430,9 @@
   			}
 		);
 
-
-
-
     		$("#pills-text-view").click()
     	}
+
     </script>
 
 	<script type="text/javascript" src="{{ url_for('static', filename='scripts/d3.min.js')}}"></script>
@@ -464,9 +462,10 @@
 
     		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
+	    	window.localStorage.setItem("DATA_FOLDER",DATA_FOLDER);
 	    	drawMatrix(DATA_FOLDER);
 	    	topicLineGraph();
-	    	rankView(DATA_FOLDER);
+	    	add_word();
 	    });
     </script>
 

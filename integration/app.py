@@ -63,7 +63,19 @@ def get_topic_words_json():
 def get_word_ranks():
 	# words = ['heaven', 'sun']
 	# print(len(topic_words_list))
-	words = request.args.get('words')
+	words = []
+	asdf = request.args
+	print(asdf)
+	for i in asdf:
+		words.append(request.args.get(i))
+	print(words)
+	if not words:
+		print("NO words Found!")
+		topic_lens = []
+		for i in range(30):
+			topic_lens.append({'name':"topic"+str(i), 'len':len(topic_words_list[i])})
+		return jsonify({'topic_lens':topic_lens, "ranks":[]})
+
 	ranks = []
 	for word in words:
 		trank = []
@@ -83,8 +95,8 @@ def get_word_ranks():
 	ixs = np.argsort(snpr)
 	topic_lens = []
 	for i in ixs:
-		topic_lens.append({'name':"topic"+str(i), 'len':topic_words_list[i]})
-	new_ranks = tnpr[ixs].T
+		topic_lens.append({'name':"topic"+str(i), 'len':len(topic_words_list[i])})
+	new_ranks = tnpr[ixs].T.tolist()
 	# print(new_ranks.tolist())
 	return jsonify({'topic_lens':topic_lens, "ranks":new_ranks})
 
