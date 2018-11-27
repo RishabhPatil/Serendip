@@ -306,18 +306,18 @@
 			<!-- Extension View Starts -->
 			<div class="row mt-3 mx-2" style="height: 5vh">
 				
-				<form >
+				<form onsubmit="return false">
 					<div class="form-row">
 						
-						<div class="form-group col-lg-8" style="width: 95vw">
+						<div class="form-group col-xl-8" style="width: 95vw">
 							<input type="text" class="form-control" id="inputword2" placeholder="Enter words separated by a space">
 						</div>
 						
-						<div class="form-group col-lg-2">								
-							<button id="input_word_btn2" type="button" onclick="add_word_extension()" class="btn btn-primary btn-block">Add</button>
+						<div class="form-group col-xl-2">								
+							<input id="input_word_btn2" type="submit" onclick="add_word_extension()" class="btn btn-primary btn-block" value="Add"></input>
 						</div>
 
-						<div class="form-group col-lg-2">								
+						<div class="form-group col-xl-2">								
 							<button id="clear_words" type="button" onclick="clear_word_extension()" class="btn btn-warning btn-block">Clear</button>
 						</div>
 					</div>
@@ -325,15 +325,20 @@
 				
 			</div>
 
-			<div class="row mx-2" id="topics">
+			<div class="row mx-1 my-1" >
+				<form>
+					<div class="form-group" id="topics">
+					</div>
+
+				</form>
 				
 			</div>
 
-			<div class="row my-2 mx-1">
-				<div class="col-lg-8">
+			<div class="row my-1 mx-1">
+				<div class="col-xl-8">
 					<div class="card">
 						<div class="card-header">
-							<h3>Documents</h3>
+							<h5>Documents</h5>
 						</div>
 						<div class="card-body" id="ranking">
 
@@ -341,12 +346,12 @@
 					</div>
 					
 				</div>
-				<div class="col-lg-4">
+				<div class="col-xl-4">
 					<div class="card">
 						<div class="card-header">
-							<h3>Bubble something</h3>
+							<h5>Topic Distribution</h5>
 						</div>
-						<div class="card-body">
+						<div class="card-body" id="bubble">
 
 						</div>
 					</div>
@@ -523,6 +528,7 @@
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
 	    	window.localStorage.setItem("DATA_FOLDER",DATA_FOLDER);
 	    	window.localStorage.setItem("sId",1);
+	    	
 
 	    	drawMatrix(DATA_FOLDER);
 	    	topicLineGraph("textoverview0");
