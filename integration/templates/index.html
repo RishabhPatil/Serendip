@@ -40,28 +40,6 @@
 							<h5>Topic Controls</h5>
 						</div>
 						<div class="card-body">
-							<!-- <div class="accordion" id="accordionExample">
-								<div class="card">
-									<div class="card-header" id="headingOne">
-										<h5 class="mb-0">
-											<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-											Selection
-											</button>
-										</h5>
-									</div>
-									<div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-										<div class="card-body">
-											<form >
-												<div class="form-row">
-													<div class="form-group col-xl-12">								
-														<button id="clear_words" type="button" onclick="clear_corpus_topic()" class="btn btn-warning btn-block">Clear</button>
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div> -->
 							<button class="btn btn-primary btn-sm my-1" onclick="clr('topics')"><span>Clear</span></button>
 							<br>
 							<textarea id="topic_textarea" placeholder="No topics selected" rows="6" cols="18"></textarea> 
@@ -96,13 +74,7 @@
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
 								<h5 id = "topicP">Topic</h5>
-								<!-- <li class="nav-item">
-									<a class="nav-link active" href="#">Metadata</a>
-								</li> -->
 							</ul>
-							<!-- <button type="button" id="close1" onclick="close_window()" class="close float-lg-right" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button> -->
 						</div>
 						<div class="card-body" style="overflow: scroll">
 							<div id="topicdist"></div>
@@ -113,19 +85,8 @@
 						<div class="card-header">
 							<ul class="nav nav-tabs float-lg-left">
 								<h5><a id = "documentP">Document</a></h5>
-								<!-- <li class="nav-item">
-									<a class="nav-link active" href="#">Metadata</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Graph</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Count</a>
-								</li> -->
+								
 							</ul>
-							<!-- <button type="button" id="close2" onclick="close_window()" class="close float-lg-right" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button> -->
 						</div>
 						<div id="textoverview0" class="card-body" style="overflow:scroll;">
 							
@@ -275,8 +236,8 @@
 
 			<div class="row my-1 mx-1">
 				<div class="col-xl-8">
-					<div class="card">
-						<div class="card-header">
+					<div class="card" style="height: 75vh; overflow: scroll;">
+						<div class="card-header" >
 							<h5>Documents</h5>
 						</div>
 						<div class="card-body" id="ranking">
@@ -484,21 +445,3 @@
 
 </body>
 </html>
-
-
-<!-- x = {
-	word1: king,
-	word2: queen
-}
-
-$.ajax({
-  url: "/docsearch",
-  type: "get",
-  async: false,
-  data: x,
-  success: function(response) {
-  },
-  error: function(xhr) {
-    //Do Something to handle error
-  }
-}); -->

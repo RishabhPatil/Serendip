@@ -131,6 +131,9 @@ function view_cards_and_chart(topics, importance)
 		var lengths = new Array();
 		var present = false;
 
+		console.log("Inside view_cards_and_chart");
+		console.log(data);
+
 		data.forEach(function(d) {
 			documents_name.push(d.Document);
 			topics.push(d.topics);
@@ -165,28 +168,6 @@ function view_cards_and_chart(topics, importance)
 		}
 	});
 
-	/*var topics = new Array();
-	var importance = new Array();
-
-	//Get the topics from the TopicsWords.csv
-	d3.csv("TopicsWords.csv", function(error, data)
-	{
-		data.forEach(function(d)
-		{
-			for(i=0; i<documents.length; i++)
-			{
-				if(d.topics == documents[i])
-				{
-					topics.push(d.topics);
-					importance.push(d.length);					
-				}
-			}
-		});
-
-
-			
-	});*/
-
 	display_bubble_chart(topics, importance);
 }
 
@@ -209,6 +190,7 @@ function add_card(doc_name, topics, lengths)
 	chart = document.createElement("div");
 	var color = d3.scaleOrdinal().range(d3.schemeCategory20);
 	var Extensionfile = window.localStorage.getItem("DATA_FOLDER") + "Extension.csv";
+	//no need for data here
 	d3.csv(Extensionfile, function(){
 		var document_data = new Array();
 		var obj = {};
@@ -220,6 +202,7 @@ function add_card(doc_name, topics, lengths)
 			obj = {};
 			obj.topic = topics[i];
 			obj.length = lengths[i];
+			obj.color = color(topics[i])
 			document_data.push(obj);
 		}
 
@@ -253,11 +236,16 @@ function add_card(doc_name, topics, lengths)
 			.append("rect")
 		      .attr("class", "bar")
 		      .attr("x", function(d) { return x1(d.topic) })
-		      .attr("y", function(d) { return y1(d.length) } )
+		      .attr("y", function(d) { return y1(d.length + 5) } )
 		      .attr("width", Math.round(width/40))
-		      .attr("height", function(d) { return height - y1(d.length); })
+		      .attr("height", function(d) { return height - y1(d.length + 5); })
 		      .attr("fill", function (d) {
-		      		return color(d.topic);
+		      		if(d.length == 0)
+		      		{
+		      			return "gray";
+		      		}
+
+		      		return d.color;
 		      });
    	});
 
@@ -366,8 +354,39 @@ function Remove_word()
 		if(this.name != documents[i])
 		{
 			new_array.push(documents[i]);
+
 		}
 	}
 	documents = new_array;
-	view_cards_and_chart();
+	var key;
+	json_var = {};
+	//insert the words into the json_var
+	for(i=0; i<documents.length; i++)
+	{
+		key = "word"+(i+1);
+		json_var[key] = documents[i]; 
+	}
+	var topics = new Array();
+	var importance = new Array();
+	//Ajax request
+	$.ajax({
+	  url: "/docsearch",
+	  type: "get",
+	  async: false,
+	  data: json_var,
+	  success: function(response) {
+	  	for(i=0;i<response.topic_scores.children.length; i++)
+	  	{
+	  		topics.push(response.topic_scores.children[i].topic);
+	  		importance.push(response.topic_scores.children[i].score);
+
+	  	}
+	  	console.log(response);
+	  },
+	  error: function(xhr) {
+	    //Do Something to handle error
+	  }
+	});
+
+	view_cards_and_chart(topics, importance);
 }
