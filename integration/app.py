@@ -78,10 +78,13 @@ def docsearch():
 			wid = word_ids[w]
 			if str(wid) in word_topic:
 				topics = word_topic[str(wid)]
+				print(topics)
 				for tix in topics:
 					t = topics[tix]
-					t_array[int(t[0])] += float(t)
+					t_array[int(tix)] += float(t)
 				words.append(t_array)
+
+	print(t_array)
 
 	topic_score_array = {"children":[]}
 	for i in range(30):
