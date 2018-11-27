@@ -1,3 +1,19 @@
+function clr(str) {
+	console.log("skdhfj"+str);
+	if(str=="topics") {
+		d3.selectAll(".classl")
+			.style("fill", "black");
+		document.getElementById("topic_textarea").value="";
+		document.getElementById("topic_textarea").innerHTML="";
+	}
+	if(str=="docs") {
+		d3.selectAll(".classd")
+			.style("fill", "black");
+		document.getElementById("doc_textarea").value="";
+		document.getElementById("doc_textarea").innerHTML="";
+	}
+}
+
 function drawMatrix(DATA_FOLDER) {
 
 	var doc_names = new Array(); 
@@ -12,7 +28,6 @@ function drawMatrix(DATA_FOLDER) {
 		var bD = 25
 		var h = Object.keys(mdata[0]).length -1;
 		var v = mdata.length;
-		console.log(h,v);
 
 		function vData(bD) {
 			var data = new Array();
@@ -39,7 +54,7 @@ function drawMatrix(DATA_FOLDER) {
 			var data = new Array();
 			xpos1 = 100
 			ypos1 = 100
-			xpos2 = 100 + (bD * h)
+			xpos2 = 100 + (bD * (h+1))
 			ypos2 = 100
 			for (var l = 0; l < (mdata.length+2); l++) {
 				data.push({
@@ -89,7 +104,7 @@ function drawMatrix(DATA_FOLDER) {
 					r: 0,
 					val: doc_names[i-1].substring(0, 10) + '...',
 					id: i-1,
-					t: -1,
+					t: "d"+i.toString(),
 				})
 				y += bD
 			}
@@ -115,6 +130,9 @@ function drawMatrix(DATA_FOLDER) {
 		var newP = document.getElementById("topicP");
 		var newD = document.getElementById("documentP");
 
+		var t_area = document.getElementById("topic_textarea");
+		var d_area = document.getElementById("doc_textarea");
+
 		var div = d3.select("body").append("div")	
 		    .attr("class", "tooltip")				
 		    .style("opacity", 0);
@@ -128,7 +146,7 @@ function drawMatrix(DATA_FOLDER) {
 			.data(labelData)
 			.enter()
 			.append("text")
-			.attr("class", function(d,i) { return "classl"+d.t})
+			.attr("class", function(d,i) {if (d.val.startsWith("Topic")) { return "classl"+d.t } else { return "classd"+d.t }})
 			.text(function(d,i) { return d.val; })
 			.attr("transform", (d,i)=>{
         			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';})
@@ -136,11 +154,17 @@ function drawMatrix(DATA_FOLDER) {
 				if (d.val.startsWith("Topic")) {
 					d3.selectAll(".classl"+d.t)
 						.style("fill", "red");
+
+					t_area.value += (d.val+"\n");
 					newP.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
 					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
 
 				} else {
+					d3.selectAll(".classd"+d.t)
+						.style("fill", "red");
+
+					d_area.value += (doc_names[d.id]+"\n");
 					window.localStorage.setItem("tname",d.val);
 					window.localStorage.setItem("docid",d.id)
 					newD.innerHTML = d.val;

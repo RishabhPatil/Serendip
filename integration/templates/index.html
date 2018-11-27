@@ -38,7 +38,6 @@
 					<div class="card h-50 m-1 mt-2" style="overflow: scroll;">
 						<div class="card-header">
 							<h5 style="float: left;">Topic Controls</h5>
-							<button class="btn btn-secondary btn-sm" style="float: right;"><img src="./pictures/menu.png"></img></button>
 						</div>
 						<div class="card-body">
 							<!-- <div class="accordion" id="accordionExample">
@@ -63,15 +62,14 @@
 									</div>
 								</div>
 							</div> -->
-							<button class="btn btn-primary btn-sm my-1" onclick=""><span>&times;</span></button>
+							<button class="btn btn-primary btn-sm my-1" onclick="clr('topics')"><span>Clear</span></button>
 							<br>
-							<textarea id="Selection_textarea">No topics selected</textarea> 
+							<textarea id="topic_textarea" placeholder="No topics selected" rows="6" cols="18"></textarea> 
 						</div>
 					</div>
 					<div class="card h-50 m-1" style="overflow: scroll;">
 						<div class="card-header">
 							<h5 style="float: left;">Document Controls</h5>
-							<button class="btn btn-secondary btn-sm" style="float: right;"><img src="./pictures/menu.png"></img></button>
 						</div>
 						<div class="card-body">
 							<!-- <div class="accordion" id="accordionExample">
@@ -133,9 +131,9 @@
 									</div>
 								</div>
 							</div> --> 
-							<button class="btn btn-primary btn-sm my-1" onclick=""><span>&times;</span></button>
+							<button class="btn btn-primary btn-sm my-1" onclick="clr('docs')"><span>Clear</span></button>
 							<br>
-							<textarea id="Selection_textarea">No documents selected</textarea>
+							<textarea id="doc_textarea" placeholder="No documents selected" rows="6" cols="18"></textarea>
 						</div>
 					</div>
 				</div>
@@ -497,6 +495,7 @@
 	    $(span).parent().remove();
 	    add_word();
 	}
+
 
     </script>
 
