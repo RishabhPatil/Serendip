@@ -55,6 +55,18 @@ colors = [[int(random.random()*128 + 127) for i in range(3)] for i in range(30)]
 
 app = Flask(__name__)
 
+@app.route("/get_linegraph_data")
+def get_linegraph_data():
+	did = request.args.get("did")
+	with open(DATA_FOLDER+"doc"+did+"_linegraph.json", "r") as f:
+		data = json.load(f)
+	for i in range(len(data["data"])):
+		idx = int(data["data"][i]["id"][1:])
+		clr = "rgb("+str(colors[idx][0])+','+str(colors[idx][1])+','+str(colors[idx][2])+")"
+		data["data"][i]["color"] = clr
+
+	return jsonify(data)
+
 @app.route("/docsearch")
 def docsearch():
 	words = []

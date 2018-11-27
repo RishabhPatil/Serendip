@@ -354,9 +354,11 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/text_overview.js')}}"></script>
 	<script type="text/javascript">
-    	function textViewInit()
+    	function textViewInit(dname)
     	{
+    		$("h4#doc-title").text(dname);
     		var topic_colors;
     		$.ajax({
 		      url: "/get_colors",
@@ -370,7 +372,7 @@
 		        //Do Something to handle error
 		      }
 		    });
-		    console.log(topic_colors);
+
     		var topic_x_word;
     		$.ajax({
 		      url: "/get_topic_words_json",
@@ -384,7 +386,7 @@
 		        //Do Something to handle error
 		      }
 		    });
-			console.log(topic_x_word);
+
     		var docid = window.localStorage.getItem("docid");
 
     		$.ajax({
@@ -411,8 +413,24 @@
 			     $(this).css("background-color", temp).css("border-radius", "0px");
 			});
 
-			$('div.tpcbutton').click(function() {
+			var data;
+	    	$.ajax({
+			      url: "/get_linegraph_data",
+			      type: "get",
+			      async: false,
+			      data: {did:docid},
+			      success: function(response) {
+			        data = response
+			      },
+			      error: function(xhr) {
+			        //Do Something to handle error
+			    }
+			});
+			topicLineGraph("textoverview1",data["data"]);
 
+			var topic_clrs = {}
+
+			$('.tpcbutton').click(function() {
 				console.log(this);
 	  			var myClass = $(this).attr("class");
 	  			var classes = myClass.split(" ");
@@ -431,10 +449,18 @@
 	  			var topicNo = parseInt(topic.replace("t",'')) - 1
 	  			console.log(topic, topicNo)
 
+	  			if(topicNo in topic_clrs){
 
-				if(selected >= 0){
+	  			} 
+	  			else{
+	  				topic_clrs[topicNo] = 0
+	  			}
+
+
+				if(selected >= 0 || topic_clrs[topicNo] == 1){
 					$("span."+topic).css({"background-color":""});
 					$(this).removeClass("topic-selected");
+					topic_clrs[topicNo] = 0
 				}
 				else{
 					
@@ -442,9 +468,9 @@
 
 						var t = $(this).text();
   						var wordScore = topic_x_word[topic][t.toLowerCase()];
-						var r = ((topic_colors[topicNo][0]-128)*wordScore*100 +128).toString()
-						var g = ((topic_colors[topicNo][1]-128)*wordScore*100 +128).toString()
-						var b = ((topic_colors[topicNo][2]-128)*wordScore*100 +128).toString()
+						var r = ( topic_colors[topicNo][0] * (1+wordScore*2) ).toString()
+						var g = ( topic_colors[topicNo][1] * (1+wordScore*2) ).toString()
+						var b = ( topic_colors[topicNo][2] * (1+wordScore*2) ).toString()
   						var rgbtext = "rgb("+r+","+g+","+b+")";
   						console.log(rgbtext)
 
@@ -452,13 +478,14 @@
 					});
 
 					$(this).addClass("topic-selected");
+					topic_clrs[topicNo] = 1
 				}
 
 
   			}
 		);
-
-    		$("#pills-text-view").click()
+    	
+    	$("#pills-text-view").click()
     	}
 
     function closew(span) {
@@ -477,21 +504,20 @@
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/rankview.js')}}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/extension.js')}}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='scripts/topic_distribution.js')}}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='scripts/text_overview.js')}}"></script>
     <script type="text/javascript">
     	$(document).ready(function() {
-    		// $.ajax({
-		    //   url: "/get_colors",
-		    //   type: "get",
-		    //   data: {},
-		    //   success: function(response) {
-		    //     window.localStorage.setItem("colors", response.colors);
-		    //     console.log(response)
-		    //   },
-		    //   error: function(xhr) {
-		    //     //Do Something to handle error
-		    //   }
-		    // });
+    		$.ajax({
+		      url: "/get_colors",
+		      type: "get",
+		      data: {},
+		      success: function(response) {
+		        window.localStorage.setItem("colors", response.colors);
+		        console.log(response)
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
 
     		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";

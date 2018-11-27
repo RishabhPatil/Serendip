@@ -1,5 +1,5 @@
 
-<span class="t5 t16 t21 t24 t25 hoverable">CASE</span> LIBRARY
+<span class="t1 t3 t5 t16 t19 t25 hoverable">CASE</span> LIBRARY
 
 SUCCESSOR TO
 CLEVELAND LIBRARY
@@ -24,7 +24,7 @@ IDOL XIII.
 Zugac’e 5etnftfc Cegt anB Branelatfon 5ierie0,
 
 VOL. 1 : THE LAUGHABLE STORIES COLLECTED BY BAR-HEBRBUS.
-Syriac <span class="t0 t1 t2 t4 t5 t7 t9 t10 t11 t12 t13 t14 t15 t16 t17 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">Text</span> and Translation, with Notes, Introduction, etc.
+Syriac <span class="t0 t1 t2 t3 t4 t5 t6 t8 t9 t10 t12 t14 t15 t16 t17 t19 t20 t21 t24 t25 t26 t29 hoverable">Text</span> and Translation, with Notes, Introduction, etc.
 By E. A. Wallis Budge. 21s. net.
 VOL. I1 : T HE LETTERS AND INSCRIPTIONS O F HAMMURABI,
 <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">KING</span> O F BABYLON, ABOUT B.C. 2 2 0 0 ; to which are added
@@ -99,7 +99,7 @@ English Translation, Introduction, etc. By E. A. Wallis
 Budge. ( I n the Press.)
 VOL. XIX : A CONTRIBUTION TO BABYLONIAX
 HISTORY, being
-a series of Babylonian Historical <span class="t9 t12 t13 t25 hoverable">Texts</span> with English Translations. By L. W. King. ( I n the Press.)
+a series of Babylonian Historical <span class="t1 t2 t5 t10 t25 hoverable">Texts</span> with English Translations. By L. W. King. ( I n the Press.)
 
 THE SEVEN TABLETS
 OF
@@ -107,7 +107,7 @@ OF
 CREATION,
 OR T H E BABYLONIAN AND ASSYRIAN LEGENDS
 
-CONCERNING T H E <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">CREATION</span> O F T H E <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">WORLD</span>
+CONCERNING T H E <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">CREATION</span> O F T H E <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">WORLD</span>
 AND OF MANKIND.
 
 EDITED BY
@@ -127,15 +127,15 @@ L U Z A C A N D CO.
 PRINTED BY STEPHEN AUSTIN AND SONS,
 
 I N this volume is published for the first <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">time</span> the
-<span class="t9 t12 t13 t25 hoverable">texts</span> from a group of tablets, inscribed in the NeoBabylonian character, and containing new portions of
-the <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">great</span> series of <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> Legends, to which the
+<span class="t1 t2 t5 t10 t25 hoverable">texts</span> from a group of tablets, inscribed in the NeoBabylonian character, and containing new portions of
+the <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">great</span> series of <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> Legends, to which the
 Assyrians and Babylonians gave the title Enulna edish.
 T h e group includes :-I. Portions of four copies of the
-First <span class="t2 t9 t12 t18 t29 hoverable">Tablet</span> of the series, <span class="t1 t2 t3 t4 t6 t7 t8 t9 t10 t11 t12 t13 t14 t16 t17 t18 t19 t20 t22 t23 t26 t27 t28 t29 hoverable">together</span> with <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">two</span> extracts
+First <span class="t4 t9 t12 t24 t26 hoverable">Tablet</span> of the series, <span class="t1 t2 t3 t5 t6 t9 t11 t15 t17 t18 t20 t21 t22 t23 t24 t27 t28 t29 hoverable">together</span> with <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">two</span> extracts
 from the text, inscribed <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">upon</span> rough " practice-tablets "
 by the pupils of Babylonian scribes; 2 . Portions of
-<span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">two</span> copies of the <span class="t0 t2 t5 t13 t14 t16 t17 t20 t23 t24 t26 t28 t29 hoverable">Second</span> <span class="t2 t9 t12 t18 t29 hoverable">Tablet</span> of the series ; 3. Part
-of a copy of the <span class="t26 hoverable">Third</span> Tablet, and fragments of <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">three</span>
+<span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">two</span> copies of the <span class="t2 t3 t5 t10 t12 t18 t19 t21 t24 t25 t26 t27 hoverable">Second</span> <span class="t4 t9 t12 t24 t26 hoverable">Tablet</span> of the series ; 3. Part
+of a copy of the <span class="t7 hoverable">Third</span> Tablet, and fragments of <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">three</span>
 " practice-tablets " inscribed wit? portions of the text,
 ther sinilar fragments already
 which I havk joined
@@ -148,10 +148,10 @@ TabZets, etc., ia th
 XI I I
 (1901) ; 4. Part of a copy of the Sixth Tablet, which
 is of peculiar interest inasmuch as it refers to the
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> of Man, and settles the disputed question
-as to the <span class="t8 t21 t27 hoverable">number</span> of Tablets, or sections, of
-the <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> Series was composed ; and 5. P&, 3ns
-of <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">two</span> copies of the Seventh <span class="t2 t9 t12 t18 t29 hoverable">Tablet</span> of the series,
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> of Man, and settles the disputed question
+as to the <span class="t3 t17 t26 hoverable">number</span> of Tablets, or sections, of
+the <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> Series was composed ; and 5. P&, 3ns
+of <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">two</span> copies of the Seventh <span class="t4 t9 t12 t24 t26 hoverable">Tablet</span> of the series,
 
 XI1
 
@@ -160,21 +160,21 @@ PREFACE.
 -
 
 A “practice-tablet,” which is inscribed in the Sunierian
-and Babylonian languages with <span class="t9 t12 t13 t25 hoverable">texts</span> relating to the
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> of the Moon and of the Sun, is also included.
-T h e Appendices contain <span class="t9 t12 t13 t25 hoverable">texts</span> which, for the most
+and Babylonian languages with <span class="t1 t2 t5 t10 t25 hoverable">texts</span> relating to the
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> of the Moon and of the Sun, is also included.
+T h e Appendices contain <span class="t1 t2 t5 t10 t25 hoverable">texts</span> which, for the most
 part, are closely connected with the interpretation of
-the <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> Legends. They include :-I.
-A <span class="t8 t21 t27 hoverable">number</span>
-of Assyrian commentaries on the Seventh <span class="t2 t9 t12 t18 t29 hoverable">Tablet</span> of the
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> Series, <span class="t1 t2 t3 t4 t6 t7 t8 t9 t10 t11 t12 t13 t14 t16 t17 t18 t19 t20 t22 t23 t26 t27 t28 t29 hoverable">together</span> with fragments of <span class="t9 t12 t13 t25 hoverable">texts</span> which
-are similar in character to that composition ; 2 . A NeoBabylonian duplicate of the <span class="t2 t9 t12 t18 t29 hoverable">tablet</span> which has been
-supposed to belong to the <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> Series and to
+the <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> Legends. They include :-I.
+A <span class="t3 t17 t26 hoverable">number</span>
+of Assyrian commentaries on the Seventh <span class="t4 t9 t12 t24 t26 hoverable">Tablet</span> of the
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> Series, <span class="t1 t2 t3 t5 t6 t9 t11 t15 t17 t18 t20 t21 t22 t23 t24 t27 t28 t29 hoverable">together</span> with fragments of <span class="t1 t2 t5 t10 t25 hoverable">texts</span> which
+are similar in character to that composition ; 2 . A NeoBabylonian duplicate of the <span class="t4 t9 t12 t24 t26 hoverable">tablet</span> which has been
+supposed to belong to the <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> Series and to
 contain the instructions given to <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">man</span> after his creation,
 but which is now shown by the new duplicate to be
-part of a <span class="t2 t9 t12 t18 t29 hoverable">tablet</span> of moral precepts and to have no
-connection whatsoever with the <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span> Series ;
-3. Part of a large astrological <span class="t0 t1 t2 t4 t5 t7 t9 t10 t11 t12 t13 t14 t15 t16 t17 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">text</span> of the period of
+part of a <span class="t4 t9 t12 t24 t26 hoverable">tablet</span> of moral precepts and to have no
+connection whatsoever with the <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span> Series ;
+3. Part of a large astrological <span class="t0 t1 t2 t3 t4 t5 t6 t8 t9 t10 t12 t14 t15 t16 t17 t19 t20 t21 t24 t25 t26 t29 hoverable">text</span> of the period of
 the Arsacidae, in which some of the chief personages
 of the Creation-story ~ p p e a in
 ’ astrological characters,
@@ -185,7 +185,7 @@ y,
 to contain
 an Assryian version of the story of the Tower of
 Babel. T h e last appendix contains a “Prayer of the
-Raising of the <span class="t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">Hand</span> to Ishtar,” which belongs to
+Raising of the <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">Hand</span> to Ishtar,” which belongs to
 the series of similar compositions already published
 in my BabyZonian Magic and Sorce9.y (1896) ; both
 from the beauty of its language and from its perfect
@@ -194,16 +194,16 @@ from the beauty of its language and from its perfect
 
 XI11
 
-<span class="t0 t1 t10 t14 t21 t23 t25 t29 hoverable">state</span> of preservation, it must be regarded as one of the
-finest and most complete Babylonian religious <span class="t9 t12 t13 t25 hoverable">texts</span>
+<span class="t1 t2 t5 t8 t10 t16 t19 hoverable">state</span> of preservation, it must be regarded as one of the
+finest and most complete Babylonian religious <span class="t1 t2 t5 t10 t25 hoverable">texts</span>
 which have hitherto been recovered.
 After the plates in this volume had been printed
 off, and whilst I was engaged in making a hand-list
 of the smaller fragments in the Kuyunjik Collections,
-I identified ten additional fragments of the <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">Creation</span>
+I identified ten additional fragments of the <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">Creation</span>
 Series, belonging to copies of the First, Second, Fifth,
-and Seventh Tablets of the composition. T h e <span class="t9 t12 t13 t25 hoverable">texts</span>
-of these fragments, as <span class="t0 t1 t3 t4 t5 t6 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t19 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">well</span> as those of some other
+and Seventh Tablets of the composition. T h e <span class="t1 t2 t5 t10 t25 hoverable">texts</span>
+of these fragments, as <span class="t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 t10 t11 t12 t13 t14 t15 t16 t17 t18 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">well</span> as those of some other
 closely allied Assyrian and Neo-Babylonian tablets,
 are published by means of outline blocks in the first
 volume of this work.
@@ -217,7 +217,7 @@ PREFACE
 
 . . . . . . . . . . . . . . . .
 
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">CREATION</span> SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">CREATION</span> SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I
 
 . .
 
@@ -225,20 +225,20 @@ PREFACE
 
 . .
 . .
-CKEATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 111 . . . .
+CKEATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 111 . . . .
 .
 .
 .
 .
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">CREATION</span> SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VI . .
-CKEATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VI1 . . . . . .
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">CREATION</span> SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VI . .
+CKEATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VI1 . . . . . .
 . .
-A <span class="t0 t1 t2 t4 t5 t7 t9 t10 t11 t12 t13 t14 t15 t16 t17 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">TEXT</span> RELATING TO <span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">CREATION</span> .
+A <span class="t0 t1 t2 t3 t4 t5 t6 t8 t9 t10 t12 t14 t15 t16 t17 t19 t20 t21 t24 t25 t26 t29 hoverable">TEXT</span> RELATING TO <span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">CREATION</span> .
 . . .
 APPENDIX I . . . . . . . .
 APPENDIX I1 . . . . . . . . . . . . . .
 
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">CREATION</span> SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I1
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">CREATION</span> SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I1
 
 I
 
@@ -252,11 +252,11 @@ APPENDIX 111.
 
 PLATE : T H E
 
-<span class="t26 hoverable">THIRD</span>
+<span class="t7 hoverable">THIRD</span>
 
 SERIES
 
-<span class="t2 t9 t12 t18 t29 hoverable">TABLET</span>
+<span class="t4 t9 t12 t24 t26 hoverable">TABLET</span>
 
 OF
 
@@ -310,13 +310,13 @@ LXXIII
 LXXV
 LXXXV
 
-<span class="t0 t1 t5 t7 t9 t11 t12 t13 t16 t17 t20 t23 t24 t26 t27 t29 hoverable">CREATION</span>
+<span class="t1 t2 t3 t5 t9 t12 t15 t16 t17 t19 t22 t24 t25 t26 hoverable">CREATION</span>
 
 . . . .
 
 Frontispiece
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 1.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 1.
 
 45528
 
@@ -334,7 +334,7 @@ IO
 
 PLATE I.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 1.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 1.
 
 45528
 
@@ -352,7 +352,7 @@ PLATE
 
 11.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 1.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 1.
 
 45588
 
@@ -364,7 +364,7 @@ PLATE
 
 111.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I
 
 45628
 
@@ -374,7 +374,7 @@ REVERSE.
 
 PLATE IV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 1.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 1.
 
 45538
 
@@ -390,7 +390,7 @@ PLATE V.
 
 -c8
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I .
 
 35134,
 
@@ -400,16 +400,16 @@ PLATE V.
 
 40
 
-The <span class="t0 t1 t2 t4 t5 t7 t9 t10 t11 t12 t13 t14 t15 t16 t17 t20 t21 t22 t23 t24 t25 t26 t27 t28 t29 hoverable">text</span> is an extract from a
+The <span class="t0 t1 t2 t3 t4 t5 t6 t8 t9 t10 t12 t14 t15 t16 t17 t19 t20 t21 t24 t25 t26 t29 hoverable">text</span> is an extract from a
 practice-tablet,
 
 PLATE VII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I.
 
 PLATE Vlll.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I .
 
 48883.
 OBVERSE.
@@ -420,7 +420,7 @@ PLATE
 
 IX
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I.
 
 46883.
 OBVERSE ( ~ ~ f l t&
@@ -431,14 +431,14 @@ PLATE
 
 X
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I .
 
 48803.
 REVERSE (cont.).
 
 PLATE XI.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I.
 
 82-9-18, 8879.
 REVERSE.
@@ -448,14 +448,14 @@ is missing.
 
 PLATE XII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 1.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 1.
 
 82-9-18, 6879.
 REVERSE (cont.).
 
 PLATE XIII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 11.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 11.
 
 48559.
 OBVERSE.
@@ -464,7 +464,7 @@ PLATE
 
 XIV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I t .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I t .
 
 PLATE XV.
 
@@ -478,28 +478,28 @@ OBVERSE
 
 cu
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I I .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I I .
 
 40559.
 OBVERSE (cont.).
 
 PLATE XVI.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> .II.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> .II.
 
 40559.
 OBVERSE (cant-).
 
 PLATE XVll
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I[
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I[
 
 40559.
 REVERSE.
 
 PLATE XVIII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 11.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 11.
 
 40559.
 REVERSE (cont.).
@@ -508,7 +508,7 @@ PLATE
 
 XIX.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> II
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> II
 
 40559.
 REVERSE (cont.).
@@ -517,7 +517,7 @@ PLATE
 
 XX
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> II.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> II.
 
 40559.
 REVERSE (cont.).
@@ -560,7 +560,7 @@ _
 
 PLATE XXI.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> iI
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> iI
 
 92632
 
@@ -572,13 +572,13 @@ PLATE
 
 XXII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I I .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I I .
 
 92632 + 93048.
 
 PLATE XXlll
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I I
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I I
 
 99632
 
@@ -588,7 +588,7 @@ REVERSE (cont.).
 
 PLATE XXlV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 111.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 111.
 
 82-9-18,1403
 
@@ -600,7 +600,7 @@ PLATE
 
 XXV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> Ill.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> Ill.
 
 83-9-18,1403 *f
 OBVERSE (Cont.).
@@ -609,7 +609,7 @@ OBVERSE (Cont.).
 
 PLATE XXVI.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 111.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 111.
 
 I
 I
@@ -622,7 +622,7 @@ PLATE XXVII.
 
 CREATION
 
-SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 111.
+SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 111.
 
 +
 
@@ -631,7 +631,7 @@ REVERSE (Cant.).
 
 PLATE XXVIII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> Ill.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> Ill.
 
 82-9-18,
 6950 +
@@ -640,14 +640,14 @@ PLATE XXIX.
 
 83-1-18,1868.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> Ill.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> Ill.
 
 43386.
 OBVERSE.
 
 PLATE Xxx.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> Ill.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> Ill.
 
 42285.
 OBVERSE (Cont.).
@@ -656,21 +656,21 @@ PLATE
 
 XXXi.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> I I I .
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> I I I .
 
 48885.
 REVERSE.
 
 PLATE XXXII,
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 111.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 111.
 
 42286.
 REVERSE (Cont.).
 
 PLATE XXXIII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> 111.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> 111.
 
 82-9-18,5448
 
@@ -682,7 +682,7 @@ PLATE
 
 XXXlV
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VI.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VI.
 
 92629.
 '
@@ -744,14 +744,14 @@ I
 
 PLATE XXXV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VI.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VI.
 
 92629.
 OBVERSE (cont.).
 
 PLATE XXXVl
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139
 -
@@ -764,7 +764,7 @@ PLATE XXXVIII.
 
 -
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139
 
@@ -774,7 +774,7 @@ OBVERSE (conk).
 
 PLATE XXXlX
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139
 
@@ -784,7 +784,7 @@ PLATE
 
 XL.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139
 
@@ -796,7 +796,7 @@ PLATE
 
 XLI.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139
 
@@ -808,7 +808,7 @@ PLATE
 
 XLII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139 + 88073.
 REVERSE
@@ -817,7 +817,7 @@ REVERSE
 
 PLATE XLlll
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 91139
 
@@ -829,7 +829,7 @@ PLATE
 
 XLIV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII,
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII,
 
 .+93073.
 
@@ -839,14 +839,14 @@ PLATE
 
 XLV.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 35506.
 OBVERSE.
 
 PLATE XLVI.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII,
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII,
 
 35506..
 OBVERSE (Cont.).
@@ -855,7 +855,7 @@ REVERSE.
 
 PLATE XLVII.
 
-CREATION SERIES, <span class="t2 t9 t12 t18 t29 hoverable">TABLET</span> VII.
+CREATION SERIES, <span class="t4 t9 t12 t24 t26 hoverable">TABLET</span> VII.
 
 35506.
 REVERSE (Cont.).

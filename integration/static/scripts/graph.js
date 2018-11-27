@@ -145,7 +145,7 @@ function drawMatrix(DATA_FOLDER) {
 					window.localStorage.setItem("docid",d.id)
 					newD.innerHTML = d.val;
 					$("#documentP").click(function() {
-  						textViewInit();
+  						textViewInit(doc_names[d.id]);
 					});
 				}
 			}).
