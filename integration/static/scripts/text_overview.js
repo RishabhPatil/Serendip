@@ -1,4 +1,4 @@
-function topicLineGraph(){
+function topicLineGraph(id){
 
     console.log("start")
     var data = [{
@@ -165,8 +165,10 @@ function topicLineGraph(){
         // .domain([0, d3.max(data[0].values, d => d.frequency)])
         .range([width - margin, 0]);
 
+    var card_body = document.getElementById(id);
+
     //Create SVG for chart
-    var svg = d3.select("#textoverview")
+    var svg = d3.select(card_body)
         .append("svg")
         .attr("width", width + margin)
         .attr("height", height + margin)

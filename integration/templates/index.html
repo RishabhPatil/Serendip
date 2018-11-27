@@ -160,8 +160,8 @@
 								<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div id="" class="card-body" style="overflow:scroll;">
-							<p>No doc selected</p>
+						<div id="textoverview0" class="card-body" style="overflow:scroll;">
+							
 						</div>
 					</div>
 				</div>
@@ -204,7 +204,7 @@
 							<h4 style="float: left;">Topic Overview</h4>
 							<button class="btn btn-secondary" style="float: right;">Clear All</button>
 						</div>
-						<div class="card-body" id="textoverview">
+						<div class="card-body" id="textoverview1">
 						</div>
 					</div>
 				</div>
@@ -464,7 +464,8 @@
 	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
 	    	window.localStorage.setItem("DATA_FOLDER",DATA_FOLDER);
 	    	drawMatrix(DATA_FOLDER);
-	    	topicLineGraph();
+	    	topicLineGraph("textoverview0");
+	    	topicLineGraph("textoverview1");
 	    	add_word();
 	    });
     </script>
