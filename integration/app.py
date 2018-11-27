@@ -10,7 +10,7 @@ import random
 import numpy as np
 from flask import Flask, request, redirect, url_for, render_template, jsonify, session, abort
 from werkzeug.utils import secure_filename
-
+from sklearn.metrics.pairwise import cosine_similarity
 ##########
 ###INIT###
 ##########
@@ -18,6 +18,18 @@ from werkzeug.utils import secure_filename
 DATA_FOLDER = './static/data/'
 with open(DATA_FOLDER+"doc_ids.json") as f:
 	doc_ids = json.load(f)
+
+with open(DATA_FOLDER+"doc_topic.json") as f:
+	doc_topic = json.load(f)
+
+for i in doc_topic:
+	doc_topic[i] = np.array(doc_topic[i]).astype(np.float32)
+
+with open(DATA_FOLDER+"word_ids.json") as f:
+	word_ids = json.load(f)
+
+with open(DATA_FOLDER+"word_topic.json") as f:
+	word_topic = json.load(f)
 
 topic_words_list = []
 topic_words_json = {}
@@ -42,6 +54,37 @@ colors = [[int(random.random()*128 + 127) for i in range(3)] for i in range(30)]
 # topic overview : topic per sentence
 
 app = Flask(__name__)
+
+@app.route("/docsearch")
+def docsearch():
+	words = []
+	asdf = request.args
+	t_array = [0 for i in range(30)]
+	for i in asdf:
+		w = request.args.get(i)
+		if w in word_ids:
+			wid = word_ids[w]
+			if str(wid) in word_topic:
+				topics = word_topic[str(wid)]
+				for tix in topics:
+					t = topics[tix]
+					t_array[int(t[0])] += float(t)
+				words.append(t_array)
+
+	topic_score_array = []
+	for i in range(30):
+		if t_array[i]!=0:
+			print(i,t_array[i])
+			topic_score_array.append([i,t_array[i]])
+
+	scores = []
+	for i in doc_topic:
+		score = cosine_similarity([doc_topic[i]],[t_array])[0][0]
+		if score:
+			scores.append([i,doc_topic[i].tolist()])
+	scores = sorted(scores, key=lambda x:x[1], reverse=True)
+
+	return jsonify({"scores":scores, "topic_scores":topic_score_array})
 
 @app.route("/get_doc")
 def get_doc():
