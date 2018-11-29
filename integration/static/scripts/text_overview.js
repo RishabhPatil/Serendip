@@ -1,147 +1,14 @@
 function topicLineGraph(id, data){
 
-    console.log("start")
-    // var data = [{
-    //         name: "Topic1",
-    //         color: "red",
-    //         id: "topic1",
-    //         values: [{
-    //                 line: "1",
-    //                 frequency: "100"
-    //             },
-    //             {
-    //                 line: "2",
-    //                 frequency: "110"
-    //             },
-    //             {
-    //                 line: "3",
-    //                 frequency: "145"
-    //             },
-    //             {
-    //                 line: "4",
-    //                 frequency: "241"
-    //             },
-    //             {
-    //                 line: "5",
-    //                 frequency: "101"
-    //             },
-    //             {
-    //                 line: "6",
-    //                 frequency: "90"
-    //             },
-    //             {
-    //                 line: "7",
-    //                 frequency: "10"
-    //             },
-    //             {
-    //                 line: "8",
-    //                 frequency: "35"
-    //             },
-    //             {
-    //                 line: "9",
-    //                 frequency: "21"
-    //             },
-    //             {
-    //                 line: "10",
-    //                 frequency: "21"
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         name: "Topic2",
-    //         color: "blue",
-    //         id: "topic2",
-    //         values: [{
-    //                 line: "1",
-    //                 frequency: "200"
-    //             },
-    //             {
-    //                 line: "2",
-    //                 frequency: "120"
-    //             },
-    //             {
-    //                 line: "3",
-    //                 frequency: "33"
-    //             },
-    //             {
-    //                 line: "4",
-    //                 frequency: "21"
-    //             },
-    //             {
-    //                 line: "5",
-    //                 frequency: "51"
-    //             },
-    //             {
-    //                 line: "6",
-    //                 frequency: "190"
-    //             },
-    //             {
-    //                 line: "7",
-    //                 frequency: "120"
-    //             },
-    //             {
-    //                 line: "8",
-    //                 frequency: "85"
-    //             },
-    //             {
-    //                 line: "9",
-    //                 frequency: "221"
-    //             },
-    //             {
-    //                 line: "10",
-    //                 frequency: "101"
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         name: "Topic3",
-    //         color: "green",
-    //         id: "topic3",
-    //         values: [{
-    //                 line: "1",
-    //                 frequency: "150"
-    //             },
-    //             {
-    //                 line: "2",
-    //                 frequency: "10"
-    //             },
-    //             {
-    //                 line: "3",
-    //                 frequency: "5"
-    //             },
-    //             {
-    //                 line: "4",
-    //                 frequency: "71"
-    //             },
-    //             {
-    //                 line: "5",
-    //                 frequency: "20"
-    //             },
-    //             {
-    //                 line: "6",
-    //                 frequency: "9"
-    //             },
-    //             {
-    //                 line: "7",
-    //                 frequency: "220"
-    //             },
-    //             {
-    //                 line: "8",
-    //                 frequency: "235"
-    //             },
-    //             {
-    //                 line: "9",
-    //                 frequency: "61"
-    //             },
-    //             {
-    //                 line: "10",
-    //                 frequency: "10"
-    //             }
-    //         ]
-    //     }
-    // ];
+    console.log(data)
 
-    var width = 300,
+    var card_body = document.getElementById(id);
+
+    d3.select(card_body)
+            .selectAll("*")
+            .remove();
+    
+    var width = 400,
         height = 610,
         margin = 30;
 
@@ -162,10 +29,9 @@ function topicLineGraph(id, data){
 
     var y = d3.scaleLinear()
         // .domain([0, 241])
-        .domain([0, 0.05])
+        .domain([0.09,0])
         .range([width - margin, 0]);
 
-    var card_body = document.getElementById(id);
 
     //Create SVG for chart
     var svg = d3.select(card_body)
@@ -223,7 +89,7 @@ function topicLineGraph(id, data){
             } else {
                 d3.select(this)
                     .style("stroke", function(d) {
-                        return "#212121"
+                        return "#777777"
                     })
                 classes.pop(ix)
                 $(this).attr("class", classes.join(" "))
@@ -255,6 +121,6 @@ function topicLineGraph(id, data){
                 .remove();
         });
 
-    console.log("end")
+
 
 }
