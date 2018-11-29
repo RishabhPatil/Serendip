@@ -60,9 +60,6 @@
 					<div class="card h-100 m-1">
 						<div class="card-header">
 							<h5 class="float-lg-left">Model</h5>
-							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Reset Data</button>
-							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Reset colors</button>
-							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Hide empty topics</button>
 						</div>
 						<div class="card-body" style="overflow: scroll;">
 							<div id="grid"></div>
@@ -98,11 +95,10 @@
 		<div class="tab-pane fade" id="textview" role="tabpanel" aria-labelledby="pills-text-view">
 			<!-- Text View Starts -->
 			<div class="row mx-0">
-				<div class="col-xl-2 p-0" style="height: 90vh">
-					<div class="card h-100 m-1 mt-2" >
+				<div class="col-xl-2 p-0" style="height: 90vh;">
+					<div class="card h-100 m-1 mt-2" style="overflow:scroll;">
 						<div class="card-header">
-							<h5 style="float: left;">Tags</h5>
-							<button class="btn btn-secondary btn-sm" style="float: right;">Clear All</button>
+							<h5>Tags</h5>
 						</div>
 						<div class="card-body-topic">
 							{% for n in range(30) %}
@@ -117,7 +113,7 @@
 					</div>
 				</div>
 				<div class="col-xl-6 p-0">
-					<div class="card h-100 m-1 mt-2">
+					<div class="card h-100 m-1 mt-2" style="overflow:scroll;">
 						<div class="card-header">
 							<h5 id="doc-title">Doc_xyz.txt</h5>
 						</div>
@@ -127,10 +123,9 @@
 					</div>
 				</div>
 				<div class="col-xl-4 p-0">
-					<div class="card h-100 m-1 mt-2">
+					<div class="card h-100 m-1 mt-2" style="overflow:scroll;">
 						<div class="card-header">
-							<h5 style="float: left;">Topic Overview</h5>
-							<button class="btn btn-secondary btn-sm" style="float: right;">Clear All</button>
+							<h5>Topic Overview</h5>
 						</div>
 						<div class="card-body" id="textoverview1">
 						</div>
@@ -142,7 +137,7 @@
 			<!-- Rank View Starts -->
 			<div class="row mt-3 mx-2" style="height: 5vh">
 				
-				<form >
+				<form onsubmit="return false">
 					<div class="form-row">
 						
 						<div class="form-group col-xl-8" style="width: 95vw">
@@ -163,7 +158,7 @@
 							</div>
 						</div>
 						<div class="form-group col-xl-2">								
-							<button id="input_word_btn" type="button" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
+							<button id="input_word_btn" type="submit" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
 						</div>
 					</div>
 				</form>
