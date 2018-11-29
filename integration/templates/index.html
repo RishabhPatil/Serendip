@@ -195,7 +195,7 @@
 						<div class="card-header">
 							<h5>Saliency</h5>
 						</div>
-						<div class="card-body">
+						<div id="topic_dist_rank" class="card-body">
 						</div>
 					</div>
 				</div>
@@ -436,10 +436,11 @@
 	    	window.localStorage.setItem("sId",1);
 	    	
 
-	    	drawMatrix(DATA_FOLDER);
+	    	drawMatrix();
+	    	add_word();
 	    	topicLineGraph("textoverview0");
 	    	topicLineGraph("textoverview1");
-	    	add_word();
+	    	
 
 	    	// $(".cls").click(function () {
 	    	// 	console.log(this);

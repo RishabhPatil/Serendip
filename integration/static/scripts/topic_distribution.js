@@ -1,11 +1,11 @@
 // $("#grid").click(function() {
 
-function topic_click(DATA_FOLDER, topic_filename){
-
+function topic_click(topic_filename,id){
+    DATA_FOLDER = window.localStorage.getItem("DATA_FOLDER");
     var filename = DATA_FOLDER+"/"+topic_filename;
     d3.csv(filename, function(data) {
 
-        d3.select("#topicdist")
+        d3.select("#" + id)
             .selectAll("*")
             .remove();
 
@@ -24,7 +24,7 @@ function topic_click(DATA_FOLDER, topic_filename){
         })
 
         var margin = {
-            left: 50,
+            left: 80,
             right: 5,
             top: 5,
             bottom: 5
@@ -33,7 +33,7 @@ function topic_click(DATA_FOLDER, topic_filename){
         var width = 200 - margin.left - margin.right,
             height = 300 - margin.top - margin.bottom;
 
-        var svg = d3.select("#topicdist")
+        var svg = d3.select("#" + id)
             .append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
