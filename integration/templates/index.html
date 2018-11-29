@@ -60,6 +60,9 @@
 					<div class="card h-100 m-1">
 						<div class="card-header">
 							<h5 class="float-lg-left">Model</h5>
+							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Reset Data</button>
+							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Reset colors</button>
+							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Hide empty topics</button>
 						</div>
 						<div class="card-body" style="overflow: scroll;">
 							<div id="grid"></div>
@@ -95,16 +98,17 @@
 		<div class="tab-pane fade" id="textview" role="tabpanel" aria-labelledby="pills-text-view">
 			<!-- Text View Starts -->
 			<div class="row mx-0">
-				<div class="col-xl-2 p-0" style="height: 90vh;">
-					<div class="card h-100 m-1 mt-2" style="overflow:scroll;">
+				<div class="col-xl-2 p-0" style="height: 90vh">
+					<div class="card h-100 m-1 mt-2" >
 						<div class="card-header">
-							<h5>Tags</h5>
+							<h5 style="float: left;">Tags</h5>
+							<button class="btn btn-secondary btn-sm" style="float: right;">Clear All</button>
 						</div>
 						<div class="card-body-topic">
 							{% for n in range(30) %}
-								<div class="alert alert-primary">
-									<div class="progress">
-										<div class="tpcbutton progress-bar t{{n}}" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Topic {{n}}</div>
+								<div class="alert t{{n}} tpcbutton" style="background-color: {{colors_str[n]}}">
+									<div class="progress active">
+										<div class="progress-bar prog{{n}}" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Topic {{n}}</div>
 									</div>
 								</div>
 							{% endfor %}							
@@ -113,7 +117,7 @@
 					</div>
 				</div>
 				<div class="col-xl-6 p-0">
-					<div class="card h-100 m-1 mt-2" style="overflow:scroll;">
+					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
 							<h5 id="doc-title">Doc_xyz.txt</h5>
 						</div>
@@ -123,9 +127,10 @@
 					</div>
 				</div>
 				<div class="col-xl-4 p-0">
-					<div class="card h-100 m-1 mt-2" style="overflow:scroll;">
+					<div class="card h-100 m-1 mt-2">
 						<div class="card-header">
-							<h5>Topic Overview</h5>
+							<h5 style="float: left;">Topic Overview</h5>
+							<button class="btn btn-secondary btn-sm" style="float: right;">Clear All</button>
 						</div>
 						<div class="card-body" id="textoverview1">
 						</div>
@@ -137,7 +142,7 @@
 			<!-- Rank View Starts -->
 			<div class="row mt-3 mx-2" style="height: 5vh">
 				
-				<form onsubmit="return false">
+				<form >
 					<div class="form-row">
 						
 						<div class="form-group col-xl-8" style="width: 95vw">
@@ -158,7 +163,7 @@
 							</div>
 						</div>
 						<div class="form-group col-xl-2">								
-							<button id="input_word_btn" type="submit" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
+							<button id="input_word_btn" type="button" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
 						</div>
 					</div>
 				</form>
@@ -296,13 +301,17 @@
 		      data: {docid: docid},
 		      success: function(response) {
 		        window.localStorage.setItem("docText", response.html);
+		        for(var i=0;i<30;i++)
+		        {
+		        	$(".progress-bar.prog"+i).css('width',10 + 90*response.topicscores[i]+'%').attr("aria-valuenow",response.topicscores[i])
+		        	// $('.progress-bar').css('width', valeur+'%').attr('aria-valuenow', valeur);
+		        } 
 		      },
 		      error: function(xhr) {
 		        //Do Something to handle error
 		      }
 		    });
 		    var txt = window.localStorage.getItem("docText");
-		    console.log(txt)
 		    $("#doc-text-html").html(txt)
 
 			var temp = '';
@@ -331,24 +340,19 @@
 			var topic_clrs = {}
 
 			$('.tpcbutton').click(function() {
-				console.log(this);
 	  			var myClass = $(this).attr("class");
 	  			var classes = myClass.split(" ");
-	  			console.log(classes);
 
 	  			var topic = "";
 	  			var selected = classes.indexOf("topic-selected");
 
 	  			for(i in classes){
 		  			if( classes[i].startsWith("t") && classes[i].length<4 ){
-		  				console.log(classes[i])
 		  				topic = classes[i]
 		  				break
 		  			}
 	  			}
-	  			var topicNo = parseInt(topic.replace("t",'')) - 1
-	  			console.log(topic, topicNo)
-
+	  			var topicNo = parseInt(topic.replace("t",''))
 	  			if(topicNo in topic_clrs){
 
 	  			} 
@@ -361,6 +365,7 @@
 					$("span."+topic).css({"background-color":""});
 					$(this).removeClass("topic-selected");
 					topic_clrs[topicNo] = 0
+					$("div."+topic+".tpcbutton").css("border-color","transparent");
 				}
 				else{
 					
@@ -372,11 +377,16 @@
 						var g = ( topic_colors[topicNo][1] * (1+wordScore*2) ).toString()
 						var b = ( topic_colors[topicNo][2] * (1+wordScore*2) ).toString()
   						var rgbtext = "rgb("+r+","+g+","+b+")";
-  						console.log(rgbtext)
 
   						$(this).css({"background-color":rgbtext});
 					});
 
+
+					// tagName = this.nodeName.toLowerCase();
+					// if (tagName == "div"){
+					// 	$("path."+topic).click()
+					// }
+					$("div."+topic+".tpcbutton").css("border-color","#000");
 					$(this).addClass("topic-selected");
 					topic_clrs[topicNo] = 1
 				}

@@ -45,7 +45,9 @@ for i in range(30):
 		temp_l.append([t[0],float(t[1])])
 	topic_words_list.append(temp_l)
 
-colors = [[int(random.random()*128 + 127) for i in range(3)] for i in range(30)]
+colors = [[int(random.random()*100 + 155) for i in range(3)] for i in range(30)]
+colors_str = ["rgb("+str(i[0])+","+str(i[1])+","+str(i[2])+")" for i in colors]
+print(colors_str)
 # matrix
 # topic distribution : all words in a topic
 # topics in a document (same as matrix?)
@@ -117,7 +119,7 @@ def get_doc():
 	with open(DATA_FOLDER+"doc"+str(docid)+".txt", "r", encoding="ISO-8859-1") as f:
 		txt = f.read()
 	txt = txt.replace("\n","<br>")
-	return jsonify({"html":txt})
+	return jsonify({"html":txt, "topicscores":doc_topic["doc"+str(docid)].tolist()})
 
 @app.route("/get_colors")
 def get_colors():
@@ -160,7 +162,7 @@ def get_word_ranks():
 	npr = np.array(ranks)
 	tnpr = npr.T
 	snpr = np.min(tnpr,axis=1)
-	ixs = np.argsort(snpr)
+	ixs = np.argsort(-snpr)
 	topic_lens = []
 	for i in ixs:
 		topic_lens.append({'name':"topic"+str(i), 'len':len(topic_words_list[i])})
@@ -171,7 +173,7 @@ def get_word_ranks():
 @app.route("/")
 def home():
 	# get_word_ranks()
-	return render_template('./index.html')
+	return render_template('./index.html', colors_str=colors_str)
 
 # def get_line_graph_data(topic_id):
 
