@@ -187,8 +187,6 @@ function view_cards_and_chart(topics, importance, extension_data)
 			topic_length[j] = parseInt(topic_length[j]*1000, 10);
 		}
 		//add_card(extension_data[i].[0], topic_array, extension_data[i].[1]);
-		console.log(topic_array);
-		console.log(topic_length);
 		add_card(topic_key, topic_array, topic_length);
 	}
 
