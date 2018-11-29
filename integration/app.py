@@ -100,16 +100,16 @@ def docsearch():
 	for i in doc_topic:
 		score = cosine_similarity([doc_topic[i]],[t_array])[0][0]
 		if score:
-			scores.append([i,doc_topic[i].tolist()])
+			scores.append([doc_ids[i],doc_topic[i].tolist()])
 	scores = sorted(scores, key=lambda x:x[1], reverse=True)
 
-	doc_topic_string = "Document,topics,length"
-	for i in scores:
-		t = doc_ids[i[0]]
-		for j in range(30):
-			doc_topic_string += "\n"+t+",topic"+str(j)+","+str(i[1][j])
-	with open(DATA_FOLDER+"Extension.csv","w") as f:
-		f.write(doc_topic_string)
+	# doc_topic_string = "Document,topics,length"
+	# for i in scores:
+	# 	t = doc_ids[i[0]]
+	# 	for j in range(30):
+	# 		doc_topic_string += "\n"+t+",topic"+str(j)+","+str(i[1][j])
+	# with open(DATA_FOLDER+"Extension.csv","w") as f:
+	# 	f.write(doc_topic_string)
 
 	return jsonify({"scores":scores, "topic_scores":topic_score_array})
 
