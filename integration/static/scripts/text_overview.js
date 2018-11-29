@@ -8,7 +8,7 @@ function topicLineGraph(id, data){
             .selectAll("*")
             .remove();
     
-    var width = 400,
+    var width = 300,
         height = 610,
         margin = 30;
 
@@ -29,7 +29,7 @@ function topicLineGraph(id, data){
 
     var y = d3.scaleLinear()
         // .domain([0, 241])
-        .domain([0.09,0])
+        .domain([0.1,0])
         .range([width - margin, 0]);
 
 

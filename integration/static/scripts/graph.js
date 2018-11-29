@@ -161,7 +161,7 @@ function drawMatrix() {
 					t_area.value += (d.val+"\n");
 					newP.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
-					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
+					topic_click(d.val.replace(" ","")+".csv","topicdist");
 
 				} else {
 					d3.selectAll(".classl"+d.t)
@@ -171,8 +171,12 @@ function drawMatrix() {
 					window.localStorage.setItem("tname",d.val);
 					window.localStorage.setItem("docid",d.id)
 					newD.innerHTML = d.val;
+					textViewInit(doc_names[d.id]);
+
+
 					$("#documentP").click(function() {
-  						textViewInit(doc_names[d.id]);
+  						// textViewInit(doc_names[d.id],"textoverview1");
+  						$("#pills-text-view").click()
 					});
 				}
 			}).

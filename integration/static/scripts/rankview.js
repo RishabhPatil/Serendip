@@ -54,13 +54,14 @@ function add_word()
 		      }
 	});
 
+	console.log(colors);
 	rankView(topics_data, ranks_data, colors);
 
 }
 
-function delete_word(){
+// function delete_word() {
 
-}
+// }
 
 function rankView(topics_data, ranks_data, colors){
 
@@ -128,7 +129,6 @@ function rankView(topics_data, ranks_data, colors){
 	for (var i =0; i < ranks_data.length; i++) {
 		for (var j=0; j < topics.length; j++) {
 			if (ranks_data[i][j] != 999) {
-				console.log(ranks_data[i][j]);
 				rankBar.append("line")
 						.data(topics_data)
 						.attr("x1", function(d) { return x(d.name) + (j*20) })

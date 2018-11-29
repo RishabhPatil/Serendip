@@ -2,14 +2,13 @@
 
 function topic_click(topic_filename,id){
     DATA_FOLDER = window.localStorage.getItem("DATA_FOLDER");
-    var filename = DATA_FOLDER+"/"+topic_filename;
+    var filename = DATA_FOLDER+topic_filename;
+    console.log(filename);
     d3.csv(filename, function(data) {
 
         d3.select("#" + id)
             .selectAll("*")
             .remove();
-
-        console.log(window.localStorage.getItem("tname"));
 
         var topic = [];
         for (var i = 0; i < 20; i++) {
