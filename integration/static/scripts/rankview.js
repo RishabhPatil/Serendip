@@ -119,12 +119,16 @@ function rankView(topics_data, ranks_data, colors){
 	      .attr("y", function(d) { return 0 } )
 	      .attr("width", 15)
 	      .attr("height", function(d) { return height - y(d.len); })
-	      .attr("fill","grey");
+	      .attr("fill","grey")
+	      .on("click", function(d,i) {
+	      	topic_click(d.name.replace("t","T")+".csv","topic_dist_rank");
+	      });
 
 
 	for (var i =0; i < ranks_data.length; i++) {
 		for (var j=0; j < topics.length; j++) {
 			if (ranks_data[i][j] != 999) {
+				console.log(ranks_data[i][j]);
 				rankBar.append("line")
 						.data(topics_data)
 						.attr("x1", function(d) { return x(d.name) + (j*20) })

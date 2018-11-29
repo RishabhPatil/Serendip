@@ -1,22 +1,23 @@
 function clr(str) {
 	console.log("skdhfj"+str);
 	if(str=="topics") {
-		d3.selectAll(".classl")
+		d3.selectAll(".classT")
 			.style("fill", "black");
 		document.getElementById("topic_textarea").value="";
 		document.getElementById("topic_textarea").innerHTML="";
 	}
 	if(str=="docs") {
-		d3.selectAll(".classd")
+		d3.selectAll(".classD")
 			.style("fill", "black");
 		document.getElementById("doc_textarea").value="";
 		document.getElementById("doc_textarea").innerHTML="";
 	}
 }
 
-function drawMatrix(DATA_FOLDER) {
+function drawMatrix() {
 
-	var doc_names = new Array(); 
+	var doc_names = new Array();
+	var DATA_FOLDER = window.localStorage.getItem("DATA_FOLDER");
 	$.getJSON(DATA_FOLDER+"/doc_ids.json", function(data) {
 		    $.each(data, function (index, value) {
 	       		doc_names.push(value);
@@ -146,7 +147,9 @@ function drawMatrix(DATA_FOLDER) {
 			.data(labelData)
 			.enter()
 			.append("text")
-			.attr("class", function(d,i) {if (d.val.startsWith("Topic")) { return "classl"+d.t } else { return "classd"+d.t }})
+			.attr("class", function(d,i) {
+				if (d.val.startsWith("Topic")) { return "classl"+d.t + " classT" } else { return "classl"+d.t + " classD" }
+			})
 			.text(function(d,i) { return d.val; })
 			.attr("transform", (d,i)=>{
         			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';})
@@ -161,7 +164,7 @@ function drawMatrix(DATA_FOLDER) {
 					topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
 
 				} else {
-					d3.selectAll(".classd"+d.t)
+					d3.selectAll(".classl"+d.t)
 						.style("fill", "red");
 
 					d_area.value += (doc_names[d.id]+"\n");
@@ -185,7 +188,10 @@ function drawMatrix(DATA_FOLDER) {
 	            div.transition()		
 	                .duration(500)		
 	                .style("opacity", 0);	
-        	});
+        	})
+        	// .on("dblclick", function(d,i) {
+        	// 	drawMatrix()
+        	// });
 
 
 		var lLines = grid.selectAll("line")
@@ -244,7 +250,7 @@ function drawMatrix(DATA_FOLDER) {
 				console.log(d.val);
 				newP.innerHTML = d.val;
 				window.localStorage.setItem("tname",d.val);
-				topic_click(DATA_FOLDER, d.val.replace(" ","")+".csv")
+				topic_click(d.val.replace(" ","")+".csv","topicdist");
 			})
 			.on("mouseover", function(d,i) {
 				c = d3.select(this).attr("class");
