@@ -38,6 +38,7 @@ function add_word_extension()
 
 	var topics = new Array();
 	var importance = new Array();
+	var extension_data;
 	//Ajax request
 	$.ajax({
 	  url: "/docsearch",
@@ -51,14 +52,14 @@ function add_word_extension()
 	  		importance.push(response.topic_scores.children[i].score);
 
 	  	}
-	  	console.log(response);
+	  	extension_data = response.scores;
 	  },
 	  error: function(xhr) {
 	    //Do Something to handle error
 	  }
 	});
 
-	view_cards_and_chart(topics, importance);
+	view_cards_and_chart(topics, importance, extension_data);
 }
 
 function clear_word_extension()
@@ -81,19 +82,26 @@ function clear_word_extension()
 	  async: false,
 	  data: json_var,
 	  success: function(response) {
+	  	for(i=0;i<response.topic_scores.children.length; i++)
+	  	{
+	  		topics.push(response.topic_scores.children[i].topic);
+	  		importance.push(response.topic_scores.children[i].score);
+
+	  	}
+	  	extension_data = response.scores;
 	  },
 	  error: function(xhr) {
 	    //Do Something to handle error
 	  }
 	});
 
-	view_cards_and_chart();
+	view_cards_and_chart(topics, importance, extension_data);
 
 	var bubble_chartspace = document.getElementById("bubble");
     bubble_chartspace.innerHTML = "";
 }
 
-function view_cards_and_chart(topics, importance)
+function view_cards_and_chart(topics, importance, extension_data)
 {
 	var topics_space = document.getElementById("topics");
 	topics_space.innerHTML = "";
@@ -121,7 +129,7 @@ function view_cards_and_chart(topics, importance)
 
 	var card, card_doc, card_body;
 	
-	var Extensionfile = window.localStorage.getItem("DATA_FOLDER") + "Extension.csv";
+	/*var Extensionfile = window.localStorage.getItem("DATA_FOLDER") + "Extension.csv";
 
 	d3.csv(Extensionfile, function(error, data) {
 		//if (error) throw error;
@@ -166,7 +174,23 @@ function view_cards_and_chart(topics, importance)
 			}
 			add_card(distinct_doc[i], distinct_topics, distinct_lengths);
 		}
-	});
+	});*/
+	var topic_array = new Array();
+	for(i=0; i<extension_data.length; i++)
+	{
+		topic_array = [];
+		var topic_key = extension_data[i][Object.keys(extension_data[i])[0]];
+		var topic_length = extension_data[i][Object.keys(extension_data[i])[1]];
+		for(j=0; j<topic_length.length; j++)		
+		{
+			topic_array.push("topic" + j);
+			topic_length[j] = parseInt(topic_length[j]*1000, 10);
+		}
+		//add_card(extension_data[i].[0], topic_array, extension_data[i].[1]);
+		console.log(topic_array);
+		console.log(topic_length);
+		add_card(topic_key, topic_array, topic_length);
+	}
 
 	display_bubble_chart(topics, importance);
 }
@@ -201,7 +225,7 @@ function add_card(doc_name, topics, lengths)
 		{
 			obj = {};
 			obj.topic = topics[i];
-			obj.length = lengths[i];
+			obj.length = parseInt(lengths[i], 10);
 			obj.color = color(topics[i])
 			document_data.push(obj);
 		}
@@ -236,9 +260,9 @@ function add_card(doc_name, topics, lengths)
 			.append("rect")
 		      .attr("class", "bar")
 		      .attr("x", function(d) { return x1(d.topic) })
-		      .attr("y", function(d) { return y1(d.length + 5) } )
+		      .attr("y", function(d) { return y1(d.length + 50) } )
 		      .attr("width", Math.round(width/40))
-		      .attr("height", function(d) { return height - y1(d.length + 5); })
+		      .attr("height", function(d) { return height - y1(d.length + 50); })
 		      .attr("fill", function (d) {
 		      		if(d.length == 0)
 		      		{
@@ -381,12 +405,12 @@ function Remove_word()
 	  		importance.push(response.topic_scores.children[i].score);
 
 	  	}
-	  	console.log(response);
+	  	extension_data = response.scores;
 	  },
 	  error: function(xhr) {
 	    //Do Something to handle error
 	  }
 	});
 
-	view_cards_and_chart(topics, importance);
+	view_cards_and_chart(topics, importance, extension_data);
 }
