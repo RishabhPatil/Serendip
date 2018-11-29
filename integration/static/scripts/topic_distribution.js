@@ -24,7 +24,7 @@ function topic_click(topic_filename,id){
         })
 
         var margin = {
-            left: 80,
+            left: 85,
             right: 5,
             top: 5,
             bottom: 5
