@@ -140,18 +140,18 @@
 			<!-- Rank View Starts -->
 			<div class="row mt-3 mx-2" style="height: 5vh">
 				
-				<form >
+				<form onsubmit="return false">
 					<div class="form-row">
 						
 						<div class="form-group col-xl-8" style="width: 95vw">
-							<input type="text" class="form-control" id="inputword" placeholder="Enter words separated by a space">
+							<input type="text" class="form-control" id="inputword" placeholder="Enter word">
 						</div>
 						<div class="form-group col-xl-2">
 							
 							<div class="form-group">
 							
 								<select id="Select" class="form-control">
-									<option>red</option>
+									<option selected>red</option>
 									<option>blue</option>
 									<option>green</option>
 									<option>purple</option>
@@ -161,7 +161,7 @@
 							</div>
 						</div>
 						<div class="form-group col-xl-2">								
-							<button id="input_word_btn" type="button" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
+							<button id="input_word_btn" type="submit" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
 						</div>
 					</div>
 				</form>
@@ -208,7 +208,7 @@
 					<div class="form-row">
 						
 						<div class="form-group col-xl-8" style="width: 95vw">
-							<input type="text" class="form-control" id="inputword2" placeholder="Enter words separated by a space">
+							<input type="text" class="form-control" id="inputword2" placeholder="Enter word">
 						</div>
 						
 						<div class="form-group col-xl-2">								

@@ -210,6 +210,7 @@ function drawMatrix() {
 			.attr("stroke", "black")
 			.on("click", function(d) {
 				if (d.val.startsWith("topic")) {
+					t_area.value += (d.val.replace("t","T")+"\n");
 					d3.selectAll(".classl"+d.t)
 						.style("fill", "red");
 					newP.innerHTML = d.val;
@@ -253,8 +254,10 @@ function drawMatrix() {
 						.style("fill", "red");
 				console.log(d.val);
 				newP.innerHTML = d.val;
+				t_area.value += (d.val+"\n");
 				window.localStorage.setItem("tname",d.val);
 				topic_click(d.val.replace(" ","")+".csv","topicdist");
+
 			})
 			.on("mouseover", function(d,i) {
 				c = d3.select(this).attr("class");
