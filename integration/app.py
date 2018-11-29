@@ -151,7 +151,7 @@ def get_word_ranks():
 		trank = []
 		for i in range(len(topic_words_list)):
 			tlen = len(topic_words_list[i])
-			sorted_list = sorted(topic_words_list[i], key=lambda x:x[1])
+			sorted_list = sorted(topic_words_list[i], key=lambda x:x[1], reverse=True)
 			tr = 999
 			for ix in range(tlen):
 				if word.lower() == sorted_list[ix][0].lower():
@@ -162,7 +162,7 @@ def get_word_ranks():
 	npr = np.array(ranks)
 	tnpr = npr.T
 	snpr = np.min(tnpr,axis=1)
-	ixs = np.argsort(-snpr)
+	ixs = np.argsort(snpr)
 	topic_lens = []
 	for i in ixs:
 		topic_lens.append({'name':"topic"+str(i), 'len':len(topic_words_list[i])})
