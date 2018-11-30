@@ -1,0 +1,226 @@
+Reddit (/ˈrɛdɪt/, stylized in its logo as reddit) is an American social news aggregation, web content rating, and discussion website. Registered members submit content to the site such as links, text posts, and images, which are then voted up or down by other members. Posts are organized by subject into user-created boards called "subreddits", which cover a variety of topics including news, science, movies, video games, music, books, fitness, food, and image-sharing. Submissions with more up-votes appear towards the top of their subreddit and, if they receive enough votes, ultimately on the site's front page. Despite strict rules prohibiting harassment, Reddit's administrators spend considerable resources on moderating the site.[4]
+
+As of February 2018, Reddit had 542 million monthly visitors (234 million unique users), ranking as the #3 most visited website in U.S. and #6 in the world, according to Alexa Internet, with 57.4% of its user base coming from the United States, followed by the United Kingdom at 7.5% and Canada at 6.3%.[5] Across 2015, Reddit saw 82.54 billion pageviews, 73.15 million submissions, 725.85 million comments, and 6.89 billion upvotes from its users.[6]
+
+Reddit was founded by University of Virginia roommates Steve Huffman and Alexis Ohanian in 2005. Condé Nast Publications acquired the site in October 2006. Reddit became a subsidiary of Condé Nast's parent company, Advance Publications, in September 2011. As of August 2012, Reddit operated as an independent entity, although Advance was its largest shareholder.[7] Reddit is based in San Francisco, California. In October 2014, Reddit raised $50 million in a funding round led by Sam Altman and including investors Marc Andreessen, Peter Thiel, Ron Conway, Snoop Dogg, and Jared Leto.[8] Their investment valued the company at $500 million then.[9][10] In July 2017, Reddit raised $200 million for a $1.8 billion valuation, with Advance Publications remaining the majority stakeholder.[11]
+
+
+Contents
+1	Overview
+1.1	Users
+1.2	Subreddits
+1.2.1	April Fools' Day
+2	History
+2.1	Technology
+3	Community and culture
+3.1	Philanthropy
+3.2	Sociopolitical action
+3.2.1	March for Science
+3.2.2	Internet privacy, neutrality and anonymity
+3.2.3	Cannabis legalization
+3.3	Commercial activity
+3.4	Reddit effect
+3.5	"Restoring Truthiness" campaign
+3.6	Blocked in Indonesia and China
+4	Controversies
+4.1	2010
+4.2	2011
+4.3	2013
+4.4	2014
+4.5	2015
+4.6	2016
+4.7	2017
+4.8	2018
+5	See also
+6	References
+7	External links
+Overview
+The site is a collection of entries submitted by its registered users, essentially a bulletin board system. The name "Reddit" is a play-on-words with the phrase "read it", i.e., "I read it on Reddit."[12] The site's content is divided into numerous categories, and the most popular posts from these 'subreddits' are visible on the front page to those who browse the site without an account. As of May 2016, there are over 11,400 active subreddits.[13][14][15]
+
+When items (links or text posts) are submitted to a subreddit, the users, called "redditors",[16] can vote for or against them (upvote/downvote). Each subreddit has a front page that shows newer submissions that have been rated highly. Redditors can also post comments about the submission, and respond back and forth in a conversation-tree of comments; the comments themselves can also be upvoted and downvoted. The front page of the site itself shows a combination of the highest-rated posts out of all the subreddits a user is subscribed to.
+
+Front-page rank—for both the general front page and for individual subreddits—is determined by the age of the submission, positive ("upvoted") to negative ("downvoted") feedback ratio and the total vote-count.[17] Dozens of submissions cycle through these front pages daily.
+
+The site's logo and its mascot is a line drawing of an alien nicknamed "Snoo". Subreddits often use themed variants of Snoo relevant to the subject.[18]
+
+Although most of the site functions like a bulletin board or message board, each subreddit has the option of having an associated wiki that can provide supplementary material like instructions, recommended reading, or collaboration for real-life events.
+
+Users
+Registering an account with Reddit is free and does not require an email address. As of June 2015, there were 36 million user accounts.[19] While logged in, Reddit users (known as redditors) have the ability to vote on submissions and comments to increase or decrease their visibility and submit links and comments. Users with enough experience and accumulated points can also create their own subreddit on a topic of their choosing, and interested users can add it to their front page by subscribing to it. Reddit comments and submissions are occasionally abbreviated and peppered with jargon, ranging from OP (for "Original Poster"—the user who posted the submission being commented upon) to NSFW (for "not safe for work"—indicating the post has graphic or sexually explicit content).[20]
+
+Users earn "post karma" and "comment karma" points for submitting text posts, link posts, and comments, which accumulate on their user profile. "Post karma" refers to karma points received from text and link posts, while "comment karma" refers to karma points received from comments.[21] Users may also be gifted "Reddit gold" if another user particularly valued the comment or post, generally due to humorous or high-quality content; this process is known as "gilding". "Reddit gold" unlocks several features not accessible to regular users, such as comment highlighting, ad-blocking, exclusive subreddits, and a personalized Snoo (known as a "snoovatar").[22][23] Reddit also created a system of points called "creddits". Reddit gold creddits are like gift certificates: each creddit allows a user to give one month of Reddit gold to someone else. Creddits confer status, not perquisites. They serve as a badge of honor for a user among their peers, although redditors have attempted to redeem points before.[24]
+
+Reddit allows submissions that do not link externally. These are called "self posts" or "text submissions". Many discussion-based subreddits allow solely text submissions such as "AskReddit"—where users are only allowed to pose broad, discussion based questions to the community at large. Self posts at first did not accumulate karma points for the submitter. As of July 2016, however, these text-only posts also generate post karma.[25]
+
+
+Mister Splashy Pants logo used on November 27, 2007
+Reddit communities occasionally coordinate Reddit-external projects such as skewing polls on other websites, like the 2007 incident when Greenpeace allowed web users to decide the name of a humpback whale it was tracking. Reddit users voted en masse to name the whale "Mr. Splashy Pants", and Reddit administrators encouraged the prank by changing the site logo to a whale during the voting. In December of that year, Mister Splashy Pants was announced as the winner of the competition.[26]
+
+On the site, redditors commemorate their "cake day" once a year, on the anniversary of the day their account was created. Cake day adds an icon of a small slice of cake next to the user's name for 24 hours.[27] Redditors can "friend" one another, which gives a redditor quick access to posting and comments of their friend list. The commenting system and friend system, along with a certain "Reddit ethos" (called reddiquette on Reddit), lend Reddit some aspects of a social networking service, though not to the extent of Facebook, Google+, or other social networking websites. The Reddit community socializes at meetings held at local parks and bars around the world,[28] and many localized subreddits for local in-person meetings exist.
+
+Subreddits
+File:American Chemical Society - What Chemists Do - Nathan Allen.webm
+Nathan Allen speaks about /r/science to the American Chemical Society
+Reddit entries are organized into user-created[29] areas of interest called "subreddits". Originally, there was a primary "main-reddit", and other areas were "subreddits". There is no longer a single main-reddit. Initially it was replaced by a group of "default subreddits". As of June 2017, an introductory page was substituted prompting users to customize their "subscriptions".[30] Subscribed subreddits appear on a user's front page and on a top navigation bar, and can deal with a large range of topics—such as video games, books, discussion, and music.
+
+There are over 11,400 active total subreddits to peruse,[13][14][15] including the former default set of 50 subreddits. This includes an aggregation of content termed "/r/popular", featuring top ranked posts across all of Reddit, with the exception of controversial subreddits (including both pro and anti-Trump communities, as well as those related to Gamergate).[31] This replaced "/r/all", which doesn't filter controversial topics; it is still accessible via an "All" link at the top of /r/popular.
+
+In an interview with Memeburn, Erik Martin, Reddit GM, remarked that their "approach is to give the community moderators or curators as much control as possible so that they can shape and cultivate the type of communities they want".[32]
+
+Popular subreddits include:
+
+/r/changemyview, a forum for discussing various topics for the purpose of understanding opposing viewpoints[33]
+/r/IAmA, a forum for user-driven question-and-answer interviews[34]
+/r/science, a forum for discussing science[35]
+/r/The_Donald, a community supporting the politics of Donald Trump[36]
+April Fools' Day
+Main articles: The Button (Reddit) and Place (Reddit)
+On April Fools' Day 2015, a social experiment subreddit called /r/thebutton appeared. It displayed a button and a 60-second countdown timer. User accounts created before that day were eligible to participate. A user could only click the button once, or opt not to click it. If a user clicked the button the timer was globally reset to 60 seconds,[37] and the user's "flair" (an icon next to the user's name) changed color. Colors were assigned based on a gradient from purple to red with purple signifying up to 60 seconds and red as low as 0 seconds. The countdown reached zero several times due to technical problems but eventually expired without further problems on June 5, 2015, after which the subreddit was archived.[38]
+
+For April Fools' Day 2016, another experiment was launched involving the "Robin" chat widget. After clicking a titular button, an IRC-like chat window was opened with one other user, and allowed a certain time to pick among three options, "Grow," "Stay" and "Leave".[39] "Grow" would join the chat with another group, "Stay" would close the group chat and create a subreddit with that group as moderators and "Leave" would close the group chat.
+
+April Fools' Day 2017 featured a social experiment based on /r/place. The subreddit contained a collaborative pixel art canvas, where a user could place a pixel every five minutes (the timer was temporarily ten and twenty minutes for a few hours on April 1).[40] Many people worked together to create large graphics, such as flags or symbols. Often subreddits would come together as a group to add a graphic from that community to place. Place was closed on April 3, 2017 at 1:00 PM GMT having been active for a full three days.[41]
+
+For April Fools Day' 2018, an experiment launched on the subreddit /r/circleoftrust.[42] Upon clicking a button, each user was given one "circle" that they could entrust to others with the circle's password key to unlock and join the circle. While each user received one personal circle, they could join or betray any other user circles. Clicking the "join" button on another's circle would cause the owner's circle to grow bigger, while the "betray" button would cause the owner's circle to no longer function (having "betrayed" the owner's trust). On the /r/circleoftrust subreddit, all users have a "flair" next to their username that displays the number of users who've joined their personal circle, followed by the number of other circles the user has joined. Those who had betrayed another user's circle have a null sign ("∅") next to their numbered flair. The experiment ended on April 6, 2018.
+
+History
+Further information: Timeline of Reddit
+
+Co-founder Alexis Ohanian speaking in 2009
+In June 2005,[43] Reddit was founded in Medford, Massachusetts by Steve Huffman and Alexis Ohanian, both 22-year-old graduates of the University of Virginia.[44] The team expanded to include Christopher Slowe in November 2005. Between November 2005 and January 2006, Reddit merged with Aaron Swartz's company Infogami, and Swartz became an equal owner of the resulting parent company, Not A Bug.[45][46] Condé Nast Publications, owner of Wired, acquired Reddit on October 31, 2006, and the team moved to San Francisco.[47] In January 2007, Swartz was fired.[48]
+
+By the end of 2008, the team had grown to include Erik Martin, Jeremy Edberg,[49] David King,[50] and Mike Schiraldi.[51] In 2009, Huffman and Ohanian moved on to form Hipmunk, recruiting Slowe[52] and King[53] shortly thereafter. In May 2010, Reddit was named in Lead411's "2010 Hottest San Francisco Companies" list.[54] In July 2010, after explosive traffic growth, Reddit introduced Reddit Gold, offering new features for a price of $3.99/month or $29.99/year.[55] Reddit Gold adds a number of features to the interface, including the ability to display more comments on a page, access to the private "lounge" subreddit, and notifications whenever one's username is mentioned in a comment. It's also possible to endow comments or submissions of other users and thereby give a gold membership to them as an anonymous present.[56]
+
+On September 6, 2011, Reddit became operationally independent of Condé Nast, operating as a separate subsidiary of its parent company, Advance Publications.[57] On January 11, 2012, Reddit announced that it would be participating in a 12-hour sitewide blackout in protest of the Stop Online Piracy Act.[58] The blackout occurred on January 18 and coincided with the blackouts of Wikipedia and several other websites. In May 2012, Reddit joined the Internet Defense League, a group formed to organize future protests.[59] On February 14, 2013, Reddit began accepting the digital currency Bitcoin for its Reddit Gold subscription service through a partnership with bitcoin payment processor Coinbase.[60]
+
+In October 2014, Reddit announced Redditmade, a service which allowed moderators to create merchandise for their subreddits. Redditmade closed in February 2015.[61] In November 2014, Chief Executive Yishan Wong resigned and co-founder Ohanian returned as the full-time executive chairman. Ellen Pao, Reddit's business and partnerships strategist replaced Wong, becoming the interim chief executive.[62] On July 10, 2015, Pao resigned and was replaced by Steve Huffman as CEO.[63][64]
+
+Reddit launched a new blocking tool in an attempt to curb online harassment in April 2016. The tool allows a user to hide posts and comments from selected redditors in addition to blocking private messages from those redditors.[65] A redditor is blocked by clicking an inbox button.
+
+In 2015, Reddit had about 100 employees.[66] By January 2017, their number had increased to around 140, then rising to 230 in July.[11]
+
+In April 2018, Reddit rolled out a new website design. The old design can still be accessed at old.reddit.com.
+
+Technology
+Reddit was originally written in Common Lisp but was rewritten in Python in December 2005.[67] The switch was for wider access to code libraries and greater development flexibility. The Python web framework that former Reddit employee Swartz developed to run the site, web.py, is available as an open-source project.[68] As of November 10, 2009, Reddit uses Pylons as its web framework.[69]
+
+From June 18, 2008 until September 2017, Reddit was an open source project.[70] During that time, all of the code and libraries written for Reddit were freely available on GitHub, with the exception of the anti-spam/cheating portions.[71] As of September 1, 2017, Reddit's main code repositories, backing its desktop and mobile websites, are no longer open source.[72][73]
+
+Users can contribute to translating Reddit into 89 languages using the localization management platform Crowdin.[74]
+
+As of November 10, 2009, Reddit decommissioned their own servers and migrated to Amazon Web Services.[75] Reddit uses PostgreSQL as their primary datastore and is slowly moving to Apache Cassandra, a column-oriented datastore. It uses RabbitMQ for offline processing, HAProxy for load balancing and memcached for caching. In early 2009, Reddit started using jQuery.[76] On June 7, 2010, Reddit staff launched a revamped mobile interface featuring rewritten CSS, a new color scheme, and a multitude of improvements.[77]
+
+On July 21, 2010, Reddit outsourced the Reddit search engine to Flaptor, who used its search product IndexTank.[78] As of July 12, 2012, Reddit uses Amazon CloudSearch.[79] There are several unofficial applications that use the Reddit API in the Google Play store, and F-Droid repository. Examples include: Reddit is Fun,[80] Andreddit,[81] F5, BaconReader,[82] Reddit Sync[83] and an Android tablet specific application called Reddita.[84] There are also several Windows apps used to access Reddit, including unofficial Reddit apps such as ReddHub[85] and Reddit To Go!.[86] An unofficial desktop application Reditr[87] exists that is compatible with Windows, OS X, Linux and ChromeOS.
+
+There are several Reddit applications for iOS. These include Karma, Upvote, iReddit, iPad-specific applications such as Reddzine and Biscuit, and, until April 2016, Alien Blue.[88] In September 2014, an official mobile application for browsing AMA (Ask Me Anything) threads was released for the iOS and Android platforms under the name Ask me Anything.[89] In October 2014, Alien Blue was acquired by Reddit and became the official iOS Reddit app.[90] In April 2016, Reddit released an official application called Reddit: The Official App, which is available on Google Play and the iOS App Store, and Alien Blue was removed from the App Store in favor of the new app.[91]
+
+Community and culture
+The website is known for its open nature and diverse user community that generate its content.[92] Its demographics allows for wide-ranging subject areas, or main subreddits, that receive much attention, as well as the ability for smaller subreddits to serve more niche purposes. For example, the University of Reddit, a subreddit that exists to communally teach, emerged from the ability to enter and leave the online forum, the "classroom", at will, and classes ranging from computer science to music, to fine art theory exist.[93] The unique possibilities that subreddits provide create new opportunities for raising attention and fostering discussion across many areas. In gaining popularity in terms of unique users per day, Reddit has been a platform for many to raise publicity for a number of causes. And with that increased ability to garner attention and a large audience, users can use one of the largest communities on the Internet for new, revolutionary, and influential purposes.[94]
+
+Additionally, the userbase of Reddit has given birth to other websites, including image sharing community and image host Imgur, which started in 2009 as a gift to Reddit's community.[95] In its first five months, it jumped from a thousand hits per day to a million total page views.[96]
+
+Statistics from Google Ad Planner suggest that 74% of Reddit users are male.[97] In 2016 the Pew Research Center published research showing that 4% of U.S. adults use reddit, of which 67% are men. 78% of users get news from Reddit.[98] Users tend to be significantly younger than average with less than 1% of users being 65 or over.[98]
+
+Its popularity has enabled users to take unprecedented advantage of such a large community. Its innovative socially ranked rating and sorting system drives a method that is useful for fulfilling certain goals of viewership or simply finding answers to interesting questions. User sentiments about the website's function and structure include feelings about the breadth and depth of the discussions on Reddit and how the site makes it easy to discover new and interesting items. Almost all of the user reviews on Alexa.com, which rates Reddit's monthly unique traffic rating 125th in the United States, mention Reddit's "good content" as a likable quality. However, others raise the negative aspects of the potential for Reddit's communities to possess a "hive mind" of sorts,[99] embodying some negative aspects of group interaction theories like crowd psychology and collective consciousness.
+
+Philanthropy
+Reddit and its subreddits have conducted multiple charity projects, some short-term and others ongoing. Among the events:
+
+In early October 2010, a story was posted on Reddit about a seven-year-old girl, Kathleen Edward, who was in the advanced stages of Huntington's disease. The girl's neighbors were taunting her and her family. Redditors banded together and gave the girl a shopping spree[100][101] at Tree Town Toys, a toy store local to the story owned by a Reddit user.
+In early December 2010, members of the Christianity subreddit decided to hold a fundraiser[102] and later members of the atheism subreddit decided to give some friendly competition,[103] cross-promoting[104] fundraising drives for World Vision's Clean Water Fund and Doctors Without Borders, respectively. Later, the Islam subreddit joined in, raising money for Islamic Relief. In less than a week, the three communities (as well as the Reddit community at large) raised over $50,000.[105] Most of this was raised by the atheism subreddit, though the smaller Christianity subreddit had a higher average donation amount per subscriber.[106] A similar donation drive in 2011 saw the atheism subreddit raise over $200,000 for charity.[107]
+Reddit started the largest Secret Santa program in the world, which is still in operation to date. For the 2010 Holiday season, 92 countries were involved in the Secret Santa program. There were 17,543 participants, and $662,907.60 was collectively spent on gift purchases and shipping costs.[108][109][110] In 2014, about 200,000 users from 188 countries participated.[111] Several celebrities have participated in the program, including Bill Gates[112] and Snoop Dogg.[113] Eventually, the Secret Santa program expanded to various other occasions through RedditGifts.
+Members from Reddit donated over $600,000 to DonorsChoose in support of Stephen Colbert's March to Keep Fear Alive. The donation spree broke previous records for the most money donated to a single cause by the Reddit community and resulted in an interview with Colbert on Reddit.[114]
+Reddit users donated $185,356 to Direct Relief for Haiti after an earthquake devastated the nation in January 2010.[115]
+Reddit users donated over $70,000 to the Faraja Orphanage in the first 24 hours to help secure the orphanage after intruders robbed and attacked one of the volunteers, who survived a strike to the head from a machete.[116]
+In October 2012, "Shitty Watercolour", a popular Redditor known for posting watercolor paintings on the website,[117][118][119] streamed live a 12-hour painting session on YouTube to raise money for charity: water, a non-profit organization which aims to provide potable drinking water in developing countries. Redditors donated a minimum of $10 to have a photo of their choice painted in a 5 by 5 centimetres (2.0 by 2.0 in) square section of large sheets of paper.[120][121] The paint-a-thon raised $2,700.[122]
+In February 2014, Reddit announced it would be donating 10% of its annual ad revenue to non-profits voted upon by its users.[123]
+Reddit continued this policy for 2015, donating $82,765 each to Electronic Frontier Foundation, Planned Parenthood Federation of America, Doctors Without Borders, Erowid Center, Wikimedia Foundation, Multidisciplinary Association for Psychedelic Studies, NPR, Free Software Foundation, Freedom From Religion Foundation, and Tor Project.[124]
+In response to the 2015 Nepal earthquake, redditors raised more than $145,000 for Direct Relief and more than $110,000 for MAP International.[125]
+Sociopolitical action
+See also: Digital citizen, Netizen, and Online social movement
+Reddit models sociopolitical action, building upon crowdsourcing, user generated content,[126] sharing, altruism,[126] gamification,[126] social reputation[126] and social relevance (rather than financial return), participation,[126] freedom of speech, openness, participatory[127] and/or self-governance, new forms of interaction (e.g. #IAmA and AMA) and collective intelligence. The site has been used for a wide variety of political engagement including the presidential campaigns of Barack Obama and Donald Trump.[128][129][130] It has also been used for self-organizing sociopolitical activism such as protests, communication with politicians and active communities. Reddit has become a popular place for worldwide political discussions.[131]
+
+March for Science
+Main article: March for Science
+The March for Science originated from a discussion on reddit over the deletion of all references to climate change from the White House website, about which a user commented that "There needs to be a Scientists' March on Washington".[132][133][134]
+
+Internet privacy, neutrality and anonymity
+Many reddit users are highly engaged in the defense of Internet privacy, net neutrality and Internet anonymity. In advance of legislation that endangers these redditors typically set up pages to organize protest, create or curate content, call responsible authorities and inform about their issues and e.g. relevant tools and organizations.
+
+On January 11, 2012, Reddit announced that it would be participating in a 12-hour sitewide blackout in protest of the Stop Online Piracy Act.[58] The blackout occurred on January 18 and coincided with the blackouts of Wikipedia and several other websites. In May 2012, Reddit joined the Internet Defense League, a group formed to organize future protests.[59]
+
+Cannabis legalization
+Further information: Drug liberalization
+The site is known for hosting groups of users who support legalization of marijuana.[135] The subreddit dedicated to cannabis culture /r/trees is most active in this regard and often organizes, coordinates or supports drug reform campaigns.[136][137][138][139]
+
+In 2010, the site ran ads promoting marijuana legalization without charge, after Conde Nast stated that they did not want to benefit financially from this particular issue.[140]
+
+Commercial activity
+In February 2013, Betabeat published a post that recognized the influx of multi-national corporations like Costco, Taco Bell, Subaru, and McDonald's posting branded content on Reddit that was made to appear as if it was original content from legitimate Reddit users.[141] Reddit's former Director of Communications noted that while a large number of Chief Marketing Officers want to "infiltrate the reddit community on behalf of their brand," she emphasized that "self-promotion is frowned upon" and the site is "100 percent organic."[142][143][144][145] She recommended that advertisers design promotions that "spark conversations and feedback."[146] She recommended that businesses use AMAs to get attention for public figures but cautioned "It is important to approach AMAs carefully and be aware that this may not be a fit for every project or client."[147] Nissan ran a successful branded content promotion offering users free gifts to publicize a new car,[148][149] though the company was later ridiculed for suspected astroturfing when the CEO only answered puff piece questions on the site.[150][151] Taylor described these situations as "high risk" noting: "We try hard to educate people that they have to treat questions that may seem irreverent or out of left field the same as they would questions about the specific project they are promoting."[152]
+
+Reddit's users are more privacy-conscious than on other websites, using tools like AdBlock and proxies,[153] and they hate "feeling manipulated by brands" but respond well to "content that begs for intelligent viewers and participants."[154] Lauren Orsini writes in ReadWrite that "Reddit's huge community is the perfect hype machine for promoting a new movie, a product release, or a lagging political campaign" but "very specific set of etiquette. Redditors don't want to advertise for you, they want to talk to you."[155] Journalists have used the site as a basis for stories, though they are advised by the site's policies to respect that "reddit's communities belong to their members" and to seek proper attribution for people's contributions.[156]
+
+Reddit announced that they would begin using VigLink to redirect affiliate links in June 2016.[157]
+
+Reddit effect
+Main article: Slashdot effect
+Also known as the "Slashdot effect", the Reddit effect occurs when a smaller website has a high influx of traffic after being linked to on Reddit.[158] It is also called the "Reddit Hug of Death" among the website's users. Because Reddit is such a large site, the traffic is immense and can easily crash smaller sites. In order for users to see crashed websites, several Reddit bots have been created that take a snapshot of the website before large amounts of traffic flood the affected website.
+
+"Restoring Truthiness" campaign
+As a response to Glenn Beck's August 28, 2010, Restoring Honor rally (heavily promoted by him in his Fox News broadcasts during the summer), in September 2010 Reddit users started a movement to persuade satirist Stephen Colbert to have a counter-rally in Washington, D.C.[159] The movement, which came to be called "Restoring Truthiness", was started by user mrsammercer, in a post where he described waking up from a dream in which Stephen Colbert was holding a satirical rally in D.C.[160] He writes, "This would be the high water mark of American satire. Half a million people pretending to suspend all rational thought in unison. Perfect harmony. It'll feel like San Francisco in the late 60s, only we won't be able to get any acid."
+
+The idea resonated with the Reddit community, which launched a campaign to bring the event to life. Over $600,000[161] was raised for charity to gain the attention of Colbert. The campaign was mentioned on-air several times, and when the Rally to Restore Sanity and/or Fear was held in Washington, D.C. on October 30, 2010, thousands of redditors made the journey.[162]
+
+During a post-rally press conference, Reddit co-founder Ohanian asked, "What role did the Internet campaign play in convincing you to hold this rally?" Jon Stewart responded by saying that, though it was a very nice gesture, he and Colbert had already thought of the idea and the deposit for using the National Mall was already paid during the summer, so it acted mostly as a "validation of what we were thinking about attempting".[163] In a message to the Reddit community, Colbert later added, "I have no doubt that your efforts to organize and the joy you clearly brought to your part of the story contributed greatly to the turnout and success."[164]
+
+Blocked in Indonesia and China
+In May 2014 Reddit was blocked in Indonesia on the grounds that it hosts content that includes nudity.[165][166] In June 2015 Reddit was blocked in China for possibly as long as a few weeks.[167]
+
+Controversies
+See also: Controversial Reddit communities
+The website generally lets moderators on individual subreddits make editorial decisions about what content to allow, and has a history of permitting some subreddits dedicated to controversial content.[168] Many of the default pages are highly moderated, with the "science" subreddit banning climate change denialism,[169] and the "news" subreddit banning opinion pieces and columns.[170] Reddit has changed its site-wide editorial policies several times, sometimes in reaction to controversies.[171][172][173][174] Reddit has had a history of giving a platform to objectionable but legal content, and in 2011, news media covered the way that jailbait was being shared on the site before the site changed their policies to explicitly ban "suggestive or sexual content featuring minors".[175] Following some controversial incidents of Internet vigilantism, Reddit introduced a strict rule against the publication of non-public personally-identifying information via the site (colloquially known as doxxing). Those who break the rule are subject to a site-wide ban, and their posts and even entire communities may be removed for breaking the rule.
+
+2010
+On December 16, 2010, a redditor named Matt posted a link describing how he has donated a kidney, and included a JustGive link to encourage users to give donations to the American Cancer Society.[176] After an initially positive reaction, Reddit users began to become suspicious of Matt's intentions, and suggested that he was keeping the donations for himself. Users telephoned his home and he received death threats. Matt eventually proved that he was genuine by uploading his doctor's records.[177]
+
+2011
+On October 18, 2011, an IT manager submitted a post to the subreddit "gameswap" offering Redditors to trade one of 312 codes he had been given for the game Deus Ex: Human Revolution.[178] A group of users obtained his personal details, and began to blackmail him for the codes.[179] The Monday after uploading the post, he received 138 threatening phone calls both at home and at his job, and by the end of the day he had been fired.[180]
+
+2013
+Following the 2013 Boston Marathon bombings, Reddit faced criticism after users wrongly identified a number of people as suspects.[181] Notable among misidentified bombing suspects was Sunil Tripathi, a student reported missing before the bombings took place. A body reported to be Sunil's was found in Providence River in Rhode Island on April 25, 2013, according to Rhode Island Health Department. The cause of death was not immediately known, but authorities said they did not suspect foul play.[182] The family later confirmed Tripathi's death was a result of suicide.[183] Reddit general manager Martin later issued an apology for this behavior, criticizing the "online witch hunts and dangerous speculation" that took place on the website.[184] The incident was later referenced in the season 5 episode of the CBS TV series The Good Wife titled "Whack-a-Mole,"[185] as well as The Newsroom.[186][187]
+
+In late October 2013, the moderators of the "politics" subreddit banned a large group of websites. Many were left-wing opinion websites, such as Mother Jones, HuffPost, Salon, Alternet, Rawstory, The Daily Kos, Truthout, Media Matters, and ThinkProgress as well as some popular progressive blog sites, such as Democratic Underground and Crooks and Liars. They also banned a number of right-wing sites—Drudge Report, Breitbart, The Daily Caller, Dailypaul, Power Line, and Reason. Salon reported that "the section's moderators explained in a post on Tuesday, the goal is 'to reduce the number of blogspam submissions and sensationalist titles.' The purge, the moderators explained, is also aimed at sites that provide lots of "bad journalism."[188] The December 2013 list of banned websites has been modified since late October, and sites with original content, such as Mother Jones and The Huffington Post, are allowed.[189] Moderators also banned RT, which moderators stated was due to vote manipulation and spam, though one moderator stated that he wanted RT banned because it is funded by the Russian Government.[190][191]
+
+2014
+In August 2014, photos from the 2014 celebrity photo hack were widely disseminated across the site.[192][193] A dedicated subreddit, "TheFappening," was created for this purpose,[194] and contained links to most if not all of the criminally obtained explicit images.[195][196][197][198][199] Some images of Liz Lee and McKayla Maroney from the leak were identified by redditors and outside commentators as child pornography because the photos were taken when the women were underage.[200] The subreddit was banned on September 6.[201] The scandal led to wider criticisms concerning the website's administration from The Verge and The Daily Dot.[202][203]
+
+Also in August 2014, moderators and administrators removed a sizeable amount of content related to the Gamergate controversy; one thread in the "gaming" subreddit lost almost 24,000 comments.[204] This included the subreddit "ZoeQuinnDiscussion", which was banned for violating the Reddit rules.[205] Administrators attributed the bans to 4chan for raiding threads and causing harm, the accuracy of which was debated by some redditors.[206]
+
+On December 18, 2014, Reddit took the unusual step of banning a subreddit, "SonyGOP," that was being used to distribute hacked Sony files.[207]
+
+2015
+After Ellen Pao became CEO, she was initially a target of criticism by users who objected to her lawsuit.[208] Later on June 10, 2015, Reddit shut down the 150,000-subscriber "fatpeoplehate" subreddit and four others citing issues related to harassment.[209] This move was seen as very controversial; some commenters said that the bans went too far, while others said that the bans did not go far enough.[210] One of the latter complaints concerned a subreddit that was "expressing support" for the perpetrator of the Charleston church shooting.[211] Responding to the accusations of "skewed enforcement", Reddit reaffirmed their commitment to free expression and stated that "There are some subreddits with very little viewership that get highlighted repeatedly for their content, but those are a tiny fraction of the content on the site."
+
+On July 2, 2015, Reddit began experiencing a series of blackouts as moderators set popular subreddit communities to private, in an event dubbed "AMAgeddon," a portmanteau of AMA ("ask me anything") and Armageddon. This was done in protest of the recent firing of Victoria Taylor, an administrator who helped organize citizen-led interviews with famous people on the popular "Ask me Anything" subreddit. Organizers of the blackout also expressed resentment about the recent severance of the communication between Reddit and the moderators of subreddits.[212] The blackout intensified on July 3 when former community manager David Croach gave an AMA about being fired. Before deleting his posts, he stated that Ellen Pao dismissed him with one year of health coverage when he had cancer and did not recover quickly enough.[213][214] Following this, a Change.org petition to remove Pao as CEO of Reddit Inc. reached over 200,000 signatures.[215][216][217] Pao posted a response on July 3 as well as an extended version of it on July 6 in which she apologized for bad communication and not delivering on promises. She also apologized on behalf of the other administrators and noted that problems already existed over the past several years.[218][219][220][221] On July 10, Pao resigned as CEO and was replaced by former CEO and co-founder Steve Huffman.[63][222]
+
+In August 2015, Steve Huffman introduced a policy which led to the banning of several offensive and sexual communities. Included in the ban was lolicon which Huffman referred to as "animated CP".[223] Some subreddits had also been quarantined due to having "highly-offensive or upsetting content", such as /r/European, /r/swedenyes, /r/drawpeople, /r/kiketown, /r/blackfathers, /r/greatapes, and /r/whitesarecriminals.[224]
+
+2016
+In May 2016, Reddit CEO Steve Huffman said on an interview at the TNW Conference that, unlike Facebook, which "only knows what [its users are] willing to declare publicly", Reddit knows its users' "dark secrets"[225][226][227] at the same time that the website's "values" page was updated in regards to its "privacy" section. The video reached the top of the website's main feed.[227][228] Shortly thereafter, announcements concerning new advertisement content drew criticism on the website.[229][230]
+
+In September 2016, a Redditor named mormondocuments released thousands of administrative documents belonging to The Church of Jesus Christ of Latter-day Saints, an action driven by the ex-Mormon and atheist communities of that site. Previously, on April 22 of that year, the same Redditor had announced his plans to do so. Church officials commented that the documents did not contain anything confidential.[231][232]
+
+On November 23, 2016, Steve Huffman admitted to having replaced his user name with the names of r/The_Donald moderators in many insulting comments.[233][234] He did so by changing insulting comments made towards him and made it appear as if the insult were directed at the moderators of the /r/The_Donald.[235]
+
+On November 24, 2016, the Washington Post reported Reddit had banned the "Pizzagate" conspiracy board from their site stating it violated their policy of posting personal information of others, triggering a wave of criticism from users on /r/The_Donald, who felt the ban amounted to censorship.[236] The Reddit forum /r/pizzagate was devoted to a conspiracy theory derived from the John Podesta leaked emails, a theory that alleged the D.C. Pizzeria Comet Ping Pong "is at the center of a child-abuse ring tied to John Podesta, Mrs. Clinton’s former campaign manager".[237] After the forum was banned from Reddit, the wording "We don't want witchhunts on our site" now appears on the former page of the Pizzagate subreddit.[237][238]
+
+On November 30, 2016 CEO Steve Huffman announced changes to the algorithm of their /r/all page to block 'stickied' posts from a number of subreddits, such as /r/The_Donald. In the announcement, the CEO also apologized for personally editing posts by users from /r/The_Donald, and declared intentions to take actions against "hundreds of the most toxic users" of Reddit and "communities whose users continually cross the line".[4][239][240]
+
+2017
+In February 2017, Reddit banned the alt-right subreddit (/r/altright) for violating its terms of service, more specifically for attempting to share personal information about the man who attacked alt-right figure Richard B. Spencer.[241][242] The forum's users and moderators accused Reddit administrators of having political motivations for the ban.[243][244]
+
+2018
+In March 2018, it was revealed that Reddit's CEO had hidden Russian troll activity from users.[245]
+
+On July 12 the creator and head moderator of the GamerGate subreddit /r/kotakuinaction, removed all of the moderators and set the forum to private, alleging it to have become "infested with racism and sexism". A Reddit employee restored the forum and its moderators an hour later.[246][247]
+

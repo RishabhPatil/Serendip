@@ -16,6 +16,7 @@ $(document).ready(function() {
 					x2: xpos2,
 					y2: ypos2,
 					val: "Topic " + (l-1).toString(),
+					t: l-1,
 				})
 				xpos1 += bD
 				xpos2 += bD
@@ -36,6 +37,7 @@ $(document).ready(function() {
 					x2: xpos2,
 					y2: ypos2,
 					val: "Document " + (l-1).toString(),
+					t: -1,
 				})
 				ypos1 += bD
 				ypos2 += bD
@@ -55,6 +57,7 @@ $(document).ready(function() {
 						y: y,
 						val: "Topic "+key,
 						r: mdata[l][key] * 2,
+						t: key,
 					})
 					x += bD
 				}
@@ -73,6 +76,7 @@ $(document).ready(function() {
 					y: y,
 					r: 0,
 					val: "Document "+i.toString(),
+					t: -1,
 				})
 				y += bD
 			}
@@ -84,6 +88,7 @@ $(document).ready(function() {
 					y: y,
 					r: 315,
 					val: "Topic "+i.toString(),
+					t: i,
 				})
 				x += bD
 			}
@@ -97,32 +102,17 @@ $(document).ready(function() {
 		var newP = document.getElementById("topicP");
 		var newD = document.getElementById("documentP");
 
+		var sortItems = function(a, b) { return d3["descending"](a.r, b.r) };
+
 		var grid = d3.select("#grid")
 			.append("svg")
 			.attr("width","950px")
 			.attr("height","1100px");
 
-		var matrixLabels = grid.selectAll("text")
-			.data(labelData)
-			.enter()
-			.append("text")
-			.text(function(d,i) { return d.val; })
-			.attr("transform", (d,i)=>{
-        			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';})
-			.on("click", function(d) {
-				if (d.val.startsWith("Topic")) {
-					newP.innerHTML = d.val;
-					window.localStorage.setItem("tname",d.val);
-				} else {
-					newD.innerHTML = d.val;
-					window.localStorage.setItem("tname",d.val);
-				}
-			});
-
-
 		var lLines = grid.selectAll("line")
 			.data(lData)
 			.enter().append("line")
+			.attr("class", function(d,i){ return "class"+(d.t).toString();})
 			.attr("x1", function(d) { return d.x1; })
 			.attr("y1", function(d) { return d.y1; })
 			.attr("x2", function(d) { return d.x2; })
@@ -137,6 +127,19 @@ $(document).ready(function() {
 					newD.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
 				}
+			})
+			.on("mouseover", function(d) {
+				c = (d3.select(this).attr("class")).slice(5)
+				if(c != -1) {
+					d3.selectAll("."+d3.select(this).attr("class"))
+						.style('stroke', 'black')
+	            		.style('stroke-width', 2.0);
+            	}
+            })
+			.on("mouseout", function(d) {
+				d3.selectAll("."+d3.select(this).attr("class"))
+					.style('stroke', 'black')
+            		.style('stroke-width', 0.5);
 			});
 			
 			
@@ -144,24 +147,47 @@ $(document).ready(function() {
 		var intersection = grid.selectAll("circle")
 			.data(cData)
 			.enter().append("circle")
+			.attr("class", function(d,i){ return "class"+(d.t).toString();})
 			.style("stroke", "grey")
 		    .style("fill", "#FFFFE0")
 		    .attr("r", function(d) { return d.r })
 		    .attr("cx", function(d) { return d.x })
 		    .attr("cy", function(d) { return d.y })
 		    .on("click", function(d) {
+				d3.select(".classl"+d.t)
+					.style("fill","red");
 				newP.innerHTML = d.val;
 				window.localStorage.setItem("tname",d.val);
 			})
-			.on("mouseover", handleMouseOver);
-
-		function handleMouseOver(d, i) { 
-			d3.select(this).attr({
-				"fill": "#000",
+			.on("mouseover", function(d){
+				d3.selectAll("."+d3.select(this).attr("class"))
+            		.style('stroke', 'black')
+            		.style('stroke-width', 2.0);
+			})
+			.on("mouseout", function(d){
+				d3.selectAll("."+d3.select(this).attr("class"))
+            		.style('stroke', 'grey')
+            		.style('stroke-width', 1.0);
 			});
-		}
 
 
+		var matrixLabels = grid.selectAll("text")
+			.data(labelData)
+			.enter()
+			.append("text")
+			.attr("class", function(d,i) { return "classl"+d.t})
+			.text(function(d,i) { return d.val; })
+			.attr("transform", (d,i)=>{
+        			return 'translate( '+d.x+' , '+d.y+'),'+ 'rotate('+d.r+')';})
+			.on("click", function(d) {
+				if (d.val.startsWith("Topic")) {
+					newP.innerHTML = d.val;
+					window.localStorage.setItem("tname",d.val);
+				} else {
+					newD.innerHTML = d.val;
+					window.localStorage.setItem("tname",d.val);
+				}
+			});
 	});
 
 });

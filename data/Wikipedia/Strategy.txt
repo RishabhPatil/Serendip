@@ -1,0 +1,61 @@
+Strategy (from Greek στρατηγία stratēgia, "art of troop leader; office of general, command, generalship"[1]) is a high-level plan to achieve one or more goals under conditions of uncertainty. In the sense of the "art of the general", which included several subsets of skills including "tactics", siegecraft, logistics etc., the term came into use in the 6th century AD in East Roman terminology, and was translated into Western vernacular languages only in the 18th century. From then until the 20th century, the word "strategy" came to denote "a comprehensive way to try to pursue political ends, including the threat or actual use of force, in a dialectic of wills" in a military conflict, in which both adversaries interact.[2]
+
+Strategy is important because the resources available to achieve these goals are usually limited. Strategy generally involves setting goals, determining actions to achieve the goals, and mobilizing resources to execute the actions[3][4]. A strategy describes how the ends (goals) will be achieved by the means (resources). Strategy can be intended or can emerge as a pattern of activity as the organization adapts to its environment or competes[5][3]. It involves activities such as strategic planning and strategic thinking.[6]
+
+Henry Mintzberg from McGill University defined strategy as a pattern in a stream of decisions to contrast with a view of strategy as planning,[7][4] while Henrik von Scheel defines the essence of strategy as the activities to deliver a unique mix of value – choosing to perform activities differently or to perform different activities than rivals. [8] while Max McKeown (2011) argues that "strategy is about shaping the future" and is the human attempt to get to "desirable ends with available means". Dr. Vladimir Kvint defines strategy as "a system of finding, formulating, and developing a doctrine that will ensure long-term success if followed faithfully."[9] Complexity theorists define strategy as the unfolding of the internal and external aspects of the organization that results in actions in a socio-economic context.[10] [11] [12]
+
+
+Contents
+1	Components of strategy
+2	Formulating and implementing strategy
+3	Military theory
+4	Management theory
+5	Strategies in game theory
+6	See also
+7	References
+8	Further reading
+Components of strategy
+Professor Richard P. Rumelt described strategy as a type of problem solving in 2011. He wrote that good strategy has an underlying structure he called a kernel. The kernel has three parts: 1) A diagnosis that defines or explains the nature of the challenge; 2) A guiding policy for dealing with the challenge; and 3) Coherent actions designed to carry out the guiding policy.[13] President Kennedy illustrated these three elements of strategy in his Cuban Missile Crisis Address to the Nation of 22 October 1962:
+
+Diagnosis: "This Government, as promised, has maintained the closest surveillance of the Soviet military buildup on the island of Cuba. Within the past week, unmistakable evidence has established the fact that a series of offensive missile sites are now in preparation on that imprisoned island. The purpose of these bases can be none other than to provide a nuclear strike capability against the Western Hemisphere."
+Guiding Policy: "Our unswerving objective, therefore, must be to prevent the use of these missiles against this or any other country, and to secure their withdrawal or elimination from the Western Hemisphere."
+Action Plans: First among seven numbered steps was the following: "To halt this offensive buildup a strict quarantine on all offensive military equipment under shipment to Cuba is being initiated. All ships of any kind bound for Cuba from whatever nation or port will, if found to contain cargoes of offensive weapons, be turned back." [14]
+Rumelt wrote in 2011 that three important aspects of strategy include "premeditation, the anticipation of others' behavior, and the purposeful design of coordinated actions." He described strategy as solving a design problem, with trade-offs among various elements that must be arranged, adjusted and coordinated, rather than a plan or choice.[13]
+
+Formulating and implementing strategy
+Strategy typically involves two major processes: formulation and implementation. Formulation involves analyzing the environment or situation, making a diagnosis, and developing guiding policies. It includes such activities as strategic planning and strategic thinking. Implementation refers to the action plans taken to achieve the goals established by the guiding policy.[6][13]
+
+Bruce Henderson wrote in 1981 that: "Strategy depends upon the ability to foresee future consequences of present initiatives." He wrote that the basic requirements for strategy development include, among other factors: 1) extensive knowledge about the environment, market and competitors; 2) ability to examine this knowledge as an interactive dynamic system; and 3) the imagination and logic to choose between specific alternatives. Henderson wrote that strategy was valuable because of: "finite resources, uncertainty about an adversary's capability and intentions; the irreversible commitment of resources; necessity of coordinating action over time and distance; uncertainty about control of the initiative; and the nature of adversaries' mutual perceptions of each other."[15]
+
+Military theory
+Main article: Military strategy
+Subordinating the political point of view to the military would be absurd, for it is policy that has created war...Policy is the guiding intelligence, and war only the instrument, not vice-versa.
+On War by Carl von Clausewitz
+In military theory, strategy is "the utilization during both peace and war, of all of the nation's forces, through large scale, long-range planning and development, to ensure security and victory" (Random House Dictionary).[7]
+
+The father of Western modern strategic study, Carl von Clausewitz, defined military strategy as "the employment of battles to gain the end of war." B. H. Liddell Hart's definition put less emphasis on battles, defining strategy as "the art of distributing and applying military means to fulfill the ends of policy".[16] Hence, both gave the pre-eminence to political aims over military goals. U.S. Naval War College instructor Andrew Wilson defined strategy as the "process by which political purpose is translated into military action."[17]
+
+Eastern military philosophy dates back much further, with examples such as The Art of War by Sun Tzu dated around 500 B.C.[18]
+
+Management theory
+Main article: Strategic management
+The essence of formulating competitive strategy is relating a company to its environment.
+Michael Porter[19]
+Modern business strategy emerged as a field of study and practice in the 1960s; prior to that time, the words "strategy" and "competition" rarely appeared in the most prominent management literature.[20][21] Alfred Chandler wrote in 1962 that: "Strategy is the determination of the basic long-term goals of an enterprise, and the adoption of courses of action and the allocation of resources necessary for carrying out these goals."[22] Michael Porter defined strategy in 1980 as the "...broad formula for how a business is going to compete, what its goals should be, and what policies will be needed to carry out those goals" and the "...combination of the ends (goals) for which the firm is striving and the means (policies) by which it is seeking to get there."[19]
+
+Henry Mintzberg described five definitions of strategy in 1998:
+
+Strategy as plan – a directed course of action to achieve an intended set of goals; similar to the strategic planning concept;
+Strategy as pattern – a consistent pattern of past behavior, with a strategy realized over time rather than planned or intended. Where the realized pattern was different from the intent, he referred to the strategy as emergent;
+Strategy as position – locating brands, products, or companies within the market, based on the conceptual framework of consumers or other stakeholders; a strategy determined primarily by factors outside the firm;
+Strategy as ploy – a specific maneuver intended to outwit a competitor; and
+Strategy as perspective – executing strategy based on a "theory of the business" or natural extension of the mindset or ideological perspective of the organization.[23]
+Strategies in game theory
+Main article: Strategy (game theory)
+In game theory, a strategy refers to the rules that a player uses to choose between the available actionable options. Every player in a non-trivial game has a set of possible strategies to use when choosing what moves to make.
+
+A strategy may recursively look ahead and consider what actions can happen in each contingent state of the game—e.g. if the player takes action 1, then that presents the opponent with a certain situation, which might be good or bad, whereas if the player takes action 2 then the opponents will be presented with a different situation, and in each case the choices they make will determine their own future situation.
+
+Strategies in game theory may be random (mixed) or deterministic (pure). Pure strategies can be thought of as a special case of mixed strategies, in which only probabilities 0 or 1 are assigned to actions.
+
+Strategy based games generally require a player to think through a sequence of solutions to determine the best way to defeat the opponent.

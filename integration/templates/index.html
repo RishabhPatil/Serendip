@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light shadow-sm" role="navigation">
+  		<a class="navbar-brand" href="#">
+    		<img src="{{ url_for('static', filename='pictures/logo.png')}}" width="160" height="40" class="d-inline-block align-top" alt="">
+  		</a>
+  		<ul class="nav nav-pills" id="pills-tab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="pills-corpus-view" data-toggle="tab" href="#corpusview" role="tab" aria-controls="corpusview" aria-selected="true">Corpus View</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" id="pills-text-view" data-toggle="tab" href="#textview" role="tab" aria-controls="textview" aria-selected="false">Text View</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" id="pills-rank-view" data-toggle="tab" href="#rankview" role="tab" aria-controls="rankview" aria-selected="false">Rank View</a>
+			</li>
+			<li class="nav-item">
+			    <a class="nav-link" id="pills-extension-view" data-toggle="tab" href="#extensionview" role="tab" aria-controls="extensionview" aria-selected="false">Extension View</a>
+			</li>
+		</ul>
+
+	</nav>
+
+	<div class="tab-content" id="pills-tabContent">
+		<div class="tab-pane fade show active" id="corpusview" role="tabpanel" aria-labelledby="pills-corpus-view">
+			<!-- Corpus View Starts -->
+			<div class="row mx-0" style="margin-right: 0px; margin-left: 0px;">
+				<div class="col-xl-2 p-0" style="height: 90vh;">
+					<div class="card h-50 m-1" style="overflow: scroll;">
+						<div class="card-header">
+							<h5>Topic Controls</h5>
+						</div>
+						<div class="card-body">
+							<button class="btn btn-primary btn-sm my-1" onclick="clr('topics')"><span>Clear</span></button>
+							<br>
+							<textarea id="topic_textarea" placeholder="No topics selected" rows="6" cols="18"></textarea> 
+						</div>
+					</div>
+					<div class="card h-50 m-1" style="overflow: scroll;">
+						<div class="card-header">
+							<h5>Document Controls</h5>
+						</div>
+						<div class="card-body">
+							<button class="btn btn-primary btn-sm my-1" onclick="clr('docs')"><span>Clear</span></button>
+							<br>
+							<textarea id="doc_textarea" placeholder="No documents selected" rows="6" cols="18"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-7 p-0" style="height: 90vh;">
+					<div class="card h-100 m-1">
+						<div class="card-header">
+							<h5 class="float-lg-left">Model</h5>
+<!-- 							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Reset Data</button>
+							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Reset colors</button>
+							<button class="btn btn-secondary btn-sm float-lg-right mx-1" >Hide empty topics</button> -->
+						</div>
+						<div class="card-body" style="overflow: scroll;">
+							<div id="grid"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 p-0" style = "height: 90vh;">
+					<div class="card h-50 m-1">
+						<div class="card-header">
+							<ul class="nav nav-tabs float-lg-left">
+								<h5 id = "topicP">Topic</h5>
+							</ul>
+						</div>
+						<div class="card-body" style="overflow: scroll">
+							<div id="topicdist"></div>
+						</div>
+						
+					</div>
+					<div class="card h-50 m-1">
+						<div class="card-header">
+							<ul class="nav nav-tabs float-lg-left">
+								<h5><a id = "documentP">Document</a></h5>
+								
+							</ul>
+						</div>
+						<div id="textoverview0" class="card-body" style="overflow:scroll;">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="textview" role="tabpanel" aria-labelledby="pills-text-view">
+			<!-- Text View Starts -->
+			<div class="row mx-0">
+				<div class="col-xl-2 p-0" style="height: 90vh">
+					<div class="card h-100 m-1 mt-2" >
+						<div class="card-header">
+							<h5 style="float: left;">Tags</h5>
+						</div>
+						<div class="card-body-topic" style="overflow: scroll">
+							{% for n in range(30) %}
+								<div class="alert t{{n}} tpcbutton" style="background-color: {{colors_str[n]}}">
+									<div class="progress active">
+										<div class="progress-bar prog{{n}}" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%">Topic {{n}}</div>
+									</div>
+								</div>
+							{% endfor %}							
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h5 id="doc-title">Document.txt</h5>
+						</div>
+						<div id="doc-text-html" class="card-body">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h5 style="float: left;">Topic Overview</h5>
+						</div>
+						<div class="card-body" id="textoverview1">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane fade" id="rankview" role="tabpanel" aria-labelledby="pills-rank-view">
+			<!-- Rank View Starts -->
+			<div class="row mt-3 mx-2" style="height: 5vh">
+				
+				<form onsubmit="return false">
+					<div class="form-row">
+						
+						<div class="form-group col-xl-8" style="width: 95vw">
+							<input type="text" class="form-control" id="inputword" placeholder="Enter word">
+						</div>
+						<div class="form-group col-xl-2">
+							
+							<div class="form-group">
+							
+								<select id="Select" class="form-control">
+									<option selected>red</option>
+									<option>blue</option>
+									<option>green</option>
+									<option>purple</option>
+									<option>orange</option>
+									<option>pink</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group col-xl-2">								
+							<button id="input_word_btn" type="submit" onclick="add_word()" class="btn btn-primary btn-block">Add</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+
+			<div class="row mx-0">
+				<div class="col-xl-2 p-0" style="height: 85vh">
+					<div class="card h-100 m-1 mt-2" >
+						<div class="card-header">
+							<h5>Words</h5>
+						</div>
+						<div id="words" class="card-body">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h5>Rank Chart</h5>
+						</div>
+						<div class="card-body">
+							<div id = "rank" style="margin-left: 20px; margin-top: 30px"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 p-0">
+					<div class="card h-100 m-1 mt-2">
+						<div class="card-header">
+							<h5>Saliency</h5>
+						</div>
+						<div id="topic_dist_rank" class="card-body">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane fade" id="extensionview" role="tabpanel" aria-labelledby="pills-extension-view">
+			<!-- Extension View Starts -->
+			<div class="row mt-3 mx-2" style="height: 5vh">
+				
+				<form onsubmit="return false">
+					<div class="form-row">
+						
+						<div class="form-group col-xl-8" style="width: 95vw">
+							<input type="text" class="form-control" id="inputword2" placeholder="Enter word">
+						</div>
+						
+						<div class="form-group col-xl-2">								
+							<input id="input_word_btn2" type="submit" onclick="add_word_extension()" class="btn btn-primary btn-block" value="Add"></input>
+						</div>
+
+						<div class="form-group col-xl-2">								
+							<button id="clear_words" type="button" onclick="clear_word_extension()" class="btn btn-warning btn-block">Clear</button>
+						</div>
+					</div>
+				</form>
+				
+			</div>
+
+			<div class="row mx-1 my-1" >
+				<form>
+					<div class="form-group" id="topics">
+					</div>
+
+				</form>
+				
+			</div>
+
+			<div class="row my-1 mx-1">
+				<div class="col-xl-8">
+					<div class="card" style="height: 75vh; overflow: scroll;">
+						<div class="card-header" >
+							<h5>Documents</h5>
+						</div>
+						<div class="card-body" id="ranking">
+
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-xl-4">
+					<div class="card">
+						<div class="card-header">
+							<h5>Topic Distribution</h5>
+						</div>
+						<div class="card-body" id="bubble">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/text_overview.js')}}"></script>
+	<script type="text/javascript">
+    	function textViewInit(dname)
+    	{
+    		$("h5#doc-title").text(dname);
+    		var topic_colors;
+    		$.ajax({
+		      url: "/get_colors",
+		      type: "get",
+		      async: false,
+		      data: {},
+		      success: function(response) {
+		        topic_colors = response.colors;
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+
+    		var topic_x_word;
+    		$.ajax({
+		      url: "/get_topic_words_json",
+		      type: "get",
+		      async:false,
+		      data: {},
+		      success: function(response) {
+		        topic_x_word = response["topic_words_json"];
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+
+    		var docid = window.localStorage.getItem("docid");
+
+    		$.ajax({
+		      url: "/get_doc",
+		      type: "get",
+		      async: false,
+		      data: {docid: docid},
+		      success: function(response) {
+		        window.localStorage.setItem("docText", response.html);
+		        for(var i=0;i<30;i++)
+		        {
+		        	$(".progress-bar.prog"+i).css('width',10 + 90*response.topicscores[i]+'%').attr("aria-valuenow",response.topicscores[i])
+		        	// $('.progress-bar').css('width', valeur+'%').attr('aria-valuenow', valeur);
+		        } 
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+		    var txt = window.localStorage.getItem("docText");
+		    $("#doc-text-html").html(txt)
+
+			var temp = '';
+			$("span.hoverable").mouseenter(function() {
+				temp = $(this).css("background-color");
+			    $(this).css("background-color", "#aaaaaa").css("border-radius", "3px");
+			}).mouseleave(function() {
+			     $(this).css("background-color", temp).css("border-radius", "0px");
+			});
+
+			var data;
+	    	$.ajax({
+			      url: "/get_linegraph_data",
+			      type: "get",
+			      async: false,
+			      data: {did:docid},
+			      success: function(response) {
+			        data = response
+			      },
+			      error: function(xhr) {
+			        //Do Something to handle error
+			    }
+			});
+			topicLineGraph("textoverview0",data["data"]);
+
+			topicLineGraph("textoverview1",data["data"]);
+
+			var topic_clrs = {}
+
+			$('.tpcbutton').click(function() {
+	  			var myClass = $(this).attr("class");
+	  			var classes = myClass.split(" ");
+
+	  			var topic = "";
+	  			var selected = classes.indexOf("topic-selected");
+
+	  			for(i in classes){
+		  			if( classes[i].startsWith("t") && classes[i].length<4 ){
+		  				topic = classes[i]
+		  				break
+		  			}
+	  			}
+	  			var topicNo = parseInt(topic.replace("t",''))
+	  			if(topicNo in topic_clrs){
+
+	  			} 
+	  			else{
+	  				topic_clrs[topicNo] = 0
+	  			}
+
+
+				if(selected >= 0 || topic_clrs[topicNo] == 1){
+					$("span."+topic).css({"background-color":""});
+					$(this).removeClass("topic-selected");
+					topic_clrs[topicNo] = 0
+					$("div."+topic+".tpcbutton").css("border-color","transparent");
+				}
+				else{
+					
+					$("span."+topic).each(function( k, v ) {
+
+						var t = $(this).text();
+  						var wordScore = topic_x_word[topic][t.toLowerCase()];
+						var r = ( topic_colors[topicNo][0] * (1+wordScore*2) ).toString()
+						var g = ( topic_colors[topicNo][1] * (1+wordScore*2) ).toString()
+						var b = ( topic_colors[topicNo][2] * (1+wordScore*2) ).toString()
+  						var rgbtext = "rgb("+r+","+g+","+b+")";
+
+  						$(this).css({"background-color":rgbtext});
+					});
+
+
+					// tagName = this.nodeName.toLowerCase();
+					// if (tagName == "div"){
+					// 	$("path."+topic).click()
+					// }
+					$("div."+topic+".tpcbutton").css("border-color","#000");
+					$(this).addClass("topic-selected");
+					topic_clrs[topicNo] = 1
+				}
+
+
+  			}
+		);
+    	
+    	}
+
+    function closew(span) {
+	    $(span).parent().remove();
+	    // delete_word();
+	    add_word();
+	}
+
+
+    </script>
+
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/d3.min.js')}}"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/index.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/graph.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/rankview.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/extension.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/topic_distribution.js')}}"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+    		$.ajax({
+		      url: "/get_colors",
+		      type: "get",
+		      data: {},
+		      success: function(response) {
+		        window.localStorage.setItem("colors", response.colors);
+		        console.log(response)
+		      },
+		      error: function(xhr) {
+		        //Do Something to handle error
+		      }
+		    });
+
+    		var DATA_FOLDER="{{ url_for('static', filename='data/')}}";
+	    	// var path="{{ url_for('static', filename='data/text_topic_matrix.csv')}}";
+	    	window.localStorage.setItem("DATA_FOLDER",DATA_FOLDER);
+	    	window.localStorage.setItem("sId",1);
+	    	
+
+	    	drawMatrix();
+	    	add_word();
+	    	// topicLineGraph("textoverview0");
+	    	// topicLineGraph("textoverview1");
+	    	
+	    });
+    </script>
+
+</body>
+</html>
