@@ -6,27 +6,27 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0036122657"
+     "frequency": "0.0065716944"
     },
     {
      "line": "2",
-     "frequency": "0.0041681"
+     "frequency": "0.0017059504"
     },
     {
      "line": "3",
-     "frequency": "0.0036122657"
+     "frequency": "0.0018222431"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.020188203"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.018073544"
     },
     {
      "line": "6",
-     "frequency": "0.0036122657"
+     "frequency": "0"
     },
     {
      "line": "7",
@@ -34,7 +34,7 @@
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0226880336"
     },
     {
      "line": "9",
@@ -42,11 +42,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.0036122657"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.0036122657"
+     "frequency": "0"
     },
     {
      "line": "12",
@@ -62,7 +62,7 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.018073544"
     },
     {
      "line": "16",
@@ -70,7 +70,7 @@
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.0018222431"
     }
    ]
   },
@@ -80,71 +80,71 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0882916324"
+     "frequency": "0.0022903422"
     },
     {
      "line": "2",
-     "frequency": "0.036764493599999996"
+     "frequency": "0"
     },
     {
      "line": "3",
-     "frequency": "0.072342406"
+     "frequency": "0.0026291509"
     },
     {
      "line": "4",
-     "frequency": "0.07805218920000001"
+     "frequency": "0.0022903422"
     },
     {
      "line": "5",
-     "frequency": "0.0349111769"
+     "frequency": "0.003411535"
     },
     {
      "line": "6",
-     "frequency": "0.086373124"
+     "frequency": "0"
     },
     {
      "line": "7",
-     "frequency": "0.045078446499999994"
+     "frequency": "0"
     },
     {
      "line": "8",
-     "frequency": "0.0517540467"
+     "frequency": "0.0045132208"
     },
     {
      "line": "9",
-     "frequency": "0.0048940727"
+     "frequency": "0"
     },
     {
      "line": "10",
-     "frequency": "0.0667279134"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.050655462"
+     "frequency": "0"
     },
     {
      "line": "12",
-     "frequency": "0.037899948"
+     "frequency": "0"
     },
     {
      "line": "13",
-     "frequency": "0.041735260999999996"
+     "frequency": "0"
     },
     {
      "line": "14",
-     "frequency": "0.020835874"
+     "frequency": "0.002522896"
     },
     {
      "line": "15",
-     "frequency": "0.0621209058"
+     "frequency": "0.0022903422"
     },
     {
      "line": "16",
-     "frequency": "0.0370790153"
+     "frequency": "0"
     },
     {
      "line": "17",
-     "frequency": "0.0294232487"
+     "frequency": "0"
     }
    ]
   },
@@ -154,19 +154,19 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.019997"
+     "frequency": "0"
     },
     {
      "line": "2",
-     "frequency": "0.011215363"
+     "frequency": "0.0100790712"
     },
     {
      "line": "3",
-     "frequency": "0.011148539"
+     "frequency": "0"
     },
     {
      "line": "4",
-     "frequency": "0.0034508987"
+     "frequency": "0.0040007946"
     },
     {
      "line": "5",
@@ -186,7 +186,7 @@
     },
     {
      "line": "9",
-     "frequency": "0"
+     "frequency": "0.0035598036"
     },
     {
      "line": "10",
@@ -202,7 +202,7 @@
     },
     {
      "line": "13",
-     "frequency": "0"
+     "frequency": "0.0033213685"
     },
     {
      "line": "14",
@@ -214,11 +214,11 @@
     },
     {
      "line": "16",
-     "frequency": "0"
+     "frequency": "0.0033213685"
     },
     {
      "line": "17",
-     "frequency": "0.011148539"
+     "frequency": "0"
     }
    ]
   },
@@ -228,19 +228,19 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0035227358"
+     "frequency": "0.0110927273"
     },
     {
      "line": "2",
-     "frequency": "0.0078260878"
+     "frequency": "0.008280188"
     },
     {
      "line": "3",
-     "frequency": "0.0035227358"
+     "frequency": "0.0085229"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.0049067803"
     },
     {
      "line": "5",
@@ -248,7 +248,7 @@
     },
     {
      "line": "6",
-     "frequency": "0"
+     "frequency": "0.0085229"
     },
     {
      "line": "7",
@@ -256,19 +256,19 @@
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0025698273"
     },
     {
      "line": "9",
-     "frequency": "0.00256764"
+     "frequency": "0"
     },
     {
      "line": "10",
-     "frequency": "0"
+     "frequency": "0.0085229"
     },
     {
      "line": "11",
-     "frequency": "0"
+     "frequency": "0.0085229"
     },
     {
      "line": "12",
@@ -276,7 +276,7 @@
     },
     {
      "line": "13",
-     "frequency": "0.0027884243"
+     "frequency": "0"
     },
     {
      "line": "14",
@@ -284,15 +284,15 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.0025698273"
     },
     {
      "line": "16",
-     "frequency": "0.0027884243"
+     "frequency": "0"
     },
     {
      "line": "17",
-     "frequency": "0.0035227358"
+     "frequency": "0"
     }
    ]
   },
@@ -302,15 +302,15 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0099225496"
+     "frequency": "0"
     },
     {
      "line": "2",
-     "frequency": "0.00899379"
+     "frequency": "0.0060584694"
     },
     {
      "line": "3",
-     "frequency": "0.0144454966"
+     "frequency": "0"
     },
     {
      "line": "4",
@@ -318,15 +318,15 @@
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.0024849793"
     },
     {
      "line": "6",
-     "frequency": "0.0085510819"
+     "frequency": "0"
     },
     {
      "line": "7",
-     "frequency": "0.006984981499999999"
+     "frequency": "0"
     },
     {
      "line": "8",
@@ -338,11 +338,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.0085510819"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.005744325"
+     "frequency": "0"
     },
     {
      "line": "12",
@@ -376,15 +376,15 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.007350466"
+     "frequency": "0.0080973673"
     },
     {
      "line": "2",
-     "frequency": "0.00971644"
+     "frequency": "0.003234104"
     },
     {
      "line": "3",
-     "frequency": "0.007350466"
+     "frequency": "0.0115257853"
     },
     {
      "line": "4",
@@ -392,15 +392,15 @@
     },
     {
      "line": "5",
-     "frequency": "0.00416901"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0.007350466"
+     "frequency": "0.003921702"
     },
     {
      "line": "7",
-     "frequency": "0"
+     "frequency": "0.0041756653"
     },
     {
      "line": "8",
@@ -412,15 +412,15 @@
     },
     {
      "line": "10",
-     "frequency": "0.009645219"
+     "frequency": "0.003921702"
     },
     {
      "line": "11",
-     "frequency": "0.007350466"
+     "frequency": "0.003921702"
     },
     {
      "line": "12",
-     "frequency": "0.002294753"
+     "frequency": "0"
     },
     {
      "line": "13",
@@ -428,7 +428,7 @@
     },
     {
      "line": "14",
-     "frequency": "0.002850153"
+     "frequency": "0"
     },
     {
      "line": "15",
@@ -450,35 +450,35 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0018512018"
-    },
-    {
-     "line": "2",
-     "frequency": "0.0008161446"
-    },
-    {
-     "line": "3",
-     "frequency": "0.0008464654"
-    },
-    {
-     "line": "4",
-     "frequency": "0.0018420391999999998"
-    },
-    {
-     "line": "5",
      "frequency": "0"
     },
     {
+     "line": "2",
+     "frequency": "0.0030483464"
+    },
+    {
+     "line": "3",
+     "frequency": "0"
+    },
+    {
+     "line": "4",
+     "frequency": "0"
+    },
+    {
+     "line": "5",
+     "frequency": "0.0024965003"
+    },
+    {
      "line": "6",
-     "frequency": "0.00260799334"
+     "frequency": "0"
     },
     {
      "line": "7",
-     "frequency": "0.00092422514"
+     "frequency": "0"
     },
     {
      "line": "8",
-     "frequency": "0.0010047364"
+     "frequency": "0"
     },
     {
      "line": "9",
@@ -486,15 +486,15 @@
     },
     {
      "line": "10",
-     "frequency": "0.0017706905400000001"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.0016837682"
+     "frequency": "0"
     },
     {
      "line": "12",
-     "frequency": "0.0008373028"
+     "frequency": "0"
     },
     {
      "line": "13",
@@ -506,7 +506,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.0010047364"
+     "frequency": "0"
     },
     {
      "line": "16",
@@ -524,7 +524,7 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0"
+     "frequency": "0.0057459913"
     },
     {
      "line": "2",
@@ -532,19 +532,19 @@
     },
     {
      "line": "3",
-     "frequency": "0"
+     "frequency": "0.0023279323"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.003418059"
     },
     {
      "line": "5",
-     "frequency": "0.003574897"
+     "frequency": "0.0041293744"
     },
     {
      "line": "6",
-     "frequency": "0"
+     "frequency": "0.0023279323"
     },
     {
      "line": "7",
@@ -552,7 +552,7 @@
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.003418059"
     },
     {
      "line": "9",
@@ -560,11 +560,11 @@
     },
     {
      "line": "10",
-     "frequency": "0"
+     "frequency": "0.0023279323"
     },
     {
      "line": "11",
-     "frequency": "0"
+     "frequency": "0.0023279323"
     },
     {
      "line": "12",
@@ -576,11 +576,11 @@
     },
     {
      "line": "14",
-     "frequency": "0"
+     "frequency": "0.0023831923"
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.003418059"
     },
     {
      "line": "16",
@@ -598,23 +598,23 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0"
+     "frequency": "0.0039063245"
     },
     {
      "line": "2",
-     "frequency": "0.0044994187"
+     "frequency": "0"
     },
     {
      "line": "3",
-     "frequency": "0.005671712"
+     "frequency": "0"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.009720887"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.010904303"
     },
     {
      "line": "6",
@@ -626,11 +626,11 @@
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0145937127"
     },
     {
      "line": "9",
-     "frequency": "0.00288287"
+     "frequency": "0"
     },
     {
      "line": "10",
@@ -654,7 +654,7 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.010904303"
     },
     {
      "line": "16",
@@ -676,7 +676,7 @@
     },
     {
      "line": "2",
-     "frequency": "0.0054317256"
+     "frequency": "0.0018905617"
     },
     {
      "line": "3",
@@ -684,11 +684,11 @@
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.0043980773"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.0049904035"
     },
     {
      "line": "6",
@@ -700,7 +700,7 @@
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0049904035"
     },
     {
      "line": "9",
@@ -728,7 +728,7 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.0049904035"
     },
     {
      "line": "16",
@@ -746,23 +746,23 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0"
+     "frequency": "0.0184075851"
     },
     {
      "line": "2",
-     "frequency": "0"
+     "frequency": "0.0045539318"
     },
     {
      "line": "3",
-     "frequency": "0"
+     "frequency": "0.0056218323"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.009010233"
     },
     {
      "line": "5",
-     "frequency": "0.003150246"
+     "frequency": "0.0096096794"
     },
     {
      "line": "6",
@@ -774,7 +774,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.003150246"
+     "frequency": "0.0153737024"
     },
     {
      "line": "9",
@@ -802,7 +802,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.003150246"
+     "frequency": "0.0124008844"
     },
     {
      "line": "16",
@@ -810,7 +810,7 @@
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.0056218323"
     }
    ]
   },
@@ -820,23 +820,23 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0288010985"
+     "frequency": "0"
     },
     {
      "line": "2",
-     "frequency": "0.005603269"
+     "frequency": "0"
     },
     {
      "line": "3",
-     "frequency": "0.021096766"
+     "frequency": "0"
     },
     {
      "line": "4",
-     "frequency": "0.0020979801"
+     "frequency": "0"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.0021563962"
     },
     {
      "line": "6",
@@ -884,7 +884,7 @@
     },
     {
      "line": "17",
-     "frequency": "0.021096766"
+     "frequency": "0"
     }
    ]
   },
@@ -894,71 +894,71 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0"
+     "frequency": "0.059750689200000005"
     },
     {
      "line": "2",
-     "frequency": "0.00760626"
+     "frequency": "0.0240818973"
     },
     {
      "line": "3",
-     "frequency": "0"
+     "frequency": "0.046794336000000006"
     },
     {
      "line": "4",
-     "frequency": "0.004210322"
+     "frequency": "0.053222816699999995"
     },
     {
      "line": "5",
-     "frequency": "0.0033250921"
+     "frequency": "0.0309604969"
     },
     {
      "line": "6",
-     "frequency": "0"
+     "frequency": "0.053349908099999996"
     },
     {
      "line": "7",
-     "frequency": "0"
+     "frequency": "0.030293873000000002"
     },
     {
      "line": "8",
-     "frequency": "0.0033250921"
+     "frequency": "0.0436544997"
     },
     {
      "line": "9",
-     "frequency": "0"
+     "frequency": "0.0035405308"
     },
     {
      "line": "10",
-     "frequency": "0"
+     "frequency": "0.042311121300000004"
     },
     {
      "line": "11",
-     "frequency": "0"
+     "frequency": "0.030509198"
     },
     {
      "line": "12",
-     "frequency": "0"
+     "frequency": "0.0236435303"
     },
     {
      "line": "13",
-     "frequency": "0"
+     "frequency": "0.026525768999999998"
     },
     {
      "line": "14",
-     "frequency": "0"
+     "frequency": "0.0141847381"
     },
     {
      "line": "15",
-     "frequency": "0.0033250921"
+     "frequency": "0.047505139700000004"
     },
     {
      "line": "16",
-     "frequency": "0"
+     "frequency": "0.023644848"
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.0170457744"
     }
    ]
   },
@@ -968,27 +968,27 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.002375345"
+     "frequency": "0"
     },
     {
      "line": "2",
-     "frequency": "0.0061195027"
+     "frequency": "0.0016317938"
     },
     {
      "line": "3",
-     "frequency": "0.002375345"
+     "frequency": "0"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.0021130554"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.007161896"
     },
     {
      "line": "6",
-     "frequency": "0.002375345"
+     "frequency": "0"
     },
     {
      "line": "7",
@@ -1004,11 +1004,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.002375345"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.002375345"
+     "frequency": "0"
     },
     {
      "line": "12",
@@ -1042,23 +1042,23 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0068142236000000005"
+     "frequency": "0.0025313012"
     },
     {
      "line": "2",
-     "frequency": "0.0070878705"
+     "frequency": "0"
     },
     {
      "line": "3",
-     "frequency": "0.003469783"
+     "frequency": "0"
     },
     {
      "line": "4",
-     "frequency": "0.0036835014"
+     "frequency": "0.007769627"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.008526132"
     },
     {
      "line": "6",
@@ -1070,7 +1070,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.0022657616"
+     "frequency": "0.008526132"
     },
     {
      "line": "9",
@@ -1098,7 +1098,7 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.008526132"
     },
     {
      "line": "16",
@@ -1106,7 +1106,7 @@
     },
     {
      "line": "17",
-     "frequency": "0.003469783"
+     "frequency": "0"
     }
    ]
   },
@@ -1120,7 +1120,7 @@
     },
     {
      "line": "2",
-     "frequency": "0"
+     "frequency": "0.0051306853999999995"
     },
     {
      "line": "3",
@@ -1128,15 +1128,15 @@
     },
     {
      "line": "4",
-     "frequency": "0.0033462204"
+     "frequency": "0.0027666367"
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.0026532281"
     },
     {
      "line": "6",
-     "frequency": "0"
+     "frequency": "0.0027666367"
     },
     {
      "line": "7",
@@ -1144,7 +1144,7 @@
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0026532281"
     },
     {
      "line": "9",
@@ -1156,15 +1156,15 @@
     },
     {
      "line": "11",
-     "frequency": "0"
+     "frequency": "0.0027666367"
     },
     {
      "line": "12",
-     "frequency": "0"
+     "frequency": "0.0027666367"
     },
     {
      "line": "13",
-     "frequency": "0"
+     "frequency": "0.0025216925"
     },
     {
      "line": "14",
@@ -1172,11 +1172,11 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.0026532281"
     },
     {
      "line": "16",
-     "frequency": "0"
+     "frequency": "0.0025216925"
     },
     {
      "line": "17",
@@ -1190,15 +1190,15 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0071982643"
+     "frequency": "0"
     },
     {
      "line": "2",
-     "frequency": "0.005718579"
+     "frequency": "0"
     },
     {
      "line": "3",
-     "frequency": "0.004256098"
+     "frequency": "0"
     },
     {
      "line": "4",
@@ -1222,7 +1222,7 @@
     },
     {
      "line": "9",
-     "frequency": "0.0020502917"
+     "frequency": "0"
     },
     {
      "line": "10",
@@ -1238,7 +1238,7 @@
     },
     {
      "line": "13",
-     "frequency": "0.002447743"
+     "frequency": "0"
     },
     {
      "line": "14",
@@ -1250,11 +1250,11 @@
     },
     {
      "line": "16",
-     "frequency": "0.002447743"
+     "frequency": "0"
     },
     {
      "line": "17",
-     "frequency": "0.004256098"
+     "frequency": "0"
     }
    ]
   },
@@ -1264,7 +1264,7 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.003989273"
+     "frequency": "0.0033547545"
     },
     {
      "line": "2",
@@ -1276,7 +1276,7 @@
     },
     {
      "line": "4",
-     "frequency": "0.003989273"
+     "frequency": "0.0033547545"
     },
     {
      "line": "5",
@@ -1292,7 +1292,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.003989273"
+     "frequency": "0.0033547545"
     },
     {
      "line": "9",
@@ -1316,11 +1316,11 @@
     },
     {
      "line": "14",
-     "frequency": "0.0033889478"
+     "frequency": "0.0033075404"
     },
     {
      "line": "15",
-     "frequency": "0.003989273"
+     "frequency": "0.0033547545"
     },
     {
      "line": "16",
@@ -1338,27 +1338,27 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.004515764"
-    },
-    {
-     "line": "2",
-     "frequency": "0.005441796"
-    },
-    {
-     "line": "3",
-     "frequency": "0.004515764"
-    },
-    {
-     "line": "4",
      "frequency": "0"
     },
     {
+     "line": "2",
+     "frequency": "0.003607817"
+    },
+    {
+     "line": "3",
+     "frequency": "0"
+    },
+    {
+     "line": "4",
+     "frequency": "0.0038315875"
+    },
+    {
      "line": "5",
-     "frequency": "0.0018292197"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0.004515764"
+     "frequency": "0"
     },
     {
      "line": "7",
@@ -1374,11 +1374,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.004515764"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.004515764"
+     "frequency": "0"
     },
     {
      "line": "12",
@@ -1390,7 +1390,7 @@
     },
     {
      "line": "14",
-     "frequency": "0.0018264849"
+     "frequency": "0"
     },
     {
      "line": "15",
@@ -1412,27 +1412,27 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0021926456"
+     "frequency": "0.0081992241"
     },
     {
      "line": "2",
-     "frequency": "0"
+     "frequency": "0.0060416725"
     },
     {
      "line": "3",
-     "frequency": "0"
+     "frequency": "0.0035047138"
     },
     {
      "line": "4",
-     "frequency": "0.0105708893"
+     "frequency": "0.0046945103"
     },
     {
      "line": "5",
-     "frequency": "0.014059492699999999"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0"
+     "frequency": "0.0035047138"
     },
     {
      "line": "7",
@@ -1440,7 +1440,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.0092171093"
+     "frequency": "0.0046945103"
     },
     {
      "line": "9",
@@ -1448,11 +1448,11 @@
     },
     {
      "line": "10",
-     "frequency": "0"
+     "frequency": "0.0035047138"
     },
     {
      "line": "11",
-     "frequency": "0"
+     "frequency": "0.0035047138"
     },
     {
      "line": "12",
@@ -1468,7 +1468,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.0092171093"
+     "frequency": "0.0046945103"
     },
     {
      "line": "16",
@@ -1486,27 +1486,27 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.015134472"
+     "frequency": "0.0174909364"
     },
     {
      "line": "2",
-     "frequency": "0.0033852952"
+     "frequency": "0.009165305"
     },
     {
      "line": "3",
-     "frequency": "0.005571081"
+     "frequency": "0.013809401"
     },
     {
      "line": "4",
-     "frequency": "0.009563391"
+     "frequency": "0"
     },
     {
      "line": "5",
-     "frequency": "0.007394693900000001"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0.005571081"
+     "frequency": "0"
     },
     {
      "line": "7",
@@ -1514,7 +1514,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.012687962899999999"
+     "frequency": "0"
     },
     {
      "line": "9",
@@ -1522,11 +1522,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.005571081"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.005571081"
+     "frequency": "0"
     },
     {
      "line": "12",
@@ -1542,7 +1542,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.012687962899999999"
+     "frequency": "0"
     },
     {
      "line": "16",
@@ -1550,7 +1550,7 @@
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.013809401"
     }
    ]
   },
@@ -1560,35 +1560,35 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0100418876"
+     "frequency": "0.019517209"
     },
     {
      "line": "2",
-     "frequency": "0"
+     "frequency": "0.010115724"
     },
     {
      "line": "3",
-     "frequency": "0.0035399296"
+     "frequency": "0.00983517"
     },
     {
      "line": "4",
-     "frequency": "0.0090835353"
+     "frequency": "0"
     },
     {
      "line": "5",
-     "frequency": "0.0040687076"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0.0089235511"
+     "frequency": "0"
     },
     {
      "line": "7",
-     "frequency": "0.0028020442"
+     "frequency": "0"
     },
     {
      "line": "8",
-     "frequency": "0.010570665600000001"
+     "frequency": "0.0040299324"
     },
     {
      "line": "9",
@@ -1596,15 +1596,15 @@
     },
     {
      "line": "10",
-     "frequency": "0.0063419738"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.0061215069"
+     "frequency": "0"
     },
     {
      "line": "12",
-     "frequency": "0.0025815773"
+     "frequency": "0"
     },
     {
      "line": "13",
@@ -1616,7 +1616,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.010570665600000001"
+     "frequency": "0"
     },
     {
      "line": "16",
@@ -1624,7 +1624,7 @@
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.00983517"
     }
    ]
   },
@@ -1642,7 +1642,7 @@
     },
     {
      "line": "3",
-     "frequency": "0"
+     "frequency": "0.00781488"
     },
     {
      "line": "4",
@@ -1654,7 +1654,7 @@
     },
     {
      "line": "6",
-     "frequency": "0.012157378"
+     "frequency": "0"
     },
     {
      "line": "7",
@@ -1666,7 +1666,7 @@
     },
     {
      "line": "9",
-     "frequency": "0"
+     "frequency": "0.00675882"
     },
     {
      "line": "10",
@@ -1708,15 +1708,15 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.012310774"
+     "frequency": "0.0115433268"
     },
     {
      "line": "2",
-     "frequency": "0.008896345"
+     "frequency": "0.011733904"
     },
     {
      "line": "3",
-     "frequency": "0.012310774"
+     "frequency": "0.0088192848"
     },
     {
      "line": "4",
@@ -1724,11 +1724,11 @@
     },
     {
      "line": "5",
-     "frequency": "0.002399918"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0.012310774"
+     "frequency": "0.0060805785"
     },
     {
      "line": "7",
@@ -1744,15 +1744,15 @@
     },
     {
      "line": "10",
-     "frequency": "0.014947926"
+     "frequency": "0.0060805785"
     },
     {
      "line": "11",
-     "frequency": "0.012310774"
+     "frequency": "0.0060805785"
     },
     {
      "line": "12",
-     "frequency": "0.002637152"
+     "frequency": "0"
     },
     {
      "line": "13",
@@ -1772,7 +1772,7 @@
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.0027387063"
     }
    ]
   },
@@ -1782,35 +1782,35 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.008297366"
+     "frequency": "0.0326289294"
     },
     {
      "line": "2",
-     "frequency": "0.009468575"
+     "frequency": "0.0166649492"
     },
     {
      "line": "3",
-     "frequency": "0.008297366"
+     "frequency": "0.0257781724"
     },
     {
      "line": "4",
-     "frequency": "0"
+     "frequency": "0.0226510646"
     },
     {
      "line": "5",
-     "frequency": "0.0019488087"
+     "frequency": "0.007677152499999999"
     },
     {
      "line": "6",
-     "frequency": "0.008297366"
+     "frequency": "0.0279373747"
     },
     {
      "line": "7",
-     "frequency": "0"
+     "frequency": "0.0138551643"
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0115335093"
     },
     {
      "line": "9",
@@ -1818,35 +1818,35 @@
     },
     {
      "line": "10",
-     "frequency": "0.011052544000000001"
+     "frequency": "0.0250501427"
     },
     {
      "line": "11",
-     "frequency": "0.008297366"
+     "frequency": "0.02277633"
     },
     {
      "line": "12",
-     "frequency": "0.002755178"
+     "frequency": "0.014966756000000001"
     },
     {
      "line": "13",
-     "frequency": "0"
+     "frequency": "0.0162417041"
     },
     {
      "line": "14",
-     "frequency": "0.0028952993"
+     "frequency": "0.0032485062"
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.0175395683"
     },
     {
      "line": "16",
-     "frequency": "0"
+     "frequency": "0.0102356451"
     },
     {
      "line": "17",
-     "frequency": "0"
+     "frequency": "0.0066990578"
     }
    ]
   },
@@ -1856,7 +1856,7 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0029515899"
+     "frequency": "0.0046822354"
     },
     {
      "line": "2",
@@ -1864,7 +1864,7 @@
     },
     {
      "line": "3",
-     "frequency": "0.0029515899"
+     "frequency": "0.0046822354"
     },
     {
      "line": "4",
@@ -1872,11 +1872,11 @@
     },
     {
      "line": "5",
-     "frequency": "0"
+     "frequency": "0.002060961"
     },
     {
      "line": "6",
-     "frequency": "0.0029515899"
+     "frequency": "0.0046822354"
     },
     {
      "line": "7",
@@ -1892,11 +1892,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.0029515899"
+     "frequency": "0.0046822354"
     },
     {
      "line": "11",
-     "frequency": "0.0029515899"
+     "frequency": "0.0046822354"
     },
     {
      "line": "12",
@@ -1930,71 +1930,71 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0440166506"
+     "frequency": "0.0058810097"
     },
     {
      "line": "2",
-     "frequency": "0.0240992551"
+     "frequency": "0.0022844893"
     },
     {
      "line": "3",
-     "frequency": "0.0360145698"
+     "frequency": "0.004253123"
     },
     {
      "line": "4",
-     "frequency": "0.0299493131"
+     "frequency": "0"
     },
     {
      "line": "5",
-     "frequency": "0.019885026400000002"
+     "frequency": "0"
     },
     {
      "line": "6",
-     "frequency": "0.0327256369"
+     "frequency": "0"
     },
     {
      "line": "7",
-     "frequency": "0.018632011"
+     "frequency": "0"
     },
     {
      "line": "8",
-     "frequency": "0.0245896548"
+     "frequency": "0"
     },
     {
      "line": "9",
-     "frequency": "0.005694819"
+     "frequency": "0.0017903234"
     },
     {
      "line": "10",
-     "frequency": "0.029297113599999997"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.021511942"
+     "frequency": "0"
     },
     {
      "line": "12",
-     "frequency": "0.017873108"
+     "frequency": "0"
     },
     {
      "line": "13",
-     "frequency": "0.0225479763"
+     "frequency": "0.0022844893"
     },
     {
      "line": "14",
-     "frequency": "0.0064822119"
+     "frequency": "0"
     },
     {
      "line": "15",
-     "frequency": "0.031050230399999997"
+     "frequency": "0"
     },
     {
      "line": "16",
-     "frequency": "0.0181029632"
+     "frequency": "0.0022844893"
     },
     {
      "line": "17",
-     "frequency": "0.0159548524"
+     "frequency": "0.004253123"
     }
    ]
   },
@@ -2004,19 +2004,19 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.0076027715"
+     "frequency": "0.0055876877"
     },
     {
      "line": "2",
-     "frequency": "0.004777983"
+     "frequency": "0.00489439"
     },
     {
      "line": "3",
-     "frequency": "0.0044496665"
+     "frequency": "0.0055876877"
     },
     {
      "line": "4",
-     "frequency": "0.003153105"
+     "frequency": "0"
     },
     {
      "line": "5",
@@ -2024,7 +2024,7 @@
     },
     {
      "line": "6",
-     "frequency": "0.0044496665"
+     "frequency": "0.0055876877"
     },
     {
      "line": "7",
@@ -2032,7 +2032,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.003153105"
+     "frequency": "0.0010339998"
     },
     {
      "line": "9",
@@ -2040,11 +2040,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.0044496665"
+     "frequency": "0.0055876877"
     },
     {
      "line": "11",
-     "frequency": "0.0044496665"
+     "frequency": "0.0055876877"
     },
     {
      "line": "12",
@@ -2060,7 +2060,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.003153105"
+     "frequency": "0"
     },
     {
      "line": "16",
@@ -2078,27 +2078,27 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0.009519278"
-    },
-    {
-     "line": "2",
-     "frequency": "0.0058535193"
-    },
-    {
-     "line": "3",
-     "frequency": "0.006478743"
-    },
-    {
-     "line": "4",
-     "frequency": "0.003040535"
-    },
-    {
-     "line": "5",
      "frequency": "0"
     },
     {
+     "line": "2",
+     "frequency": "0.0042710425"
+    },
+    {
+     "line": "3",
+     "frequency": "0"
+    },
+    {
+     "line": "4",
+     "frequency": "0"
+    },
+    {
+     "line": "5",
+     "frequency": "0.0041490686"
+    },
+    {
      "line": "6",
-     "frequency": "0.006478743"
+     "frequency": "0"
     },
     {
      "line": "7",
@@ -2106,7 +2106,7 @@
     },
     {
      "line": "8",
-     "frequency": "0.003040535"
+     "frequency": "0"
     },
     {
      "line": "9",
@@ -2114,11 +2114,11 @@
     },
     {
      "line": "10",
-     "frequency": "0.006478743"
+     "frequency": "0"
     },
     {
      "line": "11",
-     "frequency": "0.006478743"
+     "frequency": "0"
     },
     {
      "line": "12",
@@ -2134,7 +2134,7 @@
     },
     {
      "line": "15",
-     "frequency": "0.003040535"
+     "frequency": "0"
     },
     {
      "line": "16",
@@ -2152,19 +2152,19 @@
    "values": [
     {
      "line": "1",
-     "frequency": "0"
+     "frequency": "0.0091559932"
     },
     {
      "line": "2",
-     "frequency": "0.009654464"
+     "frequency": "0.0049479213"
     },
     {
      "line": "3",
-     "frequency": "0.004851494"
+     "frequency": "0.0030860126"
     },
     {
      "line": "4",
-     "frequency": "0.0028490496"
+     "frequency": "0.0060699806"
     },
     {
      "line": "5",
@@ -2172,15 +2172,15 @@
     },
     {
      "line": "6",
-     "frequency": "0"
+     "frequency": "0.0056820463"
     },
     {
      "line": "7",
-     "frequency": "0"
+     "frequency": "0.0025960337"
     },
     {
      "line": "8",
-     "frequency": "0"
+     "frequency": "0.0087121436"
     },
     {
      "line": "9",
@@ -2188,11 +2188,11 @@
     },
     {
      "line": "10",
-     "frequency": "0"
+     "frequency": "0.0056820463"
     },
     {
      "line": "11",
-     "frequency": "0"
+     "frequency": "0.0030860126"
     },
     {
      "line": "12",
@@ -2208,7 +2208,7 @@
     },
     {
      "line": "15",
-     "frequency": "0"
+     "frequency": "0.0060699806"
     },
     {
      "line": "16",
