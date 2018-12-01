@@ -256,7 +256,7 @@ function drawMatrix() {
 				newP.innerHTML = d.val;
 				t_area.value += (d.val+"\n");
 				window.localStorage.setItem("tname",d.val);
-				topic_click(d.val.replace(" ","")+".csv","topicdist");
+				topic_click(d.val.toLowerCase().replace(" ","")+".csv","topicdist");
 
 			})
 			.on("mouseover", function(d,i) {
