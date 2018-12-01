@@ -1,4 +1,6 @@
 # Serendip
+LIVE DEMO HERE: http://35.237.27.126:5000/
+---
 A modification of the tool described in this paper: https://graphics.cs.wisc.edu/Papers/2014/AKVWG14/Preprint.pdf
 ---
 
