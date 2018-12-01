@@ -3,13 +3,21 @@ README
 Make sure you run the webapp through Mozilla Firefox. Some of the graphs dont work in chrome.
 Before you run the webapp server make sure you have these installed:
 1) Python 3.6
+
 2) Python libraries required for Webapp: re, numpy, flask, werkzeug and sklearn
+
 3) Requirements for Data Preprocessing Code: jupyter notebook, gensim, nltk.
 Make sure to download all the related data for nltk. You can do this by running the following code after you install the library:
 > import nltk
 > nltk.download('all')
+
 4) Open the LDA.ipynb file via jupyter notebook.
+Or you can view the results on our git repo: https://github.com/RishabhPatil/Serendip/blob/master/LDA.ipynb
+
 5) Update the 'DATA_FOLDER' variable to selecte the dataset either 'data/NewsArticles/' or 'data/ReligiousTexts'
+
 6) Run all the cells in sequence to generate the data.
+
 7) Copy the generated files in 'data' folder to 'integration/static/data/'. This is where the webapp looks for the data files.
+
 8) Run app.py from integration folder to run the webapp.
