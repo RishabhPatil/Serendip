@@ -161,7 +161,7 @@ function drawMatrix() {
 					t_area.value += (d.val+"\n");
 					newP.innerHTML = d.val;
 					window.localStorage.setItem("tname",d.val);
-					topic_click(d.val.replace(" ","")+".csv","topicdist");
+					topic_click(d.val.toLowerCase().replace(" ","")+".csv","topicdist");
 
 				} else {
 					d3.selectAll(".classl"+d.t)
